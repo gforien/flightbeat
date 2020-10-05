@@ -36,7 +36,7 @@ async function main_(PID) {
       await sleepSec(5);
     }
 
-    else if (leader != PID && iAmNextLeader) {
+    else if (leader != -1 && iAmNextLeader) {
       console.log('STEP 3 for LEADER - trigger election');
       for(let node of allNodes) {
         try {

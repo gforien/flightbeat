@@ -3,96 +3,125 @@
  *        leader.js : simple leader election        *
  *                                                  *
  ****************************************************/
+const axios = require('axios');
+const express = require('express');
+const dns = require('dns');
+const PORT = 5000;
+const TIMEOUT = 100;
+
+
 let leader = -1;
 let PID = -1;
+let restartCount = 0;
 
 async function leaderElection(PID) {
 
-  console.log("STEP 1");
   let allNodes = await getNodesIp();
 
-  let restartCount = 0;
-  const restart = async (errMsg) => {
-    restartCount++;
-    console.log(errMsg);
-    console.log(`\n\n-------------------------  RESTART n°${restartCount}  ------------------------------`);
-    console.log('-------------------------------------------------------------------------------------');
-    await new Promise(resolve => setTimeout(resolve, 10000));
-  }
+  mainloop: while(true) {
 
-  while(true) {
-    // get status
     let nodesUp = await getNodesStatus(allNodes);
-    let countNodesUp = nodesUp.filter(ele => ele == true).length;
-    if (countNodesUp < 3) {
-      restart(`ERROR - countNodesUp = ${countNodesUp} but expected a number >= 3`);
-      continue;
+    if (notEnoughNodes(nodesUp)) continue mainloop;
+
+    if (leader == PID) {
+      console.log('STEP 4 - I am leader');
+
     }
 
-    // if I am leader
-    if(amILeader(nodesUp)) {
+    else if (await amINextLeader(nodesUp)) {
+      console.log('STEP 3 for LEADER - trigger election');
       for(let node of allNodes) {
         try {
-          data = await got.post(`${node}/election/${PID}`);
+          if(!nodesUp[allNodes.indexOf(node)]) continue;
+
+          process.stdout.write(`POST ${node}/election/${PID} \t\t`);
+          data = await axios.post(`${node}/election/${PID}`);
           if(data.status != 200) {
+            console.log(`false (status ${data.status})`);
             restart(`ERROR - election failed, status=${data.status} for node ${node}`);
-            continue;
+            continue mainloop;
+          }
+          console.log(`ok (status ${data.status})`);
+        }
+        catch (err) {
+          console.log(`false !`);
+          console.log(err);
+          restart(`ERROR - election failed for unknown reason`);
+          continue mainloop;
+        }
+      }
+      leader = PID;
+      console.log('STEP 3 - leader elected !');
+    }
+
+    else {
+      console.log('STEP 3 for FOLLOWER - wait for election');
+      await new Promise(resolve => setTimeout(resolve, 10000));
+
+      if (leader == -1) {
+        restart('Limit case: after 10 sec, there is no leader');
+        continue mainloop;
+      }
+      
+      else {
+        leaderode = allNodes[leader-1];
+        try {
+          data = await axios.get(`${leaderNode}/status`, {timeout: TIMEOUT});
+          if(data.status != 200) {
+            restart(`ERROR - leader (index ${leader-1}) is down, status=${data.status} for node ${leaderNode}`);
+            continue mainloop;
           }
         }
         catch (err) {
           restart(`ERROR - election failed for unknown reason`);
-          continue;
-        }
-      }
-    }
-
-    // if I am NOT leader
-    else {
-      await new Promise(resolve => setTimeout(resolve, 10000));
-
-      if (leader == -1) {
-        console.log('Limit case: after 10 sec, there is no leader');
-        restart();
-      }
-      else {
-        leaderNode = allNodes[leader-1];
-        while(true) {
-          try {
-            data = await got.post(`${leaderNode}/status`);
-            if(data.status != 200) {
-              restart(`ERROR - leader (index ${leader-1}) is down, status=${data.status} for node ${leaderNode}`);
-              continue;
-            }
-          }
-          catch (err) {
-            restart(`ERROR - election failed for unknown reason`);
-            continue;
-          }
+          continue mainloop;
         }
       }
     }
   }
 }
 
-/** lookupPromise
+function notEnoughNodes(nodesUp) {
+  let countNodesUp = nodesUp.filter(ele => ele == true).length;
+  if(countNodesUp < 3) {
+    restart(`ERROR - countNodesUp = ${countNodesUp} but expected a number >= 3`);
+    return true;
+  }
+  return false;
+}
+
+/** restart
  *
  */
-async function lookupPromise(host){
-    return new Promise((resolve, reject) => {
-        dns.resolve4(host, (err, address) => {
-            if(err) reject(err);
-            resolve(address);
-        });
-   });
-};
+async function restart(errMsg) {
+  leader = -1;
+  restartCount++;
+  console.log(errMsg);
+  console.log(`\n\n-------------------------  RESTART n°${restartCount}  ------------------------------`);
+  console.log('-------------------------------------------------------------------------------------');
+  await new Promise(resolve => setTimeout(resolve, 10000));
+}
 
-
-/** amILeader
+/** getNodesStatus
  *
  */
-const amILeader = loggingDecorator(amILeader_);
-function amILeader_(nodesUp) {
-  return nodesUp.slice(PID-1).every(ele => !ele);
+const getNodesStatus = loggingDecorator(getNodesStatus_);
+async function getNodesStatus_(allNodes) {
+  nodesUp = [];
+  for(let node of allNodes) {
+    try {
+      // process.stdout.write(`GET ${node}/status \t\t`);
+      data = await axios.get(`${node}/status`, {timeout: TIMEOUT});
+      nodesUp.push(data.status == 200);
+      // console.log(`=> true (code ${data.status})`)
+    }
+    catch (err) {
+      nodesUp.push(false)
+      // console.log(`=> false (${err.name})`)
+    }
+  }
+  if (nodesUp.length != 15) throw new Error(`nodesUp.length = ${nodesUp.length} but expected 15`);
+  return nodesUp;
 }
 
 
@@ -122,33 +151,25 @@ async function getNodesIp_() {
   return nodes;
 }
 
-
-/** getNodesStatus
+/** lookupPromise
  *
  */
-const getNodesStatus = loggingDecorator(getNodesStatus_);
-async function getNodesStatus_(allNodes) {
-  nodesUp = [];
-  for(let node of allNodes) {
-    try {
-      console.log(`request to ${node}/status`)
-      data = await got(`${node}/status`, {retry: 0});
-      nodesUp.push(data.status == 200);
-    }
-    catch (err) {
-      if (err instanceof got.RequestError) {
-        nodesUp.push(false)
-        console.log(false);
-      }
-      else {
-        console.log("Limit case");
-        console.log(err);
-      // throw err;
-      }
-    }
-  }
-  if (nodesUp.length != 15) throw new Error(`nodesUp.length = ${nodesUp.length} but expected 15`);
-  return nodesUp;
+async function lookupPromise(host){
+    return new Promise((resolve, reject) => {
+        dns.resolve4(host, (err, address) => {
+            if(err) reject(err);
+            resolve(address);
+        });
+   });
+};
+
+
+/** amINextLeader
+ *
+ */
+const amINextLeader = loggingDecorator(amINextLeader_);
+async function amINextLeader_(nodesUp) {
+  return nodesUp.slice(PID-1).every(ele => !ele);
 }
 
 
@@ -160,7 +181,6 @@ function loggingDecorator(wrapped) {
     console.log(`>>>>>> ${wrapped.name}() called with: ${JSON.stringify(arguments)}`);
     const result = await wrapped.apply(this, arguments);
     console.log(`<<<<<< ${wrapped.name} returns: ${result}`);
-    console.log();
     return result;
   }
 }
@@ -169,11 +189,7 @@ function loggingDecorator(wrapped) {
 /***************************************
  *        express configuration        *
  ***************************************/
-const got = require('got');
-const express = require('express');
-const dns = require('dns');
 const app = express();
-const PORT = 5000;
 
 app
   .use(express.json())

@@ -22,7 +22,10 @@ async function leaderElection(PID) {
 
     let nodesUp = await getNodesStatus(allNodes);
     let amINextLeader = await isNextLeader(nodesUp);
-    if (notEnoughNodes(nodesUp)) continue mainloop;
+    if (notEnoughNodes(nodesUp)) {
+      restart("Not enough nodes");
+      continue mainloop;
+    }
 
     if (leader == PID && amINextLeader) {
       console.log('STEP 4 - I am leader');

@@ -31,11 +31,11 @@ async function main_(PID) {
     if (leader == -1) leader = await getLeader(allNodes, nodesUp);
 
     if (leader == PID) {
-      console.log('I am leader');
+      console.log('I am leader (');
       await sleepSec(5);
     }
 
-    else if (leader != -1 && iAmNextLeader) {
+    else if (leader == -1 && iAmNextLeader) {
       console.log('STEP 3 for LEADER - trigger election');
       for(let node of allNodes) {
         try {

@@ -36,7 +36,7 @@ async function main_(PID) {
 
     if (await notEnoughNodes(nodesUp)) {
       restart("Not enough nodes");
-      sleepSec(10);
+      await sleepSec(10);
       continue mainloop;
     }
 
@@ -47,7 +47,7 @@ async function main_(PID) {
       await sleepSec(5);
     }
 
-    else if (iAmNextLeader && (leader == -1 || nodesUp[leader-2] == false)) {
+    else if (await shouldTriggerElection(iAmNextLeader, nodesUp)) {
       console.log('STEP 3 for LEADER - trigger election');
       for(let node of allNodes) {
         try {
@@ -124,19 +124,32 @@ function notEnoughNodes_(nodesUp) {
   return false;
 }
 
+/** shouldTriggerElection
+ *
+ */
+const shouldTriggerElection = logDecorator(shouldTriggerElection_);
+function shouldTriggerElection_(iAmNextLeader, nodesUp) {
+  let leaderIndex = (leader < PID)? leader-1: leader-2;
+  return (iAmNextLeader && (leader == -1 || nodesUp[leaderIndex] == false));
+}
+
 /** getNodesStatus
  *
  */
 const getNodesStatus = logDecorator(getNodesStatus_);
 async function getNodesStatus_(allNodes) {
   nodesUp = [];
+  let i = 0;
   for(let node of allNodes) {
+    i++;
     try {
       data = await axios.get(`${node}/status`, {timeout: TIMEOUT});
       nodesUp.push(data.status == 200);
+      console.log(`[${i}] for node ${node} => ${data.status == 200}`);
     }
     catch (err) {
       nodesUp.push(false)
+      console.log(`[${i}] for node ${node} => false (err)`);
     }
   }
   if (nodesUp.length != 15) throw new Error(`nodesUp.length = ${nodesUp.length} but expected 15`);
@@ -180,6 +193,7 @@ async function getNodesIp_() {
         let ipAddr = String(await lookupPromise(host));
         if(!ipAddr.match(/^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$/)) throw new Error();
         nodes.push(`http://${ipAddr}:${PORT}`); 
+        console.log(`at [${i}]  ${host} => ${ipAddr}`);
       }
     }
     catch (err) {

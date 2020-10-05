@@ -28,8 +28,8 @@ async function leaderElection(PID) {
     }
 
     if (leader == PID && amINextLeader) {
-      console.log('STEP 4 - I am leader');
-
+      console.log('I am leader');
+      await sleepSec(5);
     }
 
     else if (amINextLeader) {
@@ -59,16 +59,22 @@ async function leaderElection(PID) {
     }
 
     else {
-      console.log('STEP 3 for FOLLOWER - wait for election');
-      await new Promise(resolve => setTimeout(resolve, 10000));
+      await sleepSec(5);
 
       if (leader == -1) {
-        restart('Limit case: after 10 sec, there is no leader');
+        restart('Limit case: after 5 sec, there is no leader');
         continue mainloop;
       }
 
-      else {
-        leaderode = allNodes[leader-1];
+      if (allNodes[leader-2] == false) {
+        restart('Expected leader is down');
+        continue mainloop;
+      }
+
+      console.log(`Leader is ${leader}`);
+
+      /*else {
+        leaderNode = allNodes[leader-1];
         try {
           data = await axios.get(`${leaderNode}/status`, {timeout: TIMEOUT});
           if(data.status != 200) {
@@ -80,7 +86,7 @@ async function leaderElection(PID) {
           restart(`ERROR - election failed for unknown reason`);
           continue mainloop;
         }
-      }
+      }*/
     }
   }
 }
@@ -88,22 +94,24 @@ async function leaderElection(PID) {
 function notEnoughNodes(nodesUp) {
   let countNodesUp = nodesUp.filter(ele => ele == true).length;
   if(countNodesUp < 3) {
-    restart(`ERROR - countNodesUp = ${countNodesUp} but expected a number >= 3`);
     return true;
   }
   return false;
 }
 
+async function sleepSec(timeSec) {
+  return new Promise(resolve => setTimeout(resolve, timeSec * 1000));
+}
+
 /** restart
  *
  */
-async function restart(errMsg) {
+function restart(errMsg) {
   leader = -1;
   restartCount++;
   console.log(errMsg);
   console.log(`\n\n-------------------------  RESTART n°${restartCount}  ------------------------------`);
   console.log('-------------------------------------------------------------------------------------');
-  await new Promise(resolve => setTimeout(resolve, 10000));
 }
 
 /** getNodesStatus

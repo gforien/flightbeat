@@ -21,7 +21,7 @@ async function leaderElection(PID) {
   mainloop: while(true) {
 
     let nodesUp = await getNodesStatus(allNodes);
-    let amINextLeader = await amINextLeader(nodesUp);
+    let amINextLeader = await isNextLeader(nodesUp);
     if (notEnoughNodes(nodesUp)) continue mainloop;
 
     if (leader == PID && amINextLeader) {
@@ -168,8 +168,8 @@ async function lookupPromise(host){
 /** amINextLeader
  *
  */
-const amINextLeader = loggingDecorator(amINextLeader_);
-async function amINextLeader_(nodesUp) {
+const isNextLeader = loggingDecorator(isNextLeader_);
+async function isNextLeader_(nodesUp) {
   return nodesUp.slice(PID-1).every(ele => !ele);
 }
 
@@ -179,9 +179,9 @@ async function amINextLeader_(nodesUp) {
  */
 function loggingDecorator(wrapped) {
   return async function() {
-    console.log(`>>>>>> ${wrapped.name}() called with: ${JSON.stringify(arguments)}`);
+    console.log(`>>>>>> ${wrapped.name}() called with: ${JSON.stringify(arguments).slice(0, 80)}`);
     const result = await wrapped.apply(this, arguments);
-    console.log(`<<<<<< ${wrapped.name} returns: ${result}`);
+    console.log(`<<<<<< ${wrapped.name} returns: ${String(result).slice(0,80)}`);
     return result;
   }
 }

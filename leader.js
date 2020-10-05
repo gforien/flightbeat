@@ -11,37 +11,72 @@ async function leaderElection(PID) {
   console.log("STEP 1");
   let allNodes = await getNodesIp();
 
-  console.log("STEP 2");
-  let nodesUp = await getNodesStatus(allNodes);
-  // if there is less than 4 nodes in the array
-  let countNodesUp = nodesUp.filter(ele => ele == true).length;
-  if (countNodesUp < 3) throw new Error(`countNodesUp = ${countNodesUp} but expected a number >= 3`);
+  let restartCount = 0;
+  const restart = async (errMsg) => {
+    restartCount++;
+    console.log(errMsg);
+    console.log(`\n\n-------------------------  RESTART n°${restartCount}  ------------------------------`);
+    console.log('-------------------------------------------------------------------------------------');
+    await new Promise(resolve => setTimeout(resolve, 10000));
+  }
 
-  console.log("STEP 3");
-    // * if I am leader
-  if(amILeader(nodesUp)) {
-    for(let node of allNodes) {
-      try {
-        data = await got.post(`${node}/election/${PID}`);
-        if(data.status != 200) throw new Error();
+  while(true) {
+    // get status
+    let nodesUp = await getNodesStatus(allNodes);
+    let countNodesUp = nodesUp.filter(ele => ele == true).length;
+    if (countNodesUp < 3) {
+      restart(`ERROR - countNodesUp = ${countNodesUp} but expected a number >= 3`);
+      continue;
+    }
+
+    // if I am leader
+    if(amILeader(nodesUp)) {
+      for(let node of allNodes) {
+        try {
+          data = await got.post(`${node}/election/${PID}`);
+          if(data.status != 200) {
+            restart(`ERROR - election failed, status=${data.status} for node ${node}`);
+            continue;
+          }
+        }
+        catch (err) {
+          restart(`ERROR - election failed for unknown reason`);
+          continue;
+        }
       }
-      catch (err) {
-        // throw err;
-        // console.error(err);
+    }
+
+    // if I am NOT leader
+    else {
+      await new Promise(resolve => setTimeout(resolve, 10000));
+
+      if (leader == -1) {
+        console.log('Limit case: after 10 sec, there is no leader');
+        restart();
+      }
+      else {
+        leaderNode = allNodes[leader-1];
+        while(true) {
+          try {
+            data = await got.post(`${leaderNode}/status`);
+            if(data.status != 200) {
+              restart(`ERROR - leader (index ${leader-1}) is down, status=${data.status} for node ${leaderNode}`);
+              continue;
+            }
+          }
+          catch (err) {
+            restart(`ERROR - election failed for unknown reason`);
+            continue;
+          }
+        }
       }
     }
   }
-
-    // * if I am NOT leader
-  else {
-    setTimeout(() => {
-      if (leader == -1) throw new Error();
-    }, 5000);
-  }
-
-  // 5. mainloop: repeat 3. and 4.
 }
 
+/** lookupPromise
+ *
+ */
 async function lookupPromise(host){
     return new Promise((resolve, reject) => {
         dns.resolve4(host, (err, address) => {
@@ -51,6 +86,10 @@ async function lookupPromise(host){
    });
 };
 
+
+/** amILeader
+ *
+ */
 const amILeader = loggingDecorator(amILeader_);
 function amILeader_(nodesUp) {
   return nodesUp.slice(PID-1).every(ele => !ele);
@@ -75,7 +114,8 @@ async function getNodesIp_() {
     }
     catch (err) {
       // throw err;
-      console.error(err);
+      console.log('Limit case');
+      console.log(err);
     }
   }
   if(nodes.length != 15) throw new Error();
@@ -98,10 +138,11 @@ async function getNodesStatus_(allNodes) {
     catch (err) {
       if (err instanceof got.RequestError) {
         nodesUp.push(false)
-        console.error(false);
+        console.log(false);
       }
       else {
-        console.error(err);
+        console.log("Limit case");
+        console.log(err);
       // throw err;
       }
     }
@@ -164,6 +205,7 @@ app
       res.status(200).end()
 
     } else {
+      console.log(`Limit case: received leader request from ${newLeaderPid}`)
       res.status(401).end()
     }
   })

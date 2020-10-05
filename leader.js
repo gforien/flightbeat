@@ -3,6 +3,17 @@
  *        leader.js : simple leader election        *
  *                                                  *
  ****************************************************/
+ /*
+   [ leader defined elsewhere ]
+     (1) not leader
+      |
+      |
+     [ iAmNextLeader ](2)
+
+
+
+
+ */
 const axios = require('axios');
 const express = require('express');
 const dns = require('dns');
@@ -22,6 +33,7 @@ async function main_(PID) {
 
     let nodesUp = await getNodesStatus(allNodes);
     let iAmNextLeader = await isNextLeader(nodesUp);
+
     if (await notEnoughNodes(nodesUp)) {
       restart("Not enough nodes");
       sleepSec(10);
@@ -31,11 +43,11 @@ async function main_(PID) {
     if (leader == -1) leader = await getLeader(allNodes, nodesUp);
 
     if (leader == PID) {
-      console.log('I am leader (');
+      console.log(`I am leader (${leader})`);
       await sleepSec(5);
     }
 
-    else if (leader == -1 && iAmNextLeader) {
+    else if (iAmNextLeader && (leader == -1 || nodesUp[leader-2] == false)) {
       console.log('STEP 3 for LEADER - trigger election');
       for(let node of allNodes) {
         try {
@@ -61,7 +73,6 @@ async function main_(PID) {
     }
 
     else {
-      //leader != PID  and I am NOT next leader
       await sleepSec(5);
 
       if (leader == -1) {
@@ -75,21 +86,6 @@ async function main_(PID) {
       }
 
       console.log(`Leader is ${leader}`);
-
-      /*else {
-        leaderNode = allNodes[leader-1];
-        try {
-          data = await axios.get(`${leaderNode}/status`, {timeout: TIMEOUT});
-          if(data.status != 200) {
-            restart(`ERROR - leader (index ${leader-1}) is down, status=${data.status} for node ${leaderNode}`);
-            continue mainloop;
-          }
-        }
-        catch (err) {
-          restart(`ERROR - election failed for unknown reason`);
-          continue mainloop;
-        }
-      }*/
     }
   }
 }

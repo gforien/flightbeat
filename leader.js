@@ -28,8 +28,7 @@ async function main_(PID) {
       continue mainloop;
     }
 
-    if (leader == -1)
-      leader = await getLeader(allNodes, nodesUp);
+    if (leader == -1) leader = await getLeader(allNodes, nodesUp);
 
     if (leader == PID) {
       console.log('I am leader');
@@ -162,8 +161,8 @@ async function getLeader_(allNodes, nodesUp) {
       leaders.push(data.data);
     }
     catch (err) {
-      console.log(`ERROR - ${err.name}`);
-      console.log(err);
+      console.log(`ERROR - ${err.name} (status ${data.null})`);
+      console.log(String(err));
     }
   }
 
@@ -316,7 +315,7 @@ app
   })
 
   .get('/leader', (req, res) => {
-    res.status(200).end(leader);
+    res.status(200).end(String(leader));
   })
 
   .post('/election/:pid', (req, res) => {

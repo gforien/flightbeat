@@ -21,14 +21,15 @@ async function leaderElection(PID) {
   mainloop: while(true) {
 
     let nodesUp = await getNodesStatus(allNodes);
+    let amINextLeader = await amINextLeader(nodesUp);
     if (notEnoughNodes(nodesUp)) continue mainloop;
 
-    if (leader == PID) {
+    if (leader == PID && amINextLeader) {
       console.log('STEP 4 - I am leader');
 
     }
 
-    else if (await amINextLeader(nodesUp)) {
+    else if (amINextLeader) {
       console.log('STEP 3 for LEADER - trigger election');
       for(let node of allNodes) {
         try {
@@ -62,7 +63,7 @@ async function leaderElection(PID) {
         restart('Limit case: after 10 sec, there is no leader');
         continue mainloop;
       }
-      
+
       else {
         leaderode = allNodes[leader-1];
         try {

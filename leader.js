@@ -28,7 +28,8 @@ async function main_(PID) {
       continue mainloop;
     }
 
-    leader = await getLeader(allNodes, nodesUp);
+    if (leader == -1)
+      leader = await getLeader(allNodes, nodesUp);
 
     if (leader == PID) {
       console.log('I am leader');
@@ -156,7 +157,7 @@ async function getLeader_(allNodes, nodesUp) {
   for(let node of allNodes) {
     try {
       if(!nodesUp[allNodes.indexOf(node)]) continue;
-      data = await axios.get(`${node}/status`);
+      data = await axios.get(`${node}/leader`);
       console.log('found leader = '+data.data);
       leaders.push(data.data);
     }

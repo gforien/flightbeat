@@ -1,0 +1,23 @@
+{
+  "name": "leader-election",
+  "version": "1.0.0",
+  "description": "Simple leader-election in NodeJS with HTTP requests",
+  "main": "leader.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gforien/leader-election.git"
+  },
+  "author": "Gabriel FORIEN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gforien/leader-election/issues"
+  },
+  "homepage": "https://github.com/gforien/leader-election#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "got": "^11.7.0"
+  }
+}

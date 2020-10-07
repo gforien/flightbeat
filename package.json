@@ -18,6 +18,7 @@
   "homepage": "https://github.com/gforien/leader-election#readme",
   "dependencies": {
     "axios": "^0.20.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "ps-node": "^0.1.6"
   }
 }

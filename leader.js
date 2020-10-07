@@ -14,18 +14,31 @@
 
 
  */
-const axios = require('axios');
-const express = require('express');
-const dns = require('dns');
-const PORT = 5000;
-const TIMEOUT = 100;
-let leader = -1;
-let PID = -1;
-let restartCount = 0;
+ 
+// DEBUG
+// 'use strict';
+// process.on('unhandledRejection', (error, p) => {
+//   process.stdout.write('=== UNHANDLED REJECTION ===\n');
+//   console.log(error.stack);
+// });
+
+const axios              = require('axios');
+const express            = require('express');
+const dns                = require('dns');
+const ps                 = require('ps-node');
+const child_process      = require('child_process');
+
+const PORT               = 5000;
+let HOSTNAME             = null;
+let PRIORITY             = null;
+const GET_STATUS_TIMEOUT = 100;
+
+let leader               = -1;
+let restartCount         = 0;
 
 
 const main = logDecorator(main_);
-async function main_(PID) {
+async function main_() {
 
   let allNodes = await getNodesIp();
 
@@ -35,14 +48,14 @@ async function main_(PID) {
     let iAmNextLeader = await isNextLeader(nodesUp);
 
     if (await notEnoughNodes(nodesUp)) {
-      restart("Not enough nodes");
+      restart(`ERROR - Not enough nodes    [at line ${__line}]`);
       await sleepSec(10);
       continue mainloop;
     }
 
     if (leader == -1) leader = await getLeader(allNodes, nodesUp);
 
-    if (leader == PID) {
+    if (leader == PRIORITY) {
       console.log(`I am leader (${leader})`);
       await sleepSec(5);
     }
@@ -53,22 +66,22 @@ async function main_(PID) {
         try {
           if(!nodesUp[allNodes.indexOf(node)]) continue;
 
-          let req = `POST ${node}/election/${PID}  => `;
-          data = await axios.post(`${node}/election/${PID}`);
+          let req = `POST ${node}/election/${PRIORITY}  => `;
+          data = await axios.post(`${node}/election/${PRIORITY}`);
           if(data.status != 200) {
             console.log(`${req} false (status ${data.status})`);
-            restart(`ERROR - election failed, status=${data.status} for node ${node}`);
+            restart(`ERROR - election failed, status=${data.status} for node ${node}    [at line ${__line}]`);
             continue mainloop;
           }
           console.log(`${req} ok (status ${data.status})`);
         }
         catch (err) {
           console.log(`${req} ERROR`);
-          restart(`ERROR - election failed for unknown reason`);
+          restart(`ERROR - election failed for unknown reason    [at line ${__line}]`);
           continue mainloop;
         }
       }
-      leader = PID;
+      leader = PRIORITY;
       console.log('STEP 3 - leader elected !');
     }
 
@@ -109,7 +122,7 @@ async function main_(PID) {
  */
 const isNextLeader = logDecorator(isNextLeader_);
 async function isNextLeader_(nodesUp) {
-  return nodesUp.slice(PID-1).every(ele => !ele);
+  return nodesUp.slice(PRIORITY-1).every(ele => !ele);
 }
 
 /** notEnoughNodes
@@ -129,7 +142,7 @@ function notEnoughNodes_(nodesUp) {
  */
 const shouldTriggerElection = logDecorator(shouldTriggerElection_);
 function shouldTriggerElection_(iAmNextLeader, nodesUp) {
-  let leaderIndex = (leader < PID)? leader-1: leader-2;
+  let leaderIndex = (leader < PRIORITY)? leader-1: leader-2;
   return (iAmNextLeader && (leader == -1 || nodesUp[leaderIndex] == false));
 }
 
@@ -143,7 +156,7 @@ async function getNodesStatus_(allNodes) {
   for(let node of allNodes) {
     i++;
     try {
-      data = await axios.get(`${node}/status`, {timeout: TIMEOUT});
+      data = await axios.get(`${node}/status`, {timeout: GET_STATUS_TIMEOUT});
       nodesUp.push(data.status == 200);
       console.log(`[${i}] for node ${node} => ${data.status == 200}`);
     }
@@ -170,8 +183,8 @@ async function getLeader_(allNodes, nodesUp) {
       leaders.push(data.data);
     }
     catch (err) {
-      console.log(`ERROR - ${err.name} (status ${data.null})`);
-      console.log(String(err));
+      console.log(`ERROR - ${err.name} (status ${data.status})    [at line ${__line}]`);
+      console.log(err);
     }
   }
 
@@ -187,7 +200,7 @@ async function getNodesIp_() {
   nodes = [];
   for (let i = 1; i <= 16; i++) {
     try {
-      if(i != PID) {
+      if(i != PRIORITY) {
         let iTwoDigits = (i<10)? `0${i}`: `${i}`;
         let host = `tc405-112-${iTwoDigits}.insa-lyon.fr`;
         let ipAddr = String(await lookupPromise(host));
@@ -197,12 +210,13 @@ async function getNodesIp_() {
       }
     }
     catch (err) {
-      // throw err;
-      console.log('Limit case');
+      console.log(`ERROR - ${err.name} (status ${data.status})    [at line ${__line}]`);
       console.log(err);
     }
   }
-  if(nodes.length != 15) throw new Error();
+  if(nodes.length != 15) {
+    console.log(`ERROR - nodes.length = ${nodes.length} but expected 15    [at line ${__line}]`);
+  }
   return nodes;
 }
 
@@ -223,13 +237,40 @@ async function sleepSec(timeSec) {
   return new Promise(resolve => setTimeout(resolve, timeSec * 1000));
 }
 
+/** isProcessRunning
+ *
+ */
+const isProcessRunning = logDecorator(isProcessRunning_);
+async function isProcessRunning_() {
+  return new Promise((resolve, reject) => {
+    ps.lookup(
+    { command: 'node',
+      arguments: 'leader.js',
+    },
+    (err, resultList ) => {
+      // resultList = [ {pid, command, arguments} ]
+      if (err) {
+          return reject(err);
+      }
+
+      resultList = resultList.filter(ele => ele.pid != process.pid);
+      for (p of resultList) {
+        console.log(`detected running process 'leader.js' (PID ${p.pid})`);
+      }
+      resolve(resultList.length > 0);
+    });
+  });
+}
+
 /** lookupPromise
  *
  */
 async function lookupPromise(host){
     return new Promise((resolve, reject) => {
         dns.resolve4(host, (err, address) => {
-            if(err) reject(err);
+            if(err) {
+              return reject(err);
+            }
             resolve(address);
         });
    });
@@ -258,9 +299,10 @@ function logDecorator(wrapped) {
 const orig = console.log
 console.log = function() {
   let newArgs = []
-  // newArgs.push(new Date().toISOString().slice(11,19))
   newArgs.push(new Date().toISOString().replace(/T/, ' ').replace(/\..+/, ''));
   newArgs.push(" ");
+  newArgs.push(HOSTNAME);
+  newArgs.push(process.pid);
   let func = `${__function}`
   if (func.length < 8) newArgs.push(func+"\t\t");
   else newArgs.push(func+"\t");
@@ -270,6 +312,7 @@ console.log = function() {
 
 Object.defineProperty(global, '__stack', {
 get: function() {
+      // try {
         var orig = Error.prepareStackTrace;
         Error.prepareStackTrace = function(_, stack) {
             return stack;
@@ -279,20 +322,37 @@ get: function() {
         var stack = err.stack;
         Error.prepareStackTrace = orig;
         return stack;
+      // } catch (err) {
+      //   console.error("ERROR - at magic function __stack");
+      //   console.error(String(err) + "\n");
+      // }
     }
 });
 
 Object.defineProperty(global, '__line', {
 get: function() {
-        return __stack[2].getLineNumber();
+      // try {
+      //   return 1;
+        return __stack[1].getLineNumber();
+      // } catch (err) {
+      //   console.error("ERROR - at magic function __line");
+      //   console.error(String(err) + "\n");
+      // }
     }
 });
 
 Object.defineProperty(global, '__function', {
 get: function() {
+      // try {
+      //   return 1;
         return __stack[2].getFunctionName();
+      // } catch (err) {
+      //   console.error("ERROR - at magic function __function");
+      //   console.error(String(err) + "\n");
+      // }
     }
 });
+
 
 
 
@@ -312,10 +372,10 @@ app
 
   .use((req,res,next) => {
     if (req.body) {
-      console.log(req.method + " " + req.url + " " + JSON.stringify(req.body));
+      console.log(req.method + " " + req.url + " " + JSON.stringify(req.body) + " (from " + req.ip + ")");
     }
     else {
-      console.log(req.method + ' ' + req.url);
+      console.log(req.method + ' ' + req.url + " (from " + req.ip + ")");
     }
     next();
   })
@@ -331,12 +391,12 @@ app
   .post('/election/:pid', (req, res) => {
     let newLeaderPid = req.params.pid;
 
-    if(newLeaderPid > PID) {
+    if(newLeaderPid > PRIORITY) {
       leader = newLeaderPid;
       res.status(200).end()
 
     } else {
-      console.log(`Limit case: received leader request from ${newLeaderPid}`)
+      console.log(`ERROR - received unexpected leader request from ${newLeaderPid}    [at line ${__line}]`);
       res.status(401).end()
     }
   })
@@ -347,20 +407,58 @@ app
 
 
 
+
+
+
+
+
+
 /************************
  *        launch        *
  ************************/
-module.exports = app.listen(PORT, () => {
+module.exports = app.listen(PORT, async() => {
+
+  // EXIT if leader.js was badly invoked
+  if(process.argv.length < 3) {
+    process.stdout.write("usage: node leader.js PRIORITY [follower]\n");
+    process.exit(1);
+  }
+  PRIORITY = process.argv[2];
+
+  // EXIT if leader.js was badly deployed i.e. deployed elsewhere than TC's computers or with a PRIORITY that does not match HOSTNAME
+  let unameResult = child_process.execSync('uname -a').toString();
+  let unameMatch = /tc405-112-(\d\d)\.insa-lyon\.fr/.exec(unameResult);
+  if(!unameMatch || unameMatch.length < 1) {
+    console.log(`ERROR - hostname=${HOSTNAME} did not match as expected with 'tc405-112-xx.insa-lyon.fr'  [at line ${__line}]`);
+    console.log('Exiting');
+    process.exit(1);
+  }
+  HOSTNAME = Number(unameMatch[1]);
+  if(HOSTNAME != PRIORITY) {
+    console.log(`ERROR - prority=${PRIORITY} but expected ${HOSTNAME} (as hostname=${HOSTNAME})    [at line ${__line}]`);
+    console.log('Exiting');
+    process.exit(1);
+  }
+  console.log(HOSTNAME);
+
+  // EXIT if leader.js is already running
+  try {
+    if (await isProcessRunning()) {
+      console.log('Exiting');
+      process.exit(0);
+    }
+  } catch (err) {
+    console.log(`ERROR - could not execute isProcessRunning()    [at line ${__line}]`);
+    console.log(err)
+  }
+
+  // launch
   console.log("Listening on port "+PORT);
-
-  if(process.argv.length < 3) throw new Error("usage: node leader.js PID [follower]");
-  PID = process.argv[2];
-
   if(process.argv.length == 4 && process.argv[3] == "follower") {
-    console.log(`state=FOLLOWER     pid=${PID}`)
+    console.log(`state=FOLLOWER             prority=${PRIORITY}     hostname=${HOSTNAME}`)
   }
   else {
-    console.log(`state=POTENTIAL_LEADER     pid=${PID}`)
-    main(PID);
+    console.log(`state=POTENTIAL_LEADER     prority=${PRIORITY}     hostname=${HOSTNAME}`)
+    main();
   }
 });

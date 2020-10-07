@@ -14,16 +14,19 @@ Or more simply, a GIF of the app functionning
 ![](screenshot.gif)
 --->
 
-## Building and launching :construction_worker:
+## :construction_worker: Building and launching
 ```bash
 $ npm install
 $ npm start
 ```
 
-## Features :sparkles:
-- feature 1
+## :rocket: Rocket
+```ps1
+> 1..9 | ${ ssh tc0$_ '(crontab -l 2>/dev/null; echo "*/5 * * * * node ~/leader-election/leader.js $_") | crontab -' }
+> 10..16 | ${ ssh tc$_ '(crontab -l 2>/dev/null; echo "*/5 * * * * node ~/leader-election/leader.js $_") | crontab -' }
+```
 
-## Sources :books:
+## :books: Sources
 This project is sampled from :
 - [npm got](https://www.npmjs.com/package/got)
 

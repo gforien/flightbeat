@@ -427,19 +427,19 @@ module.exports = app.listen(PORT, async() => {
 
   // EXIT if leader.js was badly deployed i.e. deployed elsewhere than TC's computers or with a PRIORITY that does not match HOSTNAME
   let unameResult = child_process.execSync('uname -a').toString();
-  let unameMatch = /tc405-112-(\d\d)\.insa-lyon\.fr/.exec(unameResult);
+  let unameMatch = /tc405-112-(\d\d)/.exec(unameResult);
   if(!unameMatch || unameMatch.length < 1) {
-    console.log(`ERROR - hostname=${HOSTNAME} did not match as expected with 'tc405-112-xx.insa-lyon.fr'  [at line ${__line}]`);
+    console.log(`ERROR - hostname=${HOSTNAME} did not match as expected with 'tc405-112-xx'  [at line ${__line}]`);
     console.log('Exiting');
     process.exit(1);
   }
-  HOSTNAME = Number(unameMatch[1]);
-  if(HOSTNAME != PRIORITY) {
-    console.log(`ERROR - prority=${PRIORITY} but expected ${HOSTNAME} (as hostname=${HOSTNAME})    [at line ${__line}]`);
+  HOSTNAME = unameMatch[0];
+  const HOST_ID = unameMatch[1];
+  if(HOST_ID != PRIORITY) {
+    console.log(`ERROR - prority=${PRIORITY} but expected ${HOST_ID} (as hostname=${HOSTNAME})    [at line ${__line}]`);
     console.log('Exiting');
     process.exit(1);
   }
-  console.log(HOSTNAME);
 
   // EXIT if leader.js is already running
   try {

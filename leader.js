@@ -434,7 +434,7 @@ module.exports = app.listen(PORT, async() => {
     process.exit(1);
   }
   HOSTNAME = unameMatch[0];
-  const HOST_ID = unameMatch[1];
+  const HOST_ID = Number(unameMatch[1]);
   if(HOST_ID != PRIORITY) {
     console.log(`ERROR - prority=${PRIORITY} but expected ${HOST_ID} (as hostname=${HOSTNAME})    [at line ${__line}]`);
     console.log('Exiting');

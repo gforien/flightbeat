@@ -65,20 +65,21 @@ async function main_() {
     else if (await shouldTriggerElection(iAmNextLeader, nodesUp)) {
       console.log('STEP 3 for LEADER - trigger election');
       for(let node of allNodes) {
+        let request = "";
         try {
           if(!nodesUp[allNodes.indexOf(node)]) continue;
 
-          let req = `POST ${node}/election/${PRIORITY}  => `;
+          request = `POST ${node}/election/${PRIORITY}  => `;
           data = await axios.post(`${node}/election/${PRIORITY}`);
           if(data.status != 200) {
-            console.log(`${req} false (status ${data.status})`);
+            console.log(`${request} false (status ${data.status})`);
             restart(`ERROR - election failed, status=${data.status} for node ${node}    [at line ${__line}]`);
             continue mainloop;
           }
-          console.log(`${req} ok (status ${data.status})`);
+          console.log(`${request} ok (status ${data.status})`);
         }
         catch (err) {
-          console.log(`${req} ERROR`);
+          console.log(`${request} ERROR`);
           restart(`ERROR - election failed for unknown reason    [at line ${__line}]`);
           continue mainloop;
         }

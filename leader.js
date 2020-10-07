@@ -3,24 +3,26 @@
  *        leader.js : simple leader election        *
  *                                                  *
  ****************************************************/
- /*
-   [ leader defined elsewhere ]
-     (1) not leader
-      |
-      |
-     [ iAmNextLeader ](2)
+/*
+  [ leader defined elsewhere ]
+    (1) not leader
+    |
+    |
+  [ iAmNextLeader ](2)
+
+*/
 
 
-
-
- */
- 
-// DEBUG
+/***********************
+ *        debug        *
+ ***********************/
+// node --trace-warnings leader.js
 // 'use strict';
 // process.on('unhandledRejection', (error, p) => {
 //   process.stdout.write('=== UNHANDLED REJECTION ===\n');
 //   console.log(error.stack);
 // });
+
 
 const axios              = require('axios');
 const express            = require('express');
@@ -412,34 +414,10 @@ app
 
 
 
-
 /************************
  *        launch        *
  ************************/
-module.exports = app.listen(PORT, async() => {
-
-  // EXIT if leader.js was badly invoked
-  if(process.argv.length < 3) {
-    process.stdout.write("usage: node leader.js PRIORITY [follower]\n");
-    process.exit(1);
-  }
-  PRIORITY = process.argv[2];
-
-  // EXIT if leader.js was badly deployed i.e. deployed elsewhere than TC's computers or with a PRIORITY that does not match HOSTNAME
-  let unameResult = child_process.execSync('uname -a').toString();
-  let unameMatch = /tc405-112-(\d\d)/.exec(unameResult);
-  if(!unameMatch || unameMatch.length < 1) {
-    console.log(`ERROR - hostname=${HOSTNAME} did not match as expected with 'tc405-112-xx'  [at line ${__line}]`);
-    console.log('Exiting');
-    process.exit(1);
-  }
-  HOSTNAME = unameMatch[0];
-  const HOST_ID = Number(unameMatch[1]);
-  if(HOST_ID != PRIORITY) {
-    console.log(`ERROR - prority=${PRIORITY} but expected ${HOST_ID} (as hostname=${HOSTNAME})    [at line ${__line}]`);
-    console.log('Exiting');
-    process.exit(1);
-  }
+(async () => {
 
   // EXIT if leader.js is already running
   try {
@@ -452,13 +430,39 @@ module.exports = app.listen(PORT, async() => {
     console.log(err)
   }
 
-  // launch
-  console.log("Listening on port "+PORT);
-  if(process.argv.length == 4 && process.argv[3] == "follower") {
-    console.log(`state=FOLLOWER             prority=${PRIORITY}     hostname=${HOSTNAME}`)
-  }
-  else {
-    console.log(`state=POTENTIAL_LEADER     prority=${PRIORITY}     hostname=${HOSTNAME}`)
-    main();
-  }
-});
+  module.exports = app.listen(PORT, () => {
+
+    // EXIT if leader.js was badly invoked
+    if(process.argv.length < 3) {
+      process.stdout.write("usage: node leader.js PRIORITY [follower]\n");
+      process.exit(1);
+    }
+    PRIORITY = process.argv[2];
+
+    // EXIT if leader.js was badly deployed i.e. deployed elsewhere than TC's computers or with a PRIORITY that does not match HOSTNAME
+    let unameResult = child_process.execSync('uname -a').toString();
+    let unameMatch = /tc405-112-(\d\d)/.exec(unameResult);
+    if(!unameMatch || unameMatch.length < 1) {
+      console.log(`ERROR - hostname=${HOSTNAME} did not match as expected with 'tc405-112-xx'  [at line ${__line}]`);
+      console.log('Exiting');
+      process.exit(1);
+    }
+    HOSTNAME = unameMatch[0];
+    const HOST_ID = Number(unameMatch[1]);
+    if(HOST_ID != PRIORITY) {
+      console.log(`ERROR - prority=${PRIORITY} but expected ${HOST_ID} (as hostname=${HOSTNAME})    [at line ${__line}]`);
+      console.log('Exiting');
+      process.exit(1);
+    }
+
+    // launch
+    console.log("Listening on port "+PORT);
+    if(process.argv.length == 4 && process.argv[3] == "follower") {
+      console.log(`state=FOLLOWER             prority=${PRIORITY}     hostname=${HOSTNAME}`)
+    }
+    else {
+      console.log(`state=POTENTIAL_LEADER     prority=${PRIORITY}     hostname=${HOSTNAME}`)
+      main();
+    }
+  });
+})();

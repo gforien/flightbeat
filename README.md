@@ -15,17 +15,33 @@ Or more simply, a GIF of the app functionning
 --->
 
 ## :construction_worker: Building and launching
+For instance, on the **node n°5**
 ```bash
 $ npm install
-$ npm start
+$ nohup node ~/leader-election/leader.js 5 >> ~/electionlog_5 2>&1 &
 ```
 
-## :rocket: Rocket
+## :rocket: Deploy
+Deployment consists of addig a cron job on every node. This cron job will periodically launch a new **leader.js**<br>
+On the **node n°5** for instance, the shell command for adding this cron job would be
+<!--
+```bash
+$ (crontab -l 2>/dev/null; echo '* * * * * (node ~/leader-election/leader.js 5 >> ~/electionlog_5 2>&1 &) && (echo "CRON ALIVE `uname -n` `date ''+\%d-\%h \%H:\%M:\%S\''`" >> ~/electionlog_5 2>&1)') | crontab -
+```
+-->
+Hence, deployment from a remote Powershell terminal looks like this:
 ```ps1
-> 1..9 | ${ ssh tc0$_ '(crontab -l 2>/dev/null; echo "*/5 * * * * node ~/leader-election/leader.js $_") | crontab -' }
-> 10..16 | ${ ssh tc$_ '(crontab -l 2>/dev/null; echo "*/5 * * * * node ~/leader-election/leader.js $_") | crontab -' }
+> 1..16 | %{ ssh tc$_ "crontab -l"; echo $? }                           # list crontabs for all nodes
+> 1..16 | %{ ssh tc$_ "crontab -r"; echo "tc$_ => $?" }                 # empty crontab of every node if necessary
+> 1..16 | %{ ssh tc$_ "cd ~/leader-election && git pull && npm i" }     # download and build the project on every node
+> # add a cron job and remove all other cron jobs
+> 1..16 | %{ ssh tc$_ "echo '* * * * * (node ~/leader-election/leader.js $_ >> ~/electionlog_$_ 2>&1 &) && (echo ""CRON ALIVE ``uname -n`` ``date '\''+\%d-\%h \%H:\%M:\%S'\''``"" >> ~/electionlog_$_ 2>&1)' | crontab -" ; echo "tc$_ => $?"}
 ```
 
+<!--
+># add a cron job
+> 1..16 | %{ ssh tc$_ "(crontab -l 2>/dev/null; echo '* * * * * (node ~/leader-election/leader.js $_ >> ~/electionlog_$_ 2>&1 &) && (echo "CRON ALIVE `uname -n` `date '+\%d-\%h \%H:\%M:\%S'`" >> ~/electionlog_$_ 2>&1)') | crontab -" }
+ -->
 ## :books: Sources
 This project is sampled from :
 - [npm got](https://www.npmjs.com/package/got)

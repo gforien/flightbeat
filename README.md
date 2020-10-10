@@ -31,26 +31,23 @@ $ (crontab -l 2>/dev/null; echo '* * * * * (node ~/leader-election/leader.js 5 >
 -->
 Hence, deployment from a remote Powershell terminal looks like this:
 ```ps1
-> 1..16 | %{ ssh tc$_ "crontab -l"; echo "tc$_ => $?" }                                 # list crontabs
-> 1..16 | %{ ssh tc$_ "crontab -r"; echo "tc$_ => $?" }                                 # empty crontabs
-> 1..16 | %{ ssh tc$_ "ps -eo 'pid,cmd' | grep -E '^.{5} node'"; echo "tc$_ => $?" }    # print running jobs
-> 1..16 | %{ ssh tc$_ "ps -eo 'pid' | grep -E '^.{5} node'"} > jobs.log                 # get running jobs
-> 1..16 | %{ ssh tc$_ "kill $((cat .\jobs.log) -join " ")" } ; rm  jobs.log             # kill running jobs
-> 1..1  | %{ ssh tc$_ "cat electionlog_$_"; echo "tc$_ => $?" }                         # print log files
-> 1..1  | %{ ssh tc$_ "ls -l"; echo "tc$_ => $?" }                                      # list files in ~
+> 1..16 | %{ ssh tc$_ "crontab -l"; echo "tc$_ => $?" }                                                         # list crontabs
+> 1..16 | %{ ssh tc$_ "crontab -r"; echo "tc$_ => $?" }                                                         # empty crontabs
+> 1..16 | %{ ssh tc$_ "ps -eo 'pid,cmd' | grep -E '^.{5} node'" }                                               # print running jobs
+> 1..16 | %{ ssh tc$_ "ps -eo 'pid' | grep -E '^.{5} node'"} > jobs.log                                         # get running jobs
+> 1..16 | %{ ssh tc$_ "kill $((cat .\jobs.log) -join " ")" } ; rm  jobs.log                                     # kill running jobs
+> 1..1  | %{ ssh tc$_ "cat electionlog_$_"; echo "tc$_ => $?" }                                                 # print log files
+> 1..16 | %{ ssh tc$_ "cat electionlog_$_ | grep 'leader is'" }                                                 # get leader
+> 1..1  | %{ ssh tc$_ "ls -l"; echo "tc$_ => $?" }                                                              # list files in ~
+> 1..1  | %{ ssh tc$_ ". ~/.profile; ssh-add ~/.ssh/github_from_tc; cd ~/leader-election; git pull; npm i" }    # build
+> 1..16 | %{ ssh tc$_ ". ~/.profile; ssh-add ~/.ssh/path_to_key" }                                              # add a ssh key
+> 1..16 | %{ ssh tc$_ ". ~/.profile; ssh-add -l" }                                                              # list ssh keys
 > # add a cron job and remove all other cron jobs
 > 1..16 | %{ ssh tc$_ "echo '* * * * * (node ~/leader-election/leader.js $_ >> ~/electionlog_$_ 2>&1 &) && (echo ""CRON ALIVE ``uname -n`` ``date '\''+\%d-\%h \%H:\%M:\%S'\''``"" >> ~/electionlog_$_ 2>&1)' | crontab -" ; echo "tc$_ => $?"}
+> # add a cron job and and keeping other cron jobs
+> 1..16 | %{ ssh tc$_ "(crontab -l 2>/dev/null; echo '* * * * * (node ~/leader-election/leader.js $_ >> ~/electionlog_$_ 2>&1 &) && (echo ""CRON ALIVE ``uname -n`` ``date '\''+\%d-\%h \%H:\%M:\%S'\''``"" >> ~/electionlog_$_ 2>&1)') | crontab -" ; echo "tc$_ => $?"}
 ```
 
-Had we not a distributed filesystem we would have had to build the repo on every node
-```ps1
-> 1..16 | %{ ssh tc$_ "cd ~/leader-election && git pull && npm i" }
-```
-
-<!--
-># add a cron job
-> 1..16 | %{ ssh tc$_ "(crontab -l 2>/dev/null; echo '* * * * * (node ~/leader-election/leader.js $_ >> ~/electionlog_$_ 2>&1 &) && (echo "CRON ALIVE `uname -n` `date '+\%d-\%h \%H:\%M:\%S'`" >> ~/electionlog_$_ 2>&1)') | crontab -" }
- -->
 ## :books: Sources
 This project is sampled from :
 - [npm got](https://www.npmjs.com/package/got)

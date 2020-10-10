@@ -125,6 +125,7 @@ async function main_() {
  */
 const isNextLeader = logDecorator(isNextLeader_);
 async function isNextLeader_(nodesUp) {
+  console.log(`I am ${PRIORITY} so nodes above me are ${nodesUp.slice(PRIORITY-1)}`);
   return nodesUp.slice(PRIORITY-1).every(ele => !ele);
 }
 
@@ -146,6 +147,8 @@ function notEnoughNodes_(nodesUp) {
 const shouldTriggerElection = logDecorator(shouldTriggerElection_);
 function shouldTriggerElection_(iAmNextLeader, nodesUp) {
   let leaderIndex = (leader < PRIORITY)? leader-1: leader-2;
+  console.log(`leader = ${leader} ; priority = ${PRIORITY} so leader index is ${leaderIndex}`);
+  console.log(`iAmNextLeader = ${iAmNextLeader} ; nodesUp[leaderIndex] = ${nodesUp[leaderIndex]}`);
   return (iAmNextLeader && (leader == -1 || nodesUp[leaderIndex] == false));
 }
 

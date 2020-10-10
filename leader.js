@@ -311,9 +311,9 @@ console.log = function() {
   newArgs.push(HOSTNAME);
   newArgs.push(process.pid);
   newArgs.push(" ");
-  let func = `${__function}`
-  if (func.length < 8) newArgs.push(func+"\t\t");
-  else newArgs.push(func+"\t");
+  let func = `${__function}`;
+  while(func.length <= 30) func = func +" ";
+  newArgs.push(func);
   newArgs.push(...arguments);
   orig.apply(console, newArgs);
 }

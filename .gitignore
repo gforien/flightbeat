@@ -1,1 +1,5 @@
 node_modules
+run.sh
+Run.ps1
+.env
+.env.enc

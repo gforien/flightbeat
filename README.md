@@ -48,6 +48,17 @@ Hence, deployment from a remote Powershell terminal looks like this:
 > 1..16 | %{ ssh tc$_ "(crontab -l 2>/dev/null; echo '* * * * * (node ~/leader-election/leader.js $_ >> ~/electionlog_$_ 2>&1 &) && (echo ""CRON ALIVE ``uname -n`` ``date '\''+\%d-\%h \%H:\%M:\%S'\''``"" >> ~/electionlog_$_ 2>&1)') | crontab -" ; echo "tc$_ => $?"}
 ```
 
+<!-- Creating a run script
+    $env:MAIL_ID="xxxxx"; $env:MAIL_PWD="xxxx"; node leader.js $Args
+    MAIL_ID="xxxxx" MAIL_PWD="xxxx" node leader.js $1 $2
+
+
+
+    Alternatively, create a .env file
+    MAIL_ID=xxx
+    MAIL_PWD=xxx
+ -->
+
 ## :books: Sources
 This project is sampled from :
 - [npm got](https://www.npmjs.com/package/got)

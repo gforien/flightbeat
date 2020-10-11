@@ -29,6 +29,17 @@ const express            = require('express');
 const dns                = require('dns');
 const ps                 = require('ps-node');
 const child_process      = require('child_process');
+const nodemailer         = require('nodemailer');
+
+require('dotenv').config();
+const transport          = nodemailer.createTransport({
+  host: "smtp.mailtrap.io",
+  port: 2525,
+  auth: {
+    user: process.env.MAIL_ID,
+    pass: process.env.MAIL_PWD
+  }
+});
 
 const PORT               = 5000;
 let HOSTNAME             = null;
@@ -80,6 +91,7 @@ async function main_() {
         }
         catch (err) {
           console.log(`${request} ERROR`);
+          console.log(err);
           restart(`ERROR - election failed for unknown reason    [at line ${__line}]`);
           continue mainloop;
         }
@@ -195,7 +207,9 @@ async function getLeader_(allNodes, nodesUp) {
   }
 
   if (leaders.length == 0) return -1;
-  else return Math.max.apply(null, leaders);
+  if (leaders.every(ele => ele == leaders[0])) return leaders[0];
+  else return -1;
+  // else return Math.max.apply(null, leaders);
 }
 
 /** getNodesIp
@@ -229,7 +243,8 @@ async function getNodesIp_() {
 /** restart
  *  must ALWAYS be followed by `continue mainloop` and a sleep()
  */
-function restart(errMsg) {
+const restart = logDecorator(restart_);
+function restart_(errMsg) {
   leader = -1;
   restartCount++;
   console.log(errMsg);
@@ -239,8 +254,28 @@ function restart(errMsg) {
 /** sleepSec
  *
  */
-async function sleepSec(timeSec) {
+const sleepSec = logDecorator(sleepSec_);
+async function sleepSec_(timeSec) {
   return new Promise(resolve => setTimeout(resolve, timeSec * 1000));
+}
+
+/** sendMail
+ *
+ */
+const sendMail = logDecorator(sendMail_);
+async function sendMail_(msg) {
+  const email = {
+      from: 'leader-election@email.com',
+      to: 'to@email.com',
+      subject: 'Critical error on ',
+      text: msg
+  };
+  try {
+    await transport.sendMail(email);
+  } catch (err) {
+    console.log("ERROR - Could not send mail");
+    console.log(err);
+  }
 }
 
 /** isProcessRunning

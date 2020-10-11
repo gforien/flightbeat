@@ -14,7 +14,7 @@ switch($argsString) {
     # active jobs
     "list jobs"             { &{ 1..16 | %{ ssh tc$_ "ps -eo 'pid,cmd' | grep -E '^.{5} node'" }}}
     "kill jobs"             { &{ echo "Getting jobs..."; 1..16 | %{ ssh tc$_ "ps -eo 'pid,cmd' | grep -E '^.{5} node' |  grep -oE '^.{5}'" } > jobs.log; echo "Found jobs"; cat jobs.log; echo "Killing jobs..."; 1..16 | %{ ssh tc$_ "kill $((cat .\jobs.log) -join `" `") 2>/dev/null"; echo "$_ => $?" } ; rm  jobs.log }}
-    "start jobs"            { &{ 1..16 | %{ ssh tc$_ "node ~/leader-election/leader.js $_ >> ~/electionlog_$_ 2>&1 &"; echo "tc$_ => $?" }}}
+    "start jobs"            { &{ 1..16 | %{ ssh tc$_ "cd ~/leader-election; node leader.js $_ >> ~/electionlog_$_ 2>&1 &"; echo "tc$_ => $?" }}}
 
     # log files
     "list logs"             { &{ 1..1 | %{ ssh tc$_ "ls electionlog_*" }}}

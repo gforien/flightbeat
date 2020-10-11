@@ -59,6 +59,7 @@ async function main_() {
 
     let nodesUp = await getNodesStatus(allNodes);
     let iAmNextLeader = await isNextLeader(nodesUp);
+    let otherNodesLeader = await getLeader(allNodes, nodesUp);
 
     if (await notEnoughNodes(nodesUp)) {
       restart(`ERROR - Not enough nodes    [at line ${__line}]`);
@@ -66,7 +67,11 @@ async function main_() {
       continue mainloop;
     }
 
-    if (leader == -1) leader = await getLeader(allNodes, nodesUp);
+    if (leader == -1) {
+      leader = otherNodesLeader;
+    } else if (leader != otherNodesLeader) {
+      leader = -1;
+    }
 
     if (leader == PRIORITY) {
       console.log(`I am leader (${leader})`);
@@ -434,10 +439,10 @@ app
   .post('/election/:pid', (req, res) => {
     let newLeaderPid = req.params.pid;
 
+    console.log(`newLeaderPid=${newLeaderPid} and PRIORITY=${PRIORITY} so (newLeaderPid > PRIORITY)=${newLeaderPid > PRIORITY}`)
     if(newLeaderPid > PRIORITY) {
       leader = newLeaderPid;
       res.status(200).end()
-
     } else {
       console.log(`ERROR - received unexpected leader request from ${newLeaderPid}    [at line ${__line}]`);
       res.status(401).end()

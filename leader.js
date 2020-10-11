@@ -41,7 +41,7 @@ const transport          = nodemailer.createTransport({
   }
 });
 
-const PORT               = 5000;
+const PORT               = 5005;
 let HOSTNAME             = null;
 let PRIORITY             = null;
 const GET_STATUS_TIMEOUT = 100;
@@ -437,7 +437,7 @@ app
   })
 
   .post('/election/:pid', (req, res) => {
-    let newLeaderPid = req.params.pid;
+    let newLeaderPid = Number(req.params.pid);
 
     console.log(`newLeaderPid=${newLeaderPid} and PRIORITY=${PRIORITY} so (newLeaderPid > PRIORITY)=${newLeaderPid > PRIORITY}`)
     if(newLeaderPid > PRIORITY) {

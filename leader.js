@@ -468,6 +468,12 @@ app
   PRIORITY = process.argv[2];
 
   // EXIT if leader.js was badly deployed, i.e.
+  //   - deployed without a .env file
+  if(!process.env.MAIL_ID || !process.env.MAIL_PWD) {
+    console.log(`ERROR - .env variables MAIL_ID or MAIL_PWD are empty (did you create a .env file ?)    [at line ${__line}]`);
+    console.log('Exiting');
+    process.exit(1);
+  }
   //   - deployed elsewhere than the nodes it was supposed to be running on
   let unameResult = child_process.execSync('uname -a').toString();
   let unameMatch = /tc405-112-(\d\d)/.exec(unameResult);
@@ -484,6 +490,7 @@ app
     console.log('Exiting');
     process.exit(1);
   }
+
 
   // EXIT if leader.js is already running
   try {

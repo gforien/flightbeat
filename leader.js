@@ -3,14 +3,7 @@
  *        leader.js : simple leader election        *
  *                                                  *
  ****************************************************/
-/*
-  [ leader defined elsewhere ]
-    (1) not leader
-    |
-    |
-  [ iAmNextLeader ](2)
 
-*/
 
 
 /***********************
@@ -24,6 +17,11 @@
 // });
 
 
+
+
+/**************************************
+ *        constants definition        *
+ **************************************/
 const axios              = require('axios');
 const express            = require('express');
 const dns                = require('dns');
@@ -45,11 +43,17 @@ const PORT               = 5005;
 let HOSTNAME             = null;
 let PRIORITY             = null;
 const GET_STATUS_TIMEOUT = 100;
-
+const RESTART_DELAY_SEC  = 10; 
+const MAIN_DELAY_SEC     = 60*5; 
 let leader               = -1;
 let restartCount         = 0;
 
 
+
+
+/*******************************
+ *        main function        *
+ *******************************/
 const main = logDecorator(main_);
 async function main_() {
 
@@ -75,7 +79,11 @@ async function main_() {
 
     if (leader == PRIORITY) {
       console.log(`I am leader (${leader})`);
-      await sleepSec(5);
+      /*-----------------------------------------------------------------------*/
+      /*--------------------       Critical section        --------------------*/
+      if(await isProcessRunning('beat', 'leader.js'))
+      /*-----------------------------------------------------------------------*/
+      await sleepSec(MAIN_DELAY_SEC);
     }
 
     else if (await shouldTriggerElection(iAmNextLeader, nodesUp)) {
@@ -105,20 +113,20 @@ async function main_() {
       console.log('STEP 3 - leader elected !');
     }
 
-    else {
+    else if (leader == -1) {
       await sleepSec(5);
+      restart('Limit case: after 5 sec, there is no leader');
+      continue mainloop;
+    }
 
-      if (leader == -1) {
-        restart('Limit case: after 5 sec, there is no leader');
-        continue mainloop;
-      }
+    else {
+      console.log(`Leader is ${leader}`);
+      await sleepSec(MAIN_DELAY_SEC);
 
       if (allNodes[leader-2] == false) {
         restart('Expected leader is down');
         continue mainloop;
       }
-
-      console.log(`Leader is ${leader}`);
     }
   }
 }
@@ -126,16 +134,9 @@ async function main_() {
 
 
 
-
-
-
-
-
-
-
-/***************************
- *        functions        *
- ***************************/
+/**********************************
+ *        useful functions        *
+ **********************************/
 
 /** isNextLeader
  *
@@ -214,7 +215,6 @@ async function getLeader_(allNodes, nodesUp) {
   if (leaders.length == 0) return -1;
   if (leaders.every(ele => ele == leaders[0])) return leaders[0];
   else return -1;
-  // else return Math.max.apply(null, leaders);
 }
 
 /** getNodesIp
@@ -287,11 +287,11 @@ async function sendMail_(msg) {
  *
  */
 const isProcessRunning = logDecorator(isProcessRunning_);
-async function isProcessRunning_() {
+async function isProcessRunning_(cmd, args) {
   return new Promise((resolve, reject) => {
     ps.lookup(
-    { command: 'node',
-      arguments: 'leader.js',
+    { command: cmd,
+      arguments: args,
     },
     (err, resultList ) => {
       // resultList = [ {pid, command, arguments} ]
@@ -301,7 +301,7 @@ async function isProcessRunning_() {
 
       resultList = resultList.filter(ele => ele.pid != process.pid);
       for (p of resultList) {
-        console.log(`detected running process 'leader.js' (PID ${p.pid})`);
+        console.log(`detected running process '${cmd} ${args}' (PID ${p.pid})`);
       }
       resolve(resultList.length > 0);
     });
@@ -321,10 +321,6 @@ async function lookupPromise(host){
         });
    });
 };
-
-
-
-
 
 
 
@@ -439,7 +435,6 @@ app
   .post('/election/:pid', (req, res) => {
     let newLeaderPid = Number(req.params.pid);
 
-    console.log(`newLeaderPid=${newLeaderPid} and PRIORITY=${PRIORITY} so (newLeaderPid > PRIORITY)=${newLeaderPid > PRIORITY}`)
     if(newLeaderPid > PRIORITY) {
       leader = newLeaderPid;
       res.status(200).end()
@@ -499,7 +494,7 @@ app
 
   // EXIT if leader.js is already running
   try {
-    if (await isProcessRunning()) {
+    if (await isProcessRunning('node', 'leader.js')) {
       console.log('Exiting');
       process.exit(0);
     }

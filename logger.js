@@ -48,13 +48,13 @@ function functionLogger(wrapped) {
  *
  */
 const orig = console.log
-function setLogger(HOSTNAME) {
+function setLogger(hostname) {
   console.log = function() {
     let newArgs = []
     let date = new Date();
     newArgs.push(new Date(date.getTime() - date.getTimezoneOffset() * 60000).toISOString().replace(/T/, ' ').replace(/\..+/, ''));
     newArgs.push(" ");
-    newArgs.push(HOSTNAME);
+    newArgs.push(hostname);
     newArgs.push(process.pid);
     newArgs.push(" ");
     let func = `${__function}`;
@@ -65,6 +65,7 @@ function setLogger(HOSTNAME) {
   }
 
   Object.defineProperty(global, '__stack', {
+    configurable:true,
     get: function() {
       var orig = Error.prepareStackTrace;
       Error.prepareStackTrace = function(_, stack) {
@@ -77,14 +78,16 @@ function setLogger(HOSTNAME) {
       return stack;
     }
   });
-
+ 
   Object.defineProperty(global, '__line', {
+    configurable:true,
     get: function() {
       return __stack[1].getLineNumber();
     }
   });
-
+ 
   Object.defineProperty(global, '__function', {
+    configurable:true,
     get: function() {
       return __stack[2].getFunctionName();
     }

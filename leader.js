@@ -6,38 +6,16 @@
 
 
 
-/***********************
- *        debug        *
- ***********************/
-// node --trace-warnings leader.js
-// 'use strict';
-// process.on('unhandledRejection', (error, p) => {
-//   process.stdout.write('=== UNHANDLED REJECTION ===\n');
-//   console.log(error.stack);
-// });
-
-
-
-
 /**************************************
  *        constants definition        *
  **************************************/
+require('dotenv').config();
 const axios              = require('axios');
 const express            = require('express');
 const dns                = require('dns');
 const ps                 = require('ps-node');
 const child_process      = require('child_process');
-const nodemailer         = require('nodemailer');
-
-require('dotenv').config();
-const transport          = nodemailer.createTransport({
-  host: "smtp.mailtrap.io",
-  port: 2525,
-  auth: {
-    user: process.env.MAIL_ID,
-    pass: process.env.MAIL_PWD
-  }
-});
+const { functionLogger, setLogger } = require('./logger.js');
 
 const PORT               = 5005;
 let HOSTNAME             = null;
@@ -54,7 +32,7 @@ let restartCount         = 0;
 /*******************************
  *        main function        *
  *******************************/
-const main = logDecorator(main_);
+const main = functionLogger(main_);
 async function main_() {
 
   let allNodes = await getNodesIp();
@@ -138,10 +116,21 @@ async function main_() {
  *        useful functions        *
  **********************************/
 
+/** restart
+ *  must ALWAYS be followed by `continue mainloop` and a sleep()
+ */
+const restart = functionLogger(restart_);
+function restart_(errMsg) {
+  leader = -1;
+  restartCount++;
+  console.log(errMsg);
+  console.log(`\n\n---------------------------------------     RESTART n°${restartCount}     --------------------------------------------`);
+}
+
 /** isNextLeader
  *
  */
-const isNextLeader = logDecorator(isNextLeader_);
+const isNextLeader = functionLogger(isNextLeader_);
 async function isNextLeader_(nodesUp) {
   console.log(`I am ${PRIORITY} so nodes above me are ${nodesUp.slice(PRIORITY-1)}`);
   return nodesUp.slice(PRIORITY-1).every(ele => !ele);
@@ -150,7 +139,7 @@ async function isNextLeader_(nodesUp) {
 /** notEnoughNodes
  *
  */
-const notEnoughNodes = logDecorator(notEnoughNodes_)
+const notEnoughNodes = functionLogger(notEnoughNodes_)
 function notEnoughNodes_(nodesUp) {
   let countNodesUp = nodesUp.filter(ele => ele == true).length;
   if(countNodesUp < 3) {
@@ -162,7 +151,7 @@ function notEnoughNodes_(nodesUp) {
 /** shouldTriggerElection
  *
  */
-const shouldTriggerElection = logDecorator(shouldTriggerElection_);
+const shouldTriggerElection = functionLogger(shouldTriggerElection_);
 function shouldTriggerElection_(iAmNextLeader, nodesUp) {
   let leaderIndex = (leader < PRIORITY)? leader-1: leader-2;
   console.log(`leader = ${leader} ; priority = ${PRIORITY} so leader index is ${leaderIndex}`);
@@ -173,7 +162,7 @@ function shouldTriggerElection_(iAmNextLeader, nodesUp) {
 /** getNodesStatus
  *
  */
-const getNodesStatus = logDecorator(getNodesStatus_);
+const getNodesStatus = functionLogger(getNodesStatus_);
 async function getNodesStatus_(allNodes) {
   nodesUp = [];
   let i = 0;
@@ -196,7 +185,7 @@ async function getNodesStatus_(allNodes) {
 /** getLeader
  *
  */
-const getLeader = logDecorator(getLeader_);
+const getLeader = functionLogger(getLeader_);
 async function getLeader_(allNodes, nodesUp) {
   leaders = [];
   for(let node of allNodes) {
@@ -220,15 +209,25 @@ async function getLeader_(allNodes, nodesUp) {
 /** getNodesIp
  *
  */
-const getNodesIp = logDecorator(getNodesIp_)
+const getNodesIp = functionLogger(getNodesIp_)
 async function getNodesIp_() {
+
+  const dnsLookupPromise = async (host) => {
+    return new Promise((resolve, reject) => {
+      dns.resolve4(host, (err, address) => {
+        if(err) return reject(err);
+        resolve(address);
+      });
+    });
+  };
   nodes = [];
+
   for (let i = 1; i <= 16; i++) {
     try {
       if(i != PRIORITY) {
         let iTwoDigits = (i<10)? `0${i}`: `${i}`;
         let host = `tc405-112-${iTwoDigits}.insa-lyon.fr`;
-        let ipAddr = String(await lookupPromise(host));
+        let ipAddr = String(await dnsLookupPromise(host));
         if(!ipAddr.match(/^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$/)) throw new Error();
         nodes.push(`http://${ipAddr}:${PORT}`); 
         console.log(`at [${i}]  ${host} => ${ipAddr}`);
@@ -245,48 +244,18 @@ async function getNodesIp_() {
   return nodes;
 }
 
-/** restart
- *  must ALWAYS be followed by `continue mainloop` and a sleep()
- */
-const restart = logDecorator(restart_);
-function restart_(errMsg) {
-  leader = -1;
-  restartCount++;
-  console.log(errMsg);
-  console.log(`\n\n---------------------------------------     RESTART n°${restartCount}     --------------------------------------------`);
-}
-
 /** sleepSec
  *
  */
-const sleepSec = logDecorator(sleepSec_);
+const sleepSec = functionLogger(sleepSec_);
 async function sleepSec_(timeSec) {
   return new Promise(resolve => setTimeout(resolve, timeSec * 1000));
-}
-
-/** sendMail
- *
- */
-const sendMail = logDecorator(sendMail_);
-async function sendMail_(msg) {
-  const email = {
-      from: 'leader-election@email.com',
-      to: 'to@email.com',
-      subject: 'Critical error on ',
-      text: msg
-  };
-  try {
-    await transport.sendMail(email);
-  } catch (err) {
-    console.log("ERROR - Could not send mail");
-    console.log(err);
-  }
 }
 
 /** isProcessRunning
  *
  */
-const isProcessRunning = logDecorator(isProcessRunning_);
+const isProcessRunning = functionLogger(isProcessRunning_);
 async function isProcessRunning_(cmd, args) {
   return new Promise((resolve, reject) => {
     ps.lookup(
@@ -307,96 +276,6 @@ async function isProcessRunning_(cmd, args) {
     });
   });
 }
-
-/** lookupPromise
- *
- */
-async function lookupPromise(host){
-    return new Promise((resolve, reject) => {
-        dns.resolve4(host, (err, address) => {
-            if(err) {
-              return reject(err);
-            }
-            resolve(address);
-        });
-   });
-};
-
-
-
-
-/*************************************
- *        logging preferences        *
- *************************************/
-function logDecorator(wrapped) {
-  return async function() {
-    // console.log(`>>>>>> ${wrapped.name}() called with: ${JSON.stringify(arguments).slice(0, 80)}`);
-    console.log(`>>>> ${wrapped.name}()`);
-    const result = await wrapped.apply(this, arguments);
-    console.log(`<<<< ${wrapped.name} returns ${String(result).slice(0,80)}`);
-    return result;
-  }
-}
-
-const orig = console.log
-console.log = function() {
-  let newArgs = []
-  let date = new Date();
-  newArgs.push(new Date(date.getTime() - date.getTimezoneOffset() * 60000).toISOString().replace(/T/, ' ').replace(/\..+/, ''));
-  newArgs.push(" ");
-  newArgs.push(HOSTNAME);
-  newArgs.push(process.pid);
-  newArgs.push(" ");
-  let func = `${__function}`;
-  while(func.length <= 30) func = func +" ";
-  newArgs.push(func);
-  newArgs.push(...arguments);
-  orig.apply(console, newArgs);
-}
-
-Object.defineProperty(global, '__stack', {
-get: function() {
-      // try {
-        var orig = Error.prepareStackTrace;
-        Error.prepareStackTrace = function(_, stack) {
-            return stack;
-        };
-        var err = new Error;
-        Error.captureStackTrace(err, arguments.callee);
-        var stack = err.stack;
-        Error.prepareStackTrace = orig;
-        return stack;
-      // } catch (err) {
-      //   console.error("ERROR - at magic function __stack");
-      //   console.error(String(err) + "\n");
-      // }
-    }
-});
-
-Object.defineProperty(global, '__line', {
-get: function() {
-      // try {
-      //   return 1;
-        return __stack[1].getLineNumber();
-      // } catch (err) {
-      //   console.error("ERROR - at magic function __line");
-      //   console.error(String(err) + "\n");
-      // }
-    }
-});
-
-Object.defineProperty(global, '__function', {
-get: function() {
-      // try {
-      //   return 1;
-        return __stack[2].getFunctionName();
-      // } catch (err) {
-      //   console.error("ERROR - at magic function __function");
-      //   console.error(String(err) + "\n");
-      // }
-    }
-});
-
 
 
 
@@ -459,6 +338,7 @@ app
  *        launch        *
  ************************/
 (async () => {
+  setLogger(null);
 
   // EXIT if leader.js was badly invoked
   if(process.argv.length < 3) {
@@ -478,12 +358,13 @@ app
   let unameResult = child_process.execSync('uname -a').toString();
   let unameMatch = /tc405-112-(\d\d)/.exec(unameResult);
   if(!unameMatch || unameMatch.length < 1) {
-    console.log(`ERROR - hostname=${HOSTNAME} did not match as expected with 'tc405-112-xx'  [at line ${__line}]`);
+    console.log(`ERROR - uname=${unameResult} did not match as expected with 'tc405-112-xx'  [at line ${__line}]`);
     console.log('Exiting');
     process.exit(1);
   }
   //   - invoked with a PRIORITY that does not match HOSTNAME
   HOSTNAME = unameMatch[0];
+  setLogger(HOSTNAME);
   const HOST_ID = Number(unameMatch[1]);
   if(HOST_ID != PRIORITY) {
     console.log(`ERROR - prority=${PRIORITY} but expected ${HOST_ID} (as hostname=${HOSTNAME})    [at line ${__line}]`);
@@ -515,3 +396,14 @@ app
     }
   });
 })();
+
+
+/***********************
+ *        debug        *
+ ***********************/
+// node --trace-warnings leader.js
+// 'use strict';
+// process.on('unhandledRejection', (error, p) => {
+//   process.stdout.write('=== UNHANDLED REJECTION ===\n');
+//   console.log(error.stack);
+// });

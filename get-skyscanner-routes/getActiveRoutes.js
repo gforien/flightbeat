@@ -42,7 +42,7 @@
       console.log(`Wrote ${routes.length} routes to ./_WIP_routes.json`);
 
       active_routes = [...new Set(active_routes)];
-      fs.writeFileSync('active_routes.json', JSON.stringify(active_routes));
+      fs.writeFileSync('active_routes.json', JSON.stringify(active_routes, null, 2));
       console.log(`Wrote ${active_routes.length} routes to ./active_routes.json`);
     }
     catch (error) {

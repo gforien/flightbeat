@@ -11,7 +11,7 @@
   
   const axios      = require('axios');
   const fs         = require('fs');
-  let routes       = require('./WIP_routes.json');
+  let routes       = require('./_WIP_routes.json');
   let active_routes= require('./active_routes.json');
 
   console.log(`Read ${routes.length} routes from ./_WIP_routes.json`);
@@ -41,6 +41,7 @@
       fs.writeFileSync('_WIP_routes.json', JSON.stringify(routes));
       console.log(`Wrote ${routes.length} routes to ./_WIP_routes.json`);
 
+      active_routes = [...new Set(active_routes)];
       fs.writeFileSync('active_routes.json', JSON.stringify(active_routes));
       console.log(`Wrote ${active_routes.length} routes to ./active_routes.json`);
     }

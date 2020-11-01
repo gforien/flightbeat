@@ -59,7 +59,16 @@ async function main_() {
       console.log(`I am leader (${leader})`);
       /*-----------------------------------------------------------------------*/
       /*--------------------       Critical section        --------------------*/
-      if(await isProcessRunning('beat', 'leader.js'))
+      if(await isProcessRunning('~/go/src/github.com/gforien/flightbeat/flightbeat', '-e -d "*"')) {
+        console.log('Beat is running');
+      } else {
+        console.log('Should restart beat');
+        child_process.exec('~/go/src/github.com/gforien/flightbeat/flightbeat -e -d "*"',
+          (err, stdout, stderr) => {
+            // if (err) throw err;
+            // process.out.write(stdout);
+          });
+        }
       /*-----------------------------------------------------------------------*/
       await sleepSec(MAIN_DELAY_SEC);
     }

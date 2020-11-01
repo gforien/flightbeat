@@ -1,0 +1,7914 @@
+[
+  {
+    "rank": 1,
+    "name": "Hartsfield–Jackson Atlanta International Airport",
+    "iata": "ATL",
+    "city": "Atlanta",
+    "country": "United States",
+    "passengers": 103902992
+  },
+  {
+    "rank": 2,
+    "name": "Beijing Capital International Airport",
+    "iata": "PEK",
+    "city": "Beijing",
+    "country": "China",
+    "passengers": 95786442
+  },
+  {
+    "rank": 3,
+    "name": "Dubai International Airport",
+    "iata": "DXB",
+    "city": "Dubai",
+    "country": "United Arab Emirates",
+    "passengers": 88242099
+  },
+  {
+    "rank": 4,
+    "name": "Los Angeles International Airport",
+    "iata": "LAX",
+    "city": "Los Angeles",
+    "country": "United States",
+    "passengers": 84557968
+  },
+  {
+    "rank": 5,
+    "name": "O'Hare International Airport",
+    "iata": "ORD",
+    "city": "Chicago",
+    "country": "United States",
+    "passengers": 79828183
+  },
+  {
+    "rank": 6,
+    "name": "Heathrow Airport",
+    "iata": "LHR",
+    "city": "London",
+    "country": "United Kingdom",
+    "passengers": 78014598
+  },
+  {
+    "rank": 7,
+    "name": "Haneda Airport",
+    "iata": "HND",
+    "city": "Tokyo",
+    "country": "Japan",
+    "passengers": 76476251
+  },
+  {
+    "rank": 8,
+    "name": "Hong Kong International Airport",
+    "iata": "HKG",
+    "city": "Hong Kong",
+    "country": "Hong Kong",
+    "passengers": 72665078
+  },
+  {
+    "rank": 9,
+    "name": "Shanghai Pudong International Airport",
+    "iata": "PVG",
+    "city": "Shanghai",
+    "country": "China",
+    "passengers": 70001237
+  },
+  {
+    "rank": 10,
+    "name": "Charles de Gaulle International Airport",
+    "iata": "CDG",
+    "city": "Paris",
+    "country": "France",
+    "passengers": 69471442
+  },
+  {
+    "rank": 11,
+    "name": "Amsterdam Airport Schiphol",
+    "iata": "AMS",
+    "city": "Amsterdam",
+    "country": "Netherlands",
+    "passengers": 68515425
+  },
+  {
+    "rank": 12,
+    "name": "Dallas-Fort Worth International Airport",
+    "iata": "DFW",
+    "city": "Dallas",
+    "country": "United States",
+    "passengers": 67092194
+  },
+  {
+    "rank": 13,
+    "name": "Guangzhou Baiyun International Airport",
+    "iata": "CAN",
+    "city": "Guangzhou",
+    "country": "China",
+    "passengers": 65887473
+  },
+  {
+    "rank": 14,
+    "name": "Frankfurt am Main International Airport",
+    "iata": "FRA",
+    "city": "Frankfurt",
+    "country": "Germany",
+    "passengers": 64500386
+  },
+  {
+    "rank": 15,
+    "name": "Istanbul Atatürk Airport",
+    "iata": "IST",
+    "city": "Istanbul",
+    "country": "Turkey",
+    "passengers": 63859785
+  },
+  {
+    "rank": 16,
+    "name": "Indira Gandhi International Airport",
+    "iata": "DEL",
+    "city": "Delhi",
+    "country": "India",
+    "passengers": 63451503
+  },
+  {
+    "rank": 17,
+    "name": "Soekarno-Hatta International Airport",
+    "iata": "CGK",
+    "city": "Jakarta",
+    "country": "Indonesia",
+    "passengers": 63015620
+  },
+  {
+    "rank": 18,
+    "name": "Singapore Changi Airport",
+    "iata": "SIN",
+    "city": "Singapore",
+    "country": "Singapore",
+    "passengers": 62219573
+  },
+  {
+    "rank": 19,
+    "name": "Incheon International Airport",
+    "iata": "ICN",
+    "city": "Seoul",
+    "country": "South Korea",
+    "passengers": 62157834
+  },
+  {
+    "rank": 20,
+    "name": "Denver International Airport",
+    "iata": "DEN",
+    "city": "Denver",
+    "country": "United States",
+    "passengers": 61379396
+  },
+  {
+    "rank": 21,
+    "name": "Suvarnabhumi Airport",
+    "iata": "BKK",
+    "city": "Bangkok",
+    "country": "Thailand",
+    "passengers": 60860557
+  },
+  {
+    "rank": 22,
+    "name": "John F. Kennedy International Airport",
+    "iata": "JFK",
+    "city": "New York",
+    "country": "United States",
+    "passengers": 59392500
+  },
+  {
+    "rank": 23,
+    "name": "Kuala Lumpur International Airport",
+    "iata": "KUL",
+    "city": "Kuala Lumpur",
+    "country": "Malaysia",
+    "passengers": 58558440
+  },
+  {
+    "rank": 24,
+    "name": "San Francisco International Airport",
+    "iata": "SFO",
+    "city": "San Francisco",
+    "country": "United States",
+    "passengers": 55822129
+  },
+  {
+    "rank": 25,
+    "name": "Adolfo Suárez Madrid–Barajas Airport",
+    "iata": "MAD",
+    "city": "Madrid",
+    "country": "Spain",
+    "passengers": 53386075
+  },
+  {
+    "rank": 26,
+    "name": "Chengdu Shuangliu International Airport",
+    "iata": "CTU",
+    "city": "Chengdu",
+    "country": "China",
+    "passengers": 49801693
+  },
+  {
+    "rank": 27,
+    "name": "McCarran International Airport",
+    "iata": "LAS",
+    "city": "Las Vegas",
+    "country": "United States",
+    "passengers": 48566803
+  },
+  {
+    "rank": 28,
+    "name": "Barcelona–El Prat Airport",
+    "iata": "BCN",
+    "city": "Barcelona",
+    "country": "Spain",
+    "passengers": 47262826
+  },
+  {
+    "rank": 29,
+    "name": "Chhatrapati Shivaji International Airport",
+    "iata": "BOM",
+    "city": "Mumbai",
+    "country": "India",
+    "passengers": 47204259
+  },
+  {
+    "rank": 30,
+    "name": "Toronto Pearson International Airport",
+    "iata": "YYZ",
+    "city": "Toronto",
+    "country": "Canada",
+    "passengers": 47054696
+  },
+  {
+    "rank": 31,
+    "name": "Seattle–Tacoma International Airport",
+    "iata": "SEA",
+    "city": "Seattle",
+    "country": "United States",
+    "passengers": 46934194
+  },
+  {
+    "rank": 32,
+    "name": "Charlotte Douglas International Airport",
+    "iata": "CLT",
+    "city": "Charlotte",
+    "country": "United States",
+    "passengers": 45909899
+  },
+  {
+    "rank": 33,
+    "name": "Gatwick Airport",
+    "iata": "LGW",
+    "city": "London",
+    "country": "United Kingdom",
+    "passengers": 45561694
+  },
+  {
+    "rank": 34,
+    "name": "Shenzhen Bao'an International Airport",
+    "iata": "SZX",
+    "city": "Shenzhen",
+    "country": "China",
+    "passengers": 45558409
+  },
+  {
+    "rank": 35,
+    "name": "Taiwan Taoyuan International Airport",
+    "iata": "TPE",
+    "city": "Taipei",
+    "country": "Taiwan",
+    "passengers": 44878703
+  },
+  {
+    "rank": 36,
+    "name": "Mexico City International Airport",
+    "iata": "MEX",
+    "city": "Mexico City",
+    "country": "Mexico",
+    "passengers": 44732418
+  },
+  {
+    "rank": 37,
+    "name": "Kunming Changshui International Airport",
+    "iata": "KMG",
+    "city": "Kunming",
+    "country": "China",
+    "passengers": 44729736
+  },
+  {
+    "rank": 38,
+    "name": "Munich Airport",
+    "iata": "MUC",
+    "city": "Munich",
+    "country": "Germany",
+    "passengers": 44577241
+  },
+  {
+    "rank": 39,
+    "name": "Orlando International Airport",
+    "iata": "MCO",
+    "city": "Orlando",
+    "country": "United States",
+    "passengers": 44511265
+  },
+  {
+    "rank": 40,
+    "name": "Miami International Airport",
+    "iata": "MIA",
+    "city": "Miami",
+    "country": "United States",
+    "passengers": 44071313
+  },
+  {
+    "rank": 41,
+    "name": "Phoenix Sky Harbor International Airport",
+    "iata": "PHX",
+    "city": "Phoenix",
+    "country": "United States",
+    "passengers": 43921670
+  },
+  {
+    "rank": 42,
+    "name": "Sydney Airport",
+    "iata": "SYD",
+    "city": "Sydney",
+    "country": "Australia",
+    "passengers": 43410355
+  },
+  {
+    "rank": 43,
+    "name": "Newark Liberty International Airport",
+    "iata": "EWR",
+    "city": "Newark",
+    "country": "United States",
+    "passengers": 43393499
+  },
+  {
+    "rank": 44,
+    "name": "Ninoy Aquino International Airport",
+    "iata": "MNL",
+    "city": "Manila",
+    "country": "Philippines",
+    "passengers": 42022484
+  },
+  {
+    "rank": 45,
+    "name": "Shanghai Hongqiao International Airport",
+    "iata": "SHA",
+    "city": "Shanghai",
+    "country": "China",
+    "passengers": 41884059
+  },
+  {
+    "rank": 46,
+    "name": "Xi'an Xianyang International Airport",
+    "iata": "XIY",
+    "city": "Xi'an",
+    "country": "China",
+    "passengers": 41857406
+  },
+  {
+    "rank": 47,
+    "name": "Leonardo da Vinci–Fiumicino Airport",
+    "iata": "FCO",
+    "city": "Rome",
+    "country": "Italy",
+    "passengers": 40968756
+  },
+  {
+    "rank": 48,
+    "name": "George Bush Intercontinental Houston Airport",
+    "iata": "IAH",
+    "city": "Houston",
+    "country": "United States",
+    "passengers": 40696189
+  },
+  {
+    "rank": 49,
+    "name": "Narita International Airport",
+    "iata": "NRT",
+    "city": "Tokyo",
+    "country": "Japan",
+    "passengers": 40631193
+  },
+  {
+    "rank": 50,
+    "name": "Sheremetyevo International Airport",
+    "iata": "SVO",
+    "city": "Moscow",
+    "country": "Russia",
+    "passengers": 40092806
+  },
+  {
+    "rank": 51,
+    "name": "Chongqing Jiangbei International Airport",
+    "iata": "CKG",
+    "city": "Chongqing",
+    "country": "China",
+    "passengers": 38715210
+  },
+  {
+    "rank": 52,
+    "name": "Don Mueang International Airport",
+    "iata": "DMK",
+    "city": "Bangkok",
+    "country": "Thailand",
+    "passengers": 38299757
+  },
+  {
+    "rank": 53,
+    "name": "Minneapolis-St Paul International/Wold-Chamberlain Airport",
+    "iata": "MSP",
+    "city": "Minneapolis",
+    "country": "United States",
+    "passengers": 38034341
+  },
+  {
+    "rank": 54,
+    "name": "São Paulo–Guarulhos International Airport",
+    "iata": "GRU",
+    "city": "Sao Paulo",
+    "country": "Brazil",
+    "passengers": 37774000
+  },
+  {
+    "rank": 55,
+    "name": "Logan International Airport",
+    "iata": "BOS",
+    "city": "Boston",
+    "country": "United States",
+    "passengers": 36288042
+  },
+  {
+    "rank": 56,
+    "name": "Tan Son Nhat International Airport",
+    "iata": "SGN",
+    "city": "Ho Chi Minh City",
+    "country": "Vietnam",
+    "passengers": 35900000
+  },
+  {
+    "rank": 57,
+    "name": "Hamad International Airport",
+    "iata": "DOH",
+    "city": "Doha",
+    "country": "Qatar",
+    "passengers": 35867252
+  },
+  {
+    "rank": 58,
+    "name": "Hangzhou Xiaoshan International Airport",
+    "iata": "HGH",
+    "city": "Hangzhou",
+    "country": "China",
+    "passengers": 35570411
+  },
+  {
+    "rank": 59,
+    "name": "Detroit Metropolitan Wayne County Airport",
+    "iata": "DTW",
+    "city": "Detroit",
+    "country": "United States",
+    "passengers": 34701497
+  },
+  {
+    "rank": 60,
+    "name": "King Abdulaziz International Airport",
+    "iata": "JED",
+    "city": "Jeddah",
+    "country": "Saudi Arabia",
+    "passengers": 33917282
+  },
+  {
+    "rank": 61,
+    "name": "Melbourne Airport",
+    "iata": "MEL",
+    "city": "Melbourne",
+    "country": "Australia",
+    "passengers": 33704854
+  },
+  {
+    "rank": 62,
+    "name": "Fort Lauderdale Hollywood International Airport",
+    "iata": "FLL",
+    "city": "Fort Lauderdale",
+    "country": "United States",
+    "passengers": 32511053
+  },
+  {
+    "rank": 63,
+    "name": "Orlando Executive Airport",
+    "iata": "ORL",
+    "city": "Orlando",
+    "country": "United States",
+    "passengers": 32042475
+  },
+  {
+    "rank": 64,
+    "name": "Sabiha Gökçen International Airport",
+    "iata": "SAW",
+    "city": "Istanbul",
+    "country": "Turkey",
+    "passengers": 31385841
+  },
+  {
+    "rank": 65,
+    "name": "El Dorado International Airport",
+    "iata": "BOG",
+    "city": "Bogota",
+    "country": "Colombia",
+    "passengers": 30989932
+  },
+  {
+    "rank": 66,
+    "name": "Moscow Domodedovo Airport",
+    "iata": "DME",
+    "city": "Moscow",
+    "country": "Russia",
+    "passengers": 30700000
+  },
+  {
+    "rank": 67,
+    "name": "Jeju International Airport",
+    "iata": "CJU",
+    "city": "Cheju",
+    "country": "South Korea",
+    "passengers": 29846712
+  },
+  {
+    "rank": 68,
+    "name": "LaGuardia Airport",
+    "iata": "LGA",
+    "city": "New York",
+    "country": "United States",
+    "passengers": 29786769
+  },
+  {
+    "rank": 69,
+    "name": "Philadelphia International Airport",
+    "iata": "PHL",
+    "city": "Philadelphia",
+    "country": "United States",
+    "passengers": 29585754
+  },
+  {
+    "rank": 70,
+    "name": "Dublin Airport",
+    "iata": "DUB",
+    "city": "Dublin",
+    "country": "Ireland",
+    "passengers": 29582321
+  },
+  {
+    "rank": 71,
+    "name": "Zürich Airport",
+    "iata": "ZRH",
+    "city": "Zurich",
+    "country": "Switzerland",
+    "passengers": 29396094
+  },
+  {
+    "rank": 72,
+    "name": "Copenhagen Airport",
+    "iata": "CPH",
+    "city": "Copenhagen",
+    "country": "Denmark",
+    "passengers": 29177833
+  },
+  {
+    "rank": 73,
+    "name": "Kansai International Airport",
+    "iata": "KIX",
+    "city": "Osaka",
+    "country": "Japan",
+    "passengers": 27983093
+  },
+  {
+    "rank": 74,
+    "name": "Palma De Mallorca Airport",
+    "iata": "PMI",
+    "city": "Palma de Mallorca",
+    "country": "Spain",
+    "passengers": 27970655
+  },
+  {
+    "rank": 75,
+    "name": "Manchester Airport",
+    "iata": "MAN",
+    "city": "Manchester",
+    "country": "United Kingdom",
+    "passengers": 27901708
+  },
+  {
+    "rank": 76,
+    "name": "Oslo Airport",
+    "iata": "Gardermoen",
+    "city": "OSL",
+    "country": "Oslo",
+    "passengers": "Norway"
+  },
+  {
+    "rank": 77,
+    "name": "Lisbon Portela Airport",
+    "iata": "LIS",
+    "city": "Lisbon",
+    "country": "Portugal",
+    "passengers": 26669755
+  },
+  {
+    "rank": 78,
+    "name": "Stockholm Arlanda Airport",
+    "iata": "ARN",
+    "city": "Stockholm",
+    "country": "Sweden",
+    "passengers": 26642034
+  },
+  {
+    "rank": 79,
+    "name": "Baltimore/Washington International Thurgood Marshall Airport",
+    "iata": "BWI",
+    "city": "Baltimore",
+    "country": "United States",
+    "passengers": 26369411
+  },
+  {
+    "rank": 80,
+    "name": "Antalya Airport",
+    "iata": "AYT",
+    "city": "Antalya",
+    "country": "Turkey",
+    "passengers": 25931659
+  },
+  {
+    "rank": 81,
+    "name": "London Stansted Airport",
+    "iata": "STN",
+    "city": "London",
+    "country": "United Kingdom",
+    "passengers": 25904573
+  },
+  {
+    "rank": 82,
+    "name": "Nanjing Lukou International Airport",
+    "iata": "NKG",
+    "city": "Nanjing",
+    "country": "China",
+    "passengers": 25822936
+  },
+  {
+    "rank": 83,
+    "name": "Gimpo International Airport",
+    "iata": "GMP",
+    "city": "Seoul",
+    "country": "South Korea",
+    "passengers": 25267408
+  },
+  {
+    "rank": 84,
+    "name": "Kempegowda International Airport",
+    "iata": "BLR",
+    "city": "Bangalore",
+    "country": "India",
+    "passengers": 25047272
+  },
+  {
+    "rank": 85,
+    "name": "King Khaled International Airport",
+    "iata": "RUH",
+    "city": "Riyadh",
+    "country": "Saudi Arabia",
+    "passengers": 25038000
+  },
+  {
+    "rank": 86,
+    "name": "Brussels Airport",
+    "iata": "BRU",
+    "city": "Brussels",
+    "country": "Belgium",
+    "passengers": 24783911
+  },
+  {
+    "rank": 87,
+    "name": "Düsseldorf International Airport",
+    "iata": "DUS",
+    "city": "Duesseldorf",
+    "country": "Germany",
+    "passengers": 24640564
+  },
+  {
+    "rank": 88,
+    "name": "Xiamen Gaoqi International Airport",
+    "iata": "XMN",
+    "city": "Xiamen",
+    "country": "China",
+    "passengers": 24485239
+  },
+  {
+    "rank": 89,
+    "name": "Vienna International Airport",
+    "iata": "VIE",
+    "city": "Vienna",
+    "country": "Austria",
+    "passengers": 24392805
+  },
+  {
+    "rank": 90,
+    "name": "Zhengzhou Xinzheng International Airport",
+    "iata": "CGO",
+    "city": "Zhengzhou",
+    "country": "China",
+    "passengers": 24299073
+  },
+  {
+    "rank": 91,
+    "name": "Salt Lake City International Airport",
+    "iata": "SLC",
+    "city": "Salt Lake City",
+    "country": "United States",
+    "passengers": 24198816
+  },
+  {
+    "rank": 92,
+    "name": "Vancouver International Airport",
+    "iata": "YVR",
+    "city": "Vancouver",
+    "country": "Canada",
+    "passengers": 24166122
+  },
+  {
+    "rank": 93,
+    "name": "Ronald Reagan Washington National Airport",
+    "iata": "DCA",
+    "city": "Washington",
+    "country": "United States",
+    "passengers": 23928248
+  },
+  {
+    "rank": 94,
+    "name": "Changsha Huanghua International Airport",
+    "iata": "CSX",
+    "city": "Changcha",
+    "country": "China",
+    "passengers": 23764820
+  },
+  {
+    "rank": 95,
+    "name": "Abu Dhabi International Airport",
+    "iata": "AUH",
+    "city": "Abu Dhabi",
+    "country": "United Arab Emirates",
+    "passengers": 23760561
+  },
+  {
+    "rank": 96,
+    "name": "Cancún International Airport",
+    "iata": "CUN",
+    "city": "Cancun",
+    "country": "Mexico",
+    "passengers": 23601509
+  },
+  {
+    "rank": 97,
+    "name": "Fukuoka Airport",
+    "iata": "FUK",
+    "city": "Fukuoka",
+    "country": "Japan",
+    "passengers": 23484678
+  },
+  {
+    "rank": 98,
+    "name": "Liuting Airport",
+    "iata": "TAO",
+    "city": "Qingdao",
+    "country": "China",
+    "passengers": 23210530
+  },
+  {
+    "rank": 99,
+    "name": "Brisbane International Airport",
+    "iata": "BNE",
+    "city": "Brisbane",
+    "country": "Australia",
+    "passengers": 23205702
+  },
+  {
+    "rank": 100,
+    "name": "Wuhan Tianhe International Airport",
+    "iata": "WUH",
+    "city": "Wuhan",
+    "country": "China",
+    "passengers": 23129400
+  },
+  {
+    "rank": 101,
+    "name": "Noi Bai International Airport",
+    "iata": "HAN",
+    "city": "Hanoi",
+    "country": "Vietnam",
+    "passengers": 23068227
+  },
+  {
+    "rank": 102,
+    "name": "New Chitose Airport",
+    "iata": "CTS",
+    "city": "Sapporo",
+    "country": "Japan",
+    "passengers": 22916914
+  },
+  {
+    "rank": 103,
+    "name": "Washington Dulles International Airport",
+    "iata": "IAD",
+    "city": "Washington",
+    "country": "United States",
+    "passengers": 22892504
+  },
+  {
+    "rank": 104,
+    "name": "Ngurah Rai International Airport",
+    "iata": "DPS",
+    "city": "Denpasar",
+    "country": "Indonesia",
+    "passengers": 22863647
+  },
+  {
+    "rank": 105,
+    "name": "Haikou Meilan International Airport",
+    "iata": "HAK",
+    "city": "Haikou",
+    "country": "China",
+    "passengers": 22584815
+  },
+  {
+    "rank": 106,
+    "name": "Midway International Airport",
+    "iata": "MDW",
+    "city": "Chicago",
+    "country": "United States",
+    "passengers": 22460236
+  },
+  {
+    "rank": 107,
+    "name": "Comodoro Arturo Merino Benítez International Airport",
+    "iata": "SCL",
+    "city": "Santiago",
+    "country": "Chile",
+    "passengers": 22316093
+  },
+  {
+    "rank": 108,
+    "name": "San Diego International Airport",
+    "iata": "SAN",
+    "city": "San Diego",
+    "country": "United States",
+    "passengers": 22173493
+  },
+  {
+    "rank": 109,
+    "name": "Milan–Malpensa Airport",
+    "iata": "MXP",
+    "city": "Milano",
+    "country": "Italy",
+    "passengers": 22169167
+  },
+  {
+    "rank": 110,
+    "name": "Jorge Chávez International Airport",
+    "iata": "LIM",
+    "city": "Lima",
+    "country": "Peru",
+    "passengers": 22046042
+  },
+  {
+    "rank": 111,
+    "name": "Juanda International Airport",
+    "iata": "SUB",
+    "city": "Surabaya",
+    "country": "Indonesia",
+    "passengers": 21882335
+  },
+  {
+    "rank": 112,
+    "name": "São Paulo–Congonhas Airport",
+    "iata": "CGH",
+    "city": "Sao Paulo",
+    "country": "Brazil",
+    "passengers": 21859453
+  },
+  {
+    "rank": 113,
+    "name": "Athens International Airport",
+    "iata": "ATH",
+    "city": "Athens",
+    "country": "Greece",
+    "passengers": 21737787
+  },
+  {
+    "rank": 114,
+    "name": "Ürümqi Diwopu International Airport",
+    "iata": "URC",
+    "city": "Urumqi",
+    "country": "China",
+    "passengers": 21500901
+  },
+  {
+    "rank": 115,
+    "name": "O. R. Tambo International Airport",
+    "iata": "JNB",
+    "city": "Johannesburg",
+    "country": "South Africa",
+    "passengers": 21180060
+  },
+  {
+    "rank": 116,
+    "name": "Sanya Phoenix International Airport",
+    "iata": "SYX",
+    "city": "Sanya",
+    "country": "China",
+    "passengers": 21005001
+  },
+  {
+    "rank": 117,
+    "name": "Ben Gurion International Airport",
+    "iata": "TLV",
+    "city": "Tel-aviv",
+    "country": "Israel",
+    "passengers": 20781226
+  },
+  {
+    "rank": 118,
+    "name": "Tianjin Binhai International Airport",
+    "iata": "TSN",
+    "city": "Tianjin",
+    "country": "China",
+    "passengers": 20711697
+  },
+  {
+    "rank": 119,
+    "name": "Naha Airport",
+    "iata": "OKA",
+    "city": "Okinawa",
+    "country": "Japan",
+    "passengers": 20569935
+  },
+  {
+    "rank": 120,
+    "name": "Berlin-Tegel International Airport",
+    "iata": "TXL",
+    "city": "Berlin",
+    "country": "Germany",
+    "passengers": 20460688
+  },
+  {
+    "rank": 121,
+    "name": "Netaji Subhash Chandra Bose International Airport",
+    "iata": "CCU",
+    "city": "Kolkata",
+    "country": "India",
+    "passengers": 20167698
+  },
+  {
+    "rank": 122,
+    "name": "Daniel K. Inouye International Airport",
+    "iata": "HNL",
+    "city": "Honolulu",
+    "country": "United States",
+    "passengers": 19950125
+  },
+  {
+    "rank": 123,
+    "name": "Tampa International Airport",
+    "iata": "TPA",
+    "city": "Tampa",
+    "country": "United States",
+    "passengers": 19624284
+  },
+  {
+    "rank": 124,
+    "name": "Chennai International Airport",
+    "iata": "MAA",
+    "city": "Madras",
+    "country": "India",
+    "passengers": 19599438
+  },
+  {
+    "rank": 125,
+    "name": "Portland International Airport",
+    "iata": "PDX",
+    "city": "Portland",
+    "country": "United States",
+    "passengers": 19080454
+  },
+  {
+    "rank": 126,
+    "name": "Auckland International Airport",
+    "iata": "AKL",
+    "city": "Auckland",
+    "country": "New Zealand",
+    "passengers": 19020573
+  },
+  {
+    "rank": 127,
+    "name": "Helsinki Airport",
+    "iata": "HEL",
+    "city": "Helsinki",
+    "country": "Finland",
+    "passengers": 18892386
+  },
+  {
+    "rank": 128,
+    "name": "Taiping Airport",
+    "iata": "HRB",
+    "city": "Harbin",
+    "country": "China",
+    "passengers": 18810317
+  },
+  {
+    "rank": 129,
+    "name": "Málaga Airport",
+    "iata": "AGP",
+    "city": "Malaga",
+    "country": "Spain",
+    "passengers": 18628876
+  },
+  {
+    "rank": 130,
+    "name": "Montréal–Pierre Elliott Trudeau International Airport",
+    "iata": "YUL",
+    "city": "Montreal",
+    "country": "Canada",
+    "passengers": 18160223
+  },
+  {
+    "rank": 131,
+    "name": "Vnukovo International Airport",
+    "iata": "VKO",
+    "city": "Moscow",
+    "country": "Russia",
+    "passengers": 18139000
+  },
+  {
+    "rank": 132,
+    "name": "Longdongbao Airport",
+    "iata": "KWE",
+    "city": "Guiyang",
+    "country": "China",
+    "passengers": 18109610
+  },
+  {
+    "rank": 133,
+    "name": "Hamburg Airport",
+    "iata": "HAM",
+    "city": "Hamburg",
+    "country": "Germany",
+    "passengers": 17622997
+  },
+  {
+    "rank": 134,
+    "name": "Zhoushuizi Airport",
+    "iata": "DLC",
+    "city": "Dalian",
+    "country": "China",
+    "passengers": 17503810
+  },
+  {
+    "rank": 135,
+    "name": "Mehrabad International Airport",
+    "iata": "THR",
+    "city": "Teheran",
+    "country": "Iran",
+    "passengers": 17464216
+  },
+  {
+    "rank": 136,
+    "name": "Geneva Airport",
+    "iata": "GVA",
+    "city": "Geneva",
+    "country": "Switzerland",
+    "passengers": 17351816
+  },
+  {
+    "rank": 137,
+    "name": "Taoxian Airport",
+    "iata": "SHE",
+    "city": "Shenyang",
+    "country": "China",
+    "passengers": 17342626
+  },
+  {
+    "rank": 138,
+    "name": "Rajiv Gandhi International Airport",
+    "iata": "HYD",
+    "city": "Hyderabad",
+    "country": "India",
+    "passengers": 17148069
+  },
+  {
+    "rank": 139,
+    "name": "Presidente Juscelino Kubistschek International Airport",
+    "iata": "BSB",
+    "city": "Brasilia",
+    "country": "Brazil",
+    "passengers": 16912680
+  },
+  {
+    "rank": 140,
+    "name": "Phuket International Airport",
+    "iata": "HKT",
+    "city": "Phuket",
+    "country": "Thailand",
+    "passengers": 16855637
+  },
+  {
+    "rank": 141,
+    "name": "Gimhae International Airport",
+    "iata": "PUS",
+    "city": "Busan",
+    "country": "South Korea",
+    "passengers": 16403541
+  },
+  {
+    "rank": 142,
+    "name": "Calgary International Airport",
+    "iata": "YYC",
+    "city": "Calgary",
+    "country": "Canada",
+    "passengers": 16275862
+  },
+  {
+    "rank": 143,
+    "name": "Rio de Janeiro–Galeão International Airport",
+    "iata": "GIG",
+    "city": "Rio De Janeiro",
+    "country": "Brazil",
+    "passengers": 16243253
+  },
+  {
+    "rank": 144,
+    "name": "Pulkovo Airport",
+    "iata": "LED",
+    "city": "St. Petersburg",
+    "country": "Russia",
+    "passengers": 16125520
+  },
+  {
+    "rank": 145,
+    "name": "Esenboğa International Airport",
+    "iata": "ESB",
+    "city": "Ankara",
+    "country": "Turkey",
+    "passengers": 15845878
+  },
+  {
+    "rank": 146,
+    "name": "Luton Airport",
+    "iata": "LTN",
+    "city": "London",
+    "country": "United Kingdom",
+    "passengers": 15799219
+  },
+  {
+    "rank": 147,
+    "name": "Warsaw Chopin Airport",
+    "iata": "WAW",
+    "city": "Warsaw",
+    "country": "Poland",
+    "passengers": 15730330
+  },
+  {
+    "rank": 148,
+    "name": "Tocumen International Airport",
+    "iata": "PTY",
+    "city": "Panama City",
+    "country": "Panama",
+    "passengers": 15616065
+  },
+  {
+    "rank": 149,
+    "name": "Dallas Love Field",
+    "iata": "DAL",
+    "city": "Dallas",
+    "country": "United States",
+    "passengers": 15562738
+  },
+  {
+    "rank": 150,
+    "name": "Václav Havel Airport Prague",
+    "iata": "PRG",
+    "city": "Prague",
+    "country": "Czech Republic",
+    "passengers": 15415001
+  },
+  {
+    "rank": 151,
+    "name": "Lambert St Louis International Airport",
+    "iata": "STL",
+    "city": "St. Louis",
+    "country": "United States",
+    "passengers": 14730656
+  },
+  {
+    "rank": 152,
+    "name": "Osaka International Airport",
+    "iata": "ITM",
+    "city": "Osaka",
+    "country": "Japan",
+    "passengers": 14541936
+  },
+  {
+    "rank": 153,
+    "name": "Yaoqiang Airport",
+    "iata": "TNA",
+    "city": "Jinan",
+    "country": "China",
+    "passengers": 14319264
+  },
+  {
+    "rank": 154,
+    "name": "Nashville International Airport",
+    "iata": "BNA",
+    "city": "Nashville",
+    "country": "United States",
+    "passengers": 14134448
+  },
+  {
+    "rank": 155,
+    "name": "Nanning Wuxu Airport",
+    "iata": "NNG",
+    "city": "Nanning",
+    "country": "China",
+    "passengers": 13915542
+  },
+  {
+    "rank": 156,
+    "name": "Austin Bergstrom International Airport",
+    "iata": "AUS",
+    "city": "Austin",
+    "country": "United States",
+    "passengers": 13889305
+  },
+  {
+    "rank": 157,
+    "name": "Aeroparque Jorge Newbery",
+    "iata": "AEP",
+    "city": "Buenos Aires",
+    "country": "Argentina",
+    "passengers": 13797710
+  },
+  {
+    "rank": 158,
+    "name": "Perth International Airport",
+    "iata": "PER",
+    "city": "Perth",
+    "country": "Australia",
+    "passengers": 13759170
+  },
+  {
+    "rank": 159,
+    "name": "Alicante International Airport",
+    "iata": "ALC",
+    "city": "Alicante",
+    "country": "Spain",
+    "passengers": 13713061
+  },
+  {
+    "rank": 160,
+    "name": "William P Hobby Airport",
+    "iata": "HOU",
+    "city": "Houston",
+    "country": "United States",
+    "passengers": 13435672
+  },
+  {
+    "rank": 161,
+    "name": "Edinburgh Airport",
+    "iata": "EDI",
+    "city": "Edinburgh",
+    "country": "United Kingdom",
+    "passengers": 13432485
+  },
+  {
+    "rank": 162,
+    "name": "Nice-Côte d'Azur Airport",
+    "iata": "NCE",
+    "city": "Nice",
+    "country": "France",
+    "passengers": 13304782
+  },
+  {
+    "rank": 163,
+    "name": "Budapest Ferenc Liszt International Airport",
+    "iata": "BUD",
+    "city": "Budapest",
+    "country": "Hungary",
+    "passengers": 13097239
+  },
+  {
+    "rank": 164,
+    "name": "Gran Canaria Airport",
+    "iata": "LPA",
+    "city": "Gran Canaria",
+    "country": "Spain",
+    "passengers": 13092117
+  },
+  {
+    "rank": 165,
+    "name": "Metropolitan Oakland International Airport",
+    "iata": "OAK",
+    "city": "Oakland",
+    "country": "United States",
+    "passengers": 13072245
+  },
+  {
+    "rank": 166,
+    "name": "Birmingham Airport",
+    "iata": "BHX",
+    "city": "Birmingham",
+    "country": "United Kingdom",
+    "passengers": 12983436
+  },
+  {
+    "rank": 167,
+    "name": "Taiyuan Wusu Airport",
+    "iata": "TYN",
+    "city": "Taiyuan",
+    "country": "China",
+    "passengers": 12980259
+  },
+  {
+    "rank": 168,
+    "name": "Berlin-Schönefeld International Airport",
+    "iata": "SXF",
+    "city": "Berlin",
+    "country": "Germany",
+    "passengers": 12865315
+  },
+  {
+    "rank": 169,
+    "name": "Adnan Menderes International Airport",
+    "iata": "ADB",
+    "city": "Izmir",
+    "country": "Turkey",
+    "passengers": 12823701
+  },
+  {
+    "rank": 170,
+    "name": "Lanzhou Zhongchuan Airport",
+    "iata": "LHW",
+    "city": "Lanzhou",
+    "country": "China",
+    "passengers": 12816443
+  },
+  {
+    "rank": 171,
+    "name": "Guadalajara International Airport",
+    "iata": "GDL",
+    "city": "Guadalajara",
+    "country": "Mexico",
+    "passengers": 12808000
+  },
+  {
+    "rank": 172,
+    "name": "Henri Coandă International Airport",
+    "iata": "OTP",
+    "city": "Bucharest",
+    "country": "Romania",
+    "passengers": 12804191
+  },
+  {
+    "rank": 173,
+    "name": "Norman Y. Mineta San Jose International Airport",
+    "iata": "SJC",
+    "city": "San Jose",
+    "country": "United States",
+    "passengers": 12480232
+  },
+  {
+    "rank": 174,
+    "name": "Fuzhou Changle International Airport",
+    "iata": "FOC",
+    "city": "Fuzhou",
+    "country": "China",
+    "passengers": 12469235
+  },
+  {
+    "rank": 175,
+    "name": "Cologne Bonn Airport",
+    "iata": "CGN",
+    "city": "Cologne",
+    "country": "Germany",
+    "passengers": 12384223
+  },
+  {
+    "rank": 176,
+    "name": "Orio al Serio International Airport",
+    "iata": "BGY",
+    "city": "Bergamo",
+    "country": "Italy",
+    "passengers": 12336137
+  },
+  {
+    "rank": 177,
+    "name": "Kualanamu International Airport",
+    "iata": "KNO",
+    "city": "Medan",
+    "country": "Indonesia",
+    "passengers": 12245116
+  },
+  {
+    "rank": 178,
+    "name": "Louis Armstrong New Orleans International Airport",
+    "iata": "MSY",
+    "city": "New Orleans",
+    "country": "United States",
+    "passengers": 12009512
+  },
+  {
+    "rank": 179,
+    "name": "Longjia Airport",
+    "iata": "CGQ",
+    "city": "Changchun",
+    "country": "China",
+    "passengers": 11662943
+  },
+  {
+    "rank": 180,
+    "name": "Hasanuddin International Airport",
+    "iata": "UPG",
+    "city": "Ujung Pandang",
+    "country": "Indonesia",
+    "passengers": 11653387
+  },
+  {
+    "rank": 181,
+    "name": "Raleigh–Durham International Airport",
+    "iata": "RDU",
+    "city": "Raleigh",
+    "country": "United States",
+    "passengers": 11653086
+  },
+  {
+    "rank": 182,
+    "name": "Kansas City International Airport",
+    "iata": "MCI",
+    "city": "Kansas City",
+    "country": "United States",
+    "passengers": 11503936
+  },
+  {
+    "rank": 183,
+    "name": "Sharjah International Airport",
+    "iata": "SHJ",
+    "city": "Sharjah",
+    "country": "United Arab Emirates",
+    "passengers": 11360000
+  },
+  {
+    "rank": 184,
+    "name": "Tenerife South Airport",
+    "iata": "TFS",
+    "city": "Tenerife",
+    "country": "Spain",
+    "passengers": 11249327
+  },
+  {
+    "rank": 185,
+    "name": "Nanchang Changbei International Airport",
+    "iata": "KHN",
+    "city": "Nanchang",
+    "country": "China",
+    "passengers": 11212161
+  },
+  {
+    "rank": 186,
+    "name": "Cairo International Airport",
+    "iata": "CAI",
+    "city": "Cairo",
+    "country": "Egypt",
+    "passengers": 11081892
+  },
+  {
+    "rank": 187,
+    "name": "Baita International Airport",
+    "iata": "HET",
+    "city": "Hohhot",
+    "country": "China",
+    "passengers": 10969050
+  },
+  {
+    "rank": 188,
+    "name": "Stuttgart Airport",
+    "iata": "STR",
+    "city": "Stuttgart",
+    "country": "Germany",
+    "passengers": 10962247
+  },
+  {
+    "rank": 189,
+    "name": "Sacramento International Airport",
+    "iata": "SMF",
+    "city": "Sacramento",
+    "country": "United States",
+    "passengers": 10912097
+  },
+  {
+    "rank": 190,
+    "name": "Da Nang International Airport",
+    "iata": "DAD",
+    "city": "Danang",
+    "country": "Vietnam",
+    "passengers": 10860235
+  },
+  {
+    "rank": 191,
+    "name": "Francisco de Sá Carneiro Airport",
+    "iata": "OPO",
+    "city": "Porto",
+    "country": "Portugal",
+    "passengers": 10787000
+  },
+  {
+    "rank": 192,
+    "name": "Cape Town International Airport",
+    "iata": "CPT",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "passengers": 10693063
+  },
+  {
+    "rank": 193,
+    "name": "Boryspil International Airport",
+    "iata": "KBP",
+    "city": "Kiev",
+    "country": "Ukraine",
+    "passengers": 10554757
+  },
+  {
+    "rank": 194,
+    "name": "Shijiazhuang Daguocun International Airport",
+    "iata": "SJW",
+    "city": "Shijiazhuang",
+    "country": "China",
+    "passengers": 10528364
+  },
+  {
+    "rank": 195,
+    "name": "Mashhad International Airport",
+    "iata": "MHD",
+    "city": "Mashhad",
+    "country": "Iran",
+    "passengers": 10459377
+  },
+  {
+    "rank": 196,
+    "name": "John Wayne Airport-Orange County Airport",
+    "iata": "SNA",
+    "city": "Santa Ana",
+    "country": "United States",
+    "passengers": 10423578
+  },
+  {
+    "rank": 197,
+    "name": "Venice Marco Polo Airport",
+    "iata": "VCE",
+    "city": "Venice",
+    "country": "Italy",
+    "passengers": 10371380
+  },
+  {
+    "rank": 198,
+    "name": "Ministro Pistarini International Airport",
+    "iata": "EZE",
+    "city": "Buenos Aires",
+    "country": "Argentina",
+    "passengers": 10327203
+  },
+  {
+    "rank": 199,
+    "name": "Lyon Saint-Exupéry Airport",
+    "iata": "LYS",
+    "city": "Lyon",
+    "country": "France",
+    "passengers": 10280192
+  },
+  {
+    "rank": 200,
+    "name": "Cochin International Airport",
+    "iata": "COK",
+    "city": "Kochi",
+    "country": "India",
+    "passengers": 10274598
+  },
+  {
+    "rank": 201,
+    "name": "Chiang Mai International Airport",
+    "iata": "CNX",
+    "city": "Chiang Mai",
+    "country": "Thailand",
+    "passengers": 10230070
+  },
+  {
+    "rank": 202,
+    "name": "Chubu Centrair International Airport",
+    "iata": "NGO",
+    "city": "Nagoya",
+    "country": "Japan",
+    "passengers": 10177713
+  },
+  {
+    "rank": 203,
+    "name": "Tancredo Neves International Airport",
+    "iata": "CNF",
+    "city": "Belo Horizonte",
+    "country": "Brazil",
+    "passengers": 10164077
+  },
+  {
+    "rank": 204,
+    "name": "Mactan Cebu International Airport",
+    "iata": "CEB",
+    "city": "Cebu",
+    "country": "Philippines",
+    "passengers": 10050940
+  },
+  {
+    "rank": 205,
+    "name": "Glasgow Airport",
+    "iata": "GLA",
+    "city": "Glasgow",
+    "country": "United Kingdom",
+    "passengers": 9897825
+  },
+  {
+    "rank": 206,
+    "name": "Monterrey International Airport",
+    "iata": "MTY",
+    "city": "Monterrey",
+    "country": "Mexico",
+    "passengers": 9771630
+  },
+  {
+    "rank": 207,
+    "name": "Hefei Luogang International Airport",
+    "iata": "HFE",
+    "city": "Hefei",
+    "country": "China",
+    "passengers": 9690716
+  },
+  {
+    "rank": 208,
+    "name": "Milano Linate Airport",
+    "iata": "LIN",
+    "city": "Milano",
+    "country": "Italy",
+    "passengers": 9548363
+  },
+  {
+    "rank": 209,
+    "name": "Zhuhai Jinwan Airport",
+    "iata": "ZUH",
+    "city": "Zhuhai",
+    "country": "China",
+    "passengers": 9425951
+  },
+  {
+    "rank": 210,
+    "name": "Ningbo Lishe International Airport",
+    "iata": "NGB",
+    "city": "Ninbo",
+    "country": "China",
+    "passengers": 9390527
+  },
+  {
+    "rank": 211,
+    "name": "Mohammed V International Airport",
+    "iata": "CMN",
+    "city": "Casablanca",
+    "country": "Morocco",
+    "passengers": 9357427
+  },
+  {
+    "rank": 212,
+    "name": "Viracopos International Airport",
+    "iata": "VCP",
+    "city": "Campinas",
+    "country": "Brazil",
+    "passengers": 9332631
+  },
+  {
+    "rank": 213,
+    "name": "Wenzhou Yongqiang Airport",
+    "iata": "WNZ",
+    "city": "Wenzhou",
+    "country": "China",
+    "passengers": 9285621
+  },
+  {
+    "rank": 214,
+    "name": "Toulouse-Blagnac Airport",
+    "iata": "TLS",
+    "city": "Toulouse",
+    "country": "France",
+    "passengers": 9264611
+  },
+  {
+    "rank": 215,
+    "name": "Santos Dumont Airport",
+    "iata": "SDU",
+    "city": "Rio De Janeiro",
+    "country": "Brazil",
+    "passengers": 9247185
+  },
+  {
+    "rank": 216,
+    "name": "Cleveland Hopkins International Airport",
+    "iata": "CLE",
+    "city": "Cleveland",
+    "country": "United States",
+    "passengers": 9140445
+  },
+  {
+    "rank": 217,
+    "name": "Catania-Fontanarossa Airport",
+    "iata": "CTA",
+    "city": "Catania",
+    "country": "Italy",
+    "passengers": 9120913
+  },
+  {
+    "rank": 218,
+    "name": "San Antonio International Airport",
+    "iata": "SAT",
+    "city": "San Antonio",
+    "country": "United States",
+    "passengers": 9050000
+  },
+  {
+    "rank": 219,
+    "name": "Marseille Provence Airport",
+    "iata": "MRS",
+    "city": "Marseille",
+    "country": "France",
+    "passengers": 9002086
+  },
+  {
+    "rank": 220,
+    "name": "Pittsburgh International Airport",
+    "iata": "PIT",
+    "city": "Pittsburgh",
+    "country": "United States",
+    "passengers": 8988016
+  },
+  {
+    "rank": 221,
+    "name": "Addis Ababa Bole International Airport",
+    "iata": "ADD",
+    "city": "Addis Ababa",
+    "country": "Ethiopia",
+    "passengers": 8900000
+  },
+  {
+    "rank": 222,
+    "name": "Imam Khomeini International Airport",
+    "iata": "IKA",
+    "city": "Tehran",
+    "country": "Iran",
+    "passengers": 8852232
+  },
+  {
+    "rank": 223,
+    "name": "Southwest Florida International Airport",
+    "iata": "RSW",
+    "city": "Fort Myers",
+    "country": "United States",
+    "passengers": 8842549
+  },
+  {
+    "rank": 224,
+    "name": "Indianapolis International Airport",
+    "iata": "IND",
+    "city": "Indianapolis",
+    "country": "United States",
+    "passengers": 8770308
+  },
+  {
+    "rank": 225,
+    "name": "Faro Airport",
+    "iata": "FAO",
+    "city": "Faro",
+    "country": "Portugal",
+    "passengers": 8727000
+  },
+  {
+    "rank": 226,
+    "name": "Adi Sutjipto International Airport",
+    "iata": "JOG",
+    "city": "Yogyakarta",
+    "country": "Indonesia",
+    "passengers": 8634369
+  },
+  {
+    "rank": 227,
+    "name": "Yinchuan Airport",
+    "iata": "INC",
+    "city": "Yinchuan",
+    "country": "China",
+    "passengers": 8505613
+  },
+  {
+    "rank": 228,
+    "name": "Keflavík International Airport",
+    "iata": "KEF",
+    "city": "Keflavik",
+    "country": "Iceland",
+    "passengers": 8260949
+  },
+  {
+    "rank": 229,
+    "name": "Bologna Guglielmo Marconi Airport",
+    "iata": "BLQ",
+    "city": "Bologna",
+    "country": "Italy",
+    "passengers": 8198156
+  },
+  {
+    "rank": 230,
+    "name": "Naples International Airport",
+    "iata": "NAP",
+    "city": "Naples",
+    "country": "Italy",
+    "passengers": 8134492
+  },
+  {
+    "rank": 231,
+    "name": "Bristol Airport",
+    "iata": "BRS",
+    "city": "Bristol",
+    "country": "United Kingdom",
+    "passengers": 8100000
+  },
+  {
+    "rank": 232,
+    "name": "Adelaide International Airport",
+    "iata": "ADL",
+    "city": "Adelaide",
+    "country": "Australia",
+    "passengers": 8090000
+  },
+  {
+    "rank": 233,
+    "name": "Salgado Filho Airport",
+    "iata": "POA",
+    "city": "Porto Alegre",
+    "country": "Brazil",
+    "passengers": 8012114
+  },
+  {
+    "rank": 234,
+    "name": "Kota Kinabalu International Airport",
+    "iata": "BKI",
+    "city": "Kota Kinabalu",
+    "country": "Malaysia",
+    "passengers": 8006446
+  },
+  {
+    "rank": 235,
+    "name": "Halim Perdanakusuma International Airport",
+    "iata": "HLP",
+    "city": "Jakarta",
+    "country": "Indonesia",
+    "passengers": 7934520
+  },
+  {
+    "rank": 236,
+    "name": "Ibiza Airport",
+    "iata": "IBZ",
+    "city": "Ibiza",
+    "country": "Spain",
+    "passengers": 7903892
+  },
+  {
+    "rank": 237,
+    "name": "EuroAirport Basel-Mulhouse-Freiburg Airport",
+    "iata": "BSL",
+    "city": "Mulhouse",
+    "country": "France",
+    "passengers": 7888725
+  },
+  {
+    "rank": 238,
+    "name": "Guilin Liangjiang International Airport",
+    "iata": "KWL",
+    "city": "Guilin",
+    "country": "China",
+    "passengers": 7862015
+  },
+  {
+    "rank": 239,
+    "name": "Cincinnati Northern Kentucky International Airport",
+    "iata": "CVG",
+    "city": "Cincinnati",
+    "country": "United States",
+    "passengers": 7842149
+  },
+  {
+    "rank": 240,
+    "name": "Pune Airport",
+    "iata": "PNQ",
+    "city": "Pune",
+    "country": "India",
+    "passengers": 7837331
+  },
+  {
+    "rank": 241,
+    "name": "Edmonton International Airport",
+    "iata": "YEG",
+    "city": "Edmonton",
+    "country": "Canada",
+    "passengers": 7807384
+  },
+  {
+    "rank": 242,
+    "name": "Guararapes - Gilberto Freyre International Airport",
+    "iata": "REC",
+    "city": "Recife",
+    "country": "Brazil",
+    "passengers": 7776881
+  },
+  {
+    "rank": 243,
+    "name": "Deputado Luís Eduardo Magalhães International Airport",
+    "iata": "SSA",
+    "city": "Salvador",
+    "country": "Brazil",
+    "passengers": 7735685
+  },
+  {
+    "rank": 244,
+    "name": "Brussels South Charleroi Airport",
+    "iata": "CRL",
+    "city": "Charleroi",
+    "country": "Belgium",
+    "passengers": 7698767
+  },
+  {
+    "rank": 245,
+    "name": "Sultan Aji Muhamad Sulaiman Airport",
+    "iata": "BPN",
+    "city": "Balikpapan",
+    "country": "Indonesia",
+    "passengers": 7510090
+  },
+  {
+    "rank": 246,
+    "name": "Houari Boumediene Airport",
+    "iata": "ALG",
+    "city": "Algier",
+    "country": "Algeria",
+    "passengers": 7500000
+  },
+  {
+    "rank": 247,
+    "name": "Port Columbus International Airport",
+    "iata": "CMH",
+    "city": "Columbus",
+    "country": "United States",
+    "passengers": 7500000
+  },
+  {
+    "rank": 248,
+    "name": "Heraklion International Airport",
+    "iata": "HER",
+    "city": "Heraklion",
+    "country": "Greece",
+    "passengers": 7480408
+  },
+  {
+    "rank": 249,
+    "name": "Sardar Vallabhbhai Patel International Airport",
+    "iata": "AMD",
+    "city": "Ahmedabad",
+    "country": "India",
+    "passengers": 7405282
+  },
+  {
+    "rank": 250,
+    "name": "Lanzarote Airport",
+    "iata": "ACE",
+    "city": "Arrecife",
+    "country": "Spain",
+    "passengers": 7389025
+  },
+  {
+    "rank": 251,
+    "name": "Penang International Airport",
+    "iata": "PEN",
+    "city": "Penang",
+    "country": "Malaysia",
+    "passengers": 7232097
+  },
+  {
+    "rank": 252,
+    "name": "Lijiang Airport",
+    "iata": "LJG",
+    "city": "Lijiang",
+    "country": "China",
+    "passengers": 7105345
+  },
+  {
+    "rank": 253,
+    "name": "General Abelardo L. Rodríguez International Airport",
+    "iata": "TIJ",
+    "city": "Tijuana",
+    "country": "Mexico",
+    "passengers": 7103200
+  },
+  {
+    "rank": 254,
+    "name": "Jomo Kenyatta International Airport",
+    "iata": "NBO",
+    "city": "Nairobi",
+    "country": "Kenya",
+    "passengers": 7039175
+  },
+  {
+    "rank": 255,
+    "name": "Goa International Airport",
+    "iata": "GOI",
+    "city": "Goa",
+    "country": "India",
+    "passengers": 6876491
+  },
+  {
+    "rank": 256,
+    "name": "Göteborg Landvetter Airport",
+    "iata": "GOT",
+    "city": "Gothenborg",
+    "country": "Sweden",
+    "passengers": 6758520
+  },
+  {
+    "rank": 257,
+    "name": "Valencia Airport",
+    "iata": "VLC",
+    "city": "Valencia",
+    "country": "Spain",
+    "passengers": 6745394
+  },
+  {
+    "rank": 258,
+    "name": "Afonso Pena Airport",
+    "iata": "CWB",
+    "city": "Curitiba",
+    "country": "Brazil",
+    "passengers": 6722058
+  },
+  {
+    "rank": 259,
+    "name": "Sunan Shuofang International Airport",
+    "iata": "WUX",
+    "city": "Wuxi",
+    "country": "China",
+    "passengers": 6683380
+  },
+  {
+    "rank": 260,
+    "name": "Christchurch International Airport",
+    "iata": "CHC",
+    "city": "Christchurch",
+    "country": "New Zealand",
+    "passengers": 6566598
+  },
+  {
+    "rank": 261,
+    "name": "Yantai Laishan Airport",
+    "iata": "YNT",
+    "city": "Yantai",
+    "country": "China",
+    "passengers": 6503015
+  },
+  {
+    "rank": 262,
+    "name": "Sofia Airport",
+    "iata": "SOF",
+    "city": "Sofia",
+    "country": "Bulgaria",
+    "passengers": 6206400
+  },
+  {
+    "rank": 263,
+    "name": "Kaohsiung International Airport",
+    "iata": "KHH",
+    "city": "Kaohsiung",
+    "country": "Taiwan",
+    "passengers": 6472085
+  },
+  {
+    "rank": 264,
+    "name": "Gold Coast Airport",
+    "iata": "OOL",
+    "city": "Coolangatta",
+    "country": "Australia",
+    "passengers": 6457086
+  },
+  {
+    "rank": 265,
+    "name": "Bradley International Airport",
+    "iata": "BDL",
+    "city": "Windsor Locks",
+    "country": "United States",
+    "passengers": 6436407
+  },
+  {
+    "rank": "266;",
+    "name": "Thessaloniki Airport \"\"Makedonia\"\"",
+    "iata": "SKG",
+    "city": "Thessaloniki",
+    "country": "Greece",
+    "passengers": 6395523
+  },
+  {
+    "rank": 267,
+    "name": "Murtala Muhammed International Airport",
+    "iata": "LOS",
+    "city": "Lagos",
+    "country": "Nigeria",
+    "passengers": 6367478
+  },
+  {
+    "rank": 268,
+    "name": "Hang Nadim International Airport",
+    "iata": "BTH",
+    "city": "Batam",
+    "country": "Indonesia",
+    "passengers": 6355113
+  },
+  {
+    "rank": 269,
+    "name": "Palm Beach International Airport",
+    "iata": "PBI",
+    "city": "West Palm Beach",
+    "country": "United States",
+    "passengers": 6322452
+  },
+  {
+    "rank": 270,
+    "name": "Prince Mohammad Bin Abdulaziz Airport",
+    "iata": "MED",
+    "city": "Madinah",
+    "country": "Saudi Arabia",
+    "passengers": 6300638
+  },
+  {
+    "rank": 271,
+    "name": "Bordeaux-Mérignac Airport",
+    "iata": "BOD",
+    "city": "Bordeaux",
+    "country": "France",
+    "passengers": 6203824
+  },
+  {
+    "rank": 272,
+    "name": "Taipei Songshan Airport",
+    "iata": "TSA",
+    "city": "Taipei",
+    "country": "Taiwan",
+    "passengers": 6143445
+  },
+  {
+    "rank": 273,
+    "name": "Quanzhou Jinjiang International Airport",
+    "iata": "JJN",
+    "city": "Quanzhou",
+    "country": "China",
+    "passengers": 6118876
+  },
+  {
+    "rank": 274,
+    "name": "Bergen Airport",
+    "iata": "Flesland",
+    "city": "BGO",
+    "country": "Bergen",
+    "passengers": "Norway"
+  },
+  {
+    "rank": 275,
+    "name": "Riga International Airport",
+    "iata": "RIX",
+    "city": "Riga",
+    "country": "Latvia",
+    "passengers": 6097765
+  },
+  {
+    "rank": 276,
+    "name": "Fuerteventura Airport",
+    "iata": "FUE",
+    "city": "Fuerteventura",
+    "country": "Spain",
+    "passengers": 6049401
+  },
+  {
+    "rank": 277,
+    "name": "Wellington International Airport",
+    "iata": "WLG",
+    "city": "Wellington",
+    "country": "New Zealand",
+    "passengers": 6049194
+  },
+  {
+    "rank": 278,
+    "name": "Malta International Airport",
+    "iata": "MLA",
+    "city": "Malta",
+    "country": "Malta",
+    "passengers": 6014548
+  },
+  {
+    "rank": 279,
+    "name": "Beijing Nanyuan Airport",
+    "iata": "NAY",
+    "city": "Beijing",
+    "country": "China",
+    "passengers": 5946886
+  },
+  {
+    "rank": 280,
+    "name": "Pinto Martins International Airport",
+    "iata": "FOR",
+    "city": "Fortaleza",
+    "country": "Brazil",
+    "passengers": 5935288
+  },
+  {
+    "rank": 281,
+    "name": "Yangon International Airport",
+    "iata": "RGN",
+    "city": "Yangon",
+    "country": "Burma",
+    "passengers": 5916597
+  },
+  {
+    "rank": 282,
+    "name": "Ciampino–G. B. Pastine International Airport",
+    "iata": "CIA",
+    "city": "Rome",
+    "country": "Italy",
+    "passengers": 5885812
+  },
+  {
+    "rank": 283,
+    "name": "Hannover Airport",
+    "iata": "HAJ",
+    "city": "Hannover",
+    "country": "Germany",
+    "passengers": 5870104
+  },
+  {
+    "rank": 284,
+    "name": "Belfast International Airport",
+    "iata": "BFS",
+    "city": "Belfast",
+    "country": "United Kingdom",
+    "passengers": 5844000
+  },
+  {
+    "rank": 285,
+    "name": "John Paul II International Airport Kraków–Balice",
+    "iata": "KRK",
+    "city": "Krakow",
+    "country": "Poland",
+    "passengers": 5835189
+  },
+  {
+    "rank": 286,
+    "name": "Falcone–Borsellino Airport",
+    "iata": "PMO",
+    "city": "Palermo",
+    "country": "Italy",
+    "passengers": 5775274
+  },
+  {
+    "rank": 287,
+    "name": "José Martí International Airport",
+    "iata": "HAV",
+    "city": "Havana",
+    "country": "Cuba",
+    "passengers": 5713859
+  },
+  {
+    "rank": 288,
+    "name": "Sochi International Airport",
+    "iata": "AER",
+    "city": "Sochi",
+    "country": "Russia",
+    "passengers": 5691822
+  },
+  {
+    "rank": 289,
+    "name": "Tunis Carthage International Airport",
+    "iata": "TUN",
+    "city": "Tunis",
+    "country": "Tunisia",
+    "passengers": 5691037
+  },
+  {
+    "rank": 290,
+    "name": "Sultan Mahmud Badaruddin II Airport",
+    "iata": "PLM",
+    "city": "Palembang",
+    "country": "Indonesia",
+    "passengers": 5677234
+  },
+  {
+    "rank": 291,
+    "name": "Eindhoven Airport",
+    "iata": "EIN",
+    "city": "Eindhoven",
+    "country": "Netherlands",
+    "passengers": 5653402
+  },
+  {
+    "rank": 292,
+    "name": "Xining Caojiabu Airport",
+    "iata": "XNN",
+    "city": "Xining",
+    "country": "China",
+    "passengers": 5627696
+  },
+  {
+    "rank": 293,
+    "name": "Adana Airport",
+    "iata": "ADA",
+    "city": "Adana",
+    "country": "Turkey",
+    "passengers": 5594630
+  },
+  {
+    "rank": 294,
+    "name": "Jacksonville International Airport",
+    "iata": "JAX",
+    "city": "Jacksonville",
+    "country": "United States",
+    "passengers": 5591886
+  },
+  {
+    "rank": 295,
+    "name": "King Shaka International Airport",
+    "iata": "DUR",
+    "city": "Durban",
+    "country": "South Africa",
+    "passengers": 5527747
+  },
+  {
+    "rank": 296,
+    "name": "Nantes Atlantique Airport",
+    "iata": "NTE",
+    "city": "Nantes",
+    "country": "France",
+    "passengers": 5489899
+  },
+  {
+    "rank": 297,
+    "name": "Koltsovo Airport",
+    "iata": "SVX",
+    "city": "Yekaterinburg",
+    "country": "Russia",
+    "passengers": 5404000
+  },
+  {
+    "rank": 298,
+    "name": "Newcastle Airport",
+    "iata": "NCL",
+    "city": "Newcastle",
+    "country": "United Kingdom",
+    "passengers": 5349751
+  },
+  {
+    "rank": 299,
+    "name": "Belgrade Nikola Tesla Airport",
+    "iata": "BEG",
+    "city": "Belgrade",
+    "country": "Serbia",
+    "passengers": 5343420
+  },
+  {
+    "rank": 300,
+    "name": "Rhodes International Airport",
+    "iata": "RHO",
+    "city": "Rhodos",
+    "country": "Greece",
+    "passengers": 5301517
+  },
+  {
+    "rank": 301,
+    "name": "Pisa International Airport",
+    "iata": "PSA",
+    "city": "Pisa",
+    "country": "Italy",
+    "passengers": 5233118
+  },
+  {
+    "rank": 302,
+    "name": "Kagoshima Airport",
+    "iata": "KOJ",
+    "city": "Kagoshima",
+    "country": "Japan",
+    "passengers": 5220710
+  },
+  {
+    "rank": 303,
+    "name": "Simferopol International Airport",
+    "iata": "SIP",
+    "city": "Simferopol",
+    "country": "Ukraine",
+    "passengers": 5128738
+  },
+  {
+    "rank": 304,
+    "name": "Sevilla Airport",
+    "iata": "SVQ",
+    "city": "Sevilla",
+    "country": "Spain",
+    "passengers": 5108807
+  },
+  {
+    "rank": 305,
+    "name": "Kuching International Airport",
+    "iata": "KCH",
+    "city": "Kuching",
+    "country": "Malaysia",
+    "passengers": 5095193
+  },
+  {
+    "rank": 306,
+    "name": "Tolmachevo Airport",
+    "iata": "OVB",
+    "city": "Novosibirsk",
+    "country": "Russia",
+    "passengers": 5007302
+  },
+  {
+    "rank": 307,
+    "name": "Bilbao Airport",
+    "iata": "BIO",
+    "city": "Bilbao",
+    "country": "Spain",
+    "passengers": 4973712
+  },
+  {
+    "rank": 308,
+    "name": "Ted Stevens Anchorage International Airport",
+    "iata": "ANC",
+    "city": "Anchorage",
+    "country": "United States",
+    "passengers": 4966000
+  },
+  {
+    "rank": 309,
+    "name": "Albuquerque International Sunport Airport",
+    "iata": "ABQ",
+    "city": "Albuquerque",
+    "country": "United States",
+    "passengers": 4958417
+  },
+  {
+    "rank": 310,
+    "name": "Liverpool John Lennon Airport",
+    "iata": "LPL",
+    "city": "Liverpool",
+    "country": "United Kingdom",
+    "passengers": 4950000
+  },
+  {
+    "rank": 311,
+    "name": "Cairns International Airport",
+    "iata": "CNS",
+    "city": "Cairns",
+    "country": "Australia",
+    "passengers": 4898189
+  },
+  {
+    "rank": 312,
+    "name": "East Midlands Airport",
+    "iata": "EMA",
+    "city": "East Midlands",
+    "country": "United Kingdom",
+    "passengers": 4875791
+  },
+  {
+    "rank": 313,
+    "name": "Cam Ranh Airport",
+    "iata": "CXR",
+    "city": "Nha Trang",
+    "country": "Vietnam",
+    "passengers": 4858362
+  },
+  {
+    "rank": 314,
+    "name": "Jieyang Chaoshan International Airport",
+    "iata": "SWA",
+    "city": "Shantou",
+    "country": "China",
+    "passengers": 4851015
+  },
+  {
+    "rank": 315,
+    "name": "Ottawa Macdonald–Cartier International Airport",
+    "iata": "YOW",
+    "city": "Ottawa",
+    "country": "Canada",
+    "passengers": 4839677
+  },
+  {
+    "rank": 316,
+    "name": "Buffalo Niagara International Airport",
+    "iata": "BUF",
+    "city": "Buffalo",
+    "country": "United States",
+    "passengers": 4726000
+  },
+  {
+    "rank": 317,
+    "name": "Tenerife Norte Airport",
+    "iata": "TFN",
+    "city": "Santa Cruz de Tenerife",
+    "country": "Spain",
+    "passengers": 4704863
+  },
+  {
+    "rank": 318,
+    "name": "Bari Karol Wojtyła Airport",
+    "iata": "BRI",
+    "city": "Bari",
+    "country": "Italy",
+    "passengers": 4686016
+  },
+  {
+    "rank": 319,
+    "name": "Eppley Airfield",
+    "iata": "OMA",
+    "city": "Omaha",
+    "country": "United States",
+    "passengers": 4611906
+  },
+  {
+    "rank": 320,
+    "name": "Gdańsk Lech Wałęsa Airport",
+    "iata": "GDN",
+    "city": "Gdansk",
+    "country": "Poland",
+    "passengers": 4611714
+  },
+  {
+    "rank": 321,
+    "name": "London City Airport",
+    "iata": "LCY",
+    "city": "London",
+    "country": "United Kingdom",
+    "passengers": 4530439
+  },
+  {
+    "rank": 322,
+    "name": "Sultan Syarif Kasim Ii (Simpang Tiga) Airport",
+    "iata": "PKU",
+    "city": "Pekanbaru",
+    "country": "Indonesia",
+    "passengers": 4465977
+  },
+  {
+    "rank": 323,
+    "name": "Trondheim Airport Værnes",
+    "iata": "TRD",
+    "city": "Trondheim",
+    "country": "Norway",
+    "passengers": 4427733
+  },
+  {
+    "rank": 324,
+    "name": "Dalaman International Airport",
+    "iata": "DLM",
+    "city": "Dalaman",
+    "country": "Turkey",
+    "passengers": 4377101
+  },
+  {
+    "rank": 325,
+    "name": "Juan Santamaria International Airport",
+    "iata": "SJO",
+    "city": "San Jose",
+    "country": "Costa Rica",
+    "passengers": 4369333
+  },
+  {
+    "rank": 326,
+    "name": "Hat Yai International Airport",
+    "iata": "HDY",
+    "city": "Hat Yai",
+    "country": "Thailand",
+    "passengers": 4367364
+  },
+  {
+    "rank": 327,
+    "name": "Menara Airport",
+    "iata": "RAK",
+    "city": "Marrakech",
+    "country": "Morocco",
+    "passengers": 4359865
+  },
+  {
+    "rank": 328,
+    "name": "Jaipur International Airport",
+    "iata": "JAI",
+    "city": "Jaipur",
+    "country": "India",
+    "passengers": 4345927
+  },
+  {
+    "rank": 329,
+    "name": "Winnipeg James Armstrong Richardson International Airport",
+    "iata": "YWG",
+    "city": "Winnipeg",
+    "country": "Canada",
+    "passengers": 4305744
+  },
+  {
+    "rank": 330,
+    "name": "Chaudhary Charan Singh International Airport",
+    "iata": "LKO",
+    "city": "Lucknow",
+    "country": "India",
+    "passengers": 4272024
+  },
+  {
+    "rank": 331,
+    "name": "Lokpriya Gopinath Bordoloi International Airport",
+    "iata": "GAU",
+    "city": "Guwahati",
+    "country": "India",
+    "passengers": 4237474
+  },
+  {
+    "rank": 332,
+    "name": "Achmad Yani Airport",
+    "iata": "SRG",
+    "city": "Semarang",
+    "country": "Indonesia",
+    "passengers": 4224295
+  },
+  {
+    "rank": 333,
+    "name": "Ontario International Airport",
+    "iata": "ONT",
+    "city": "Ontario",
+    "country": "United States",
+    "passengers": 4217366
+  },
+  {
+    "rank": 334,
+    "name": "Nuremberg Airport",
+    "iata": "NUE",
+    "city": "Nuernberg",
+    "country": "Germany",
+    "passengers": 4186961
+  },
+  {
+    "rank": 335,
+    "name": "Stavanger Airport Sola",
+    "iata": "SVG",
+    "city": "Stavanger",
+    "country": "Norway",
+    "passengers": 4177673
+  },
+  {
+    "rank": 336,
+    "name": "Maturín Airport",
+    "iata": "MUN",
+    "city": "Maturin",
+    "country": "Venezuela",
+    "passengers": 4176556
+  },
+  {
+    "rank": 337,
+    "name": "Cagliari Elmas Airport",
+    "iata": "CAG",
+    "city": "Cagliari",
+    "country": "Italy",
+    "passengers": 4157612
+  },
+  {
+    "rank": 338,
+    "name": "Minsk National Airport",
+    "iata": "MSQ",
+    "city": "Minsk",
+    "country": "Belarus",
+    "passengers": 4114512
+  },
+  {
+    "rank": 339,
+    "name": "Halifax Stanfield International Airport",
+    "iata": "YHZ",
+    "city": "Halifax",
+    "country": "Canada",
+    "passengers": 4083188
+  },
+  {
+    "rank": 340,
+    "name": "Krabi Airport",
+    "iata": "KBV",
+    "city": "Krabi",
+    "country": "Thailand",
+    "passengers": 4079564
+  },
+  {
+    "rank": 341,
+    "name": "Leeds Bradford Airport",
+    "iata": "LBA",
+    "city": "Leeds",
+    "country": "United Kingdom",
+    "passengers": 4074500
+  },
+  {
+    "rank": 342,
+    "name": "Hurghada International Airport",
+    "iata": "HRG",
+    "city": "Hurghada",
+    "country": "Egypt",
+    "passengers": 4027291
+  },
+  {
+    "rank": 343,
+    "name": "Trivandrum International Airport",
+    "iata": "TRV",
+    "city": "Trivandrum",
+    "country": "India",
+    "passengers": 4018095
+  },
+  {
+    "rank": 344,
+    "name": "Xishuangbanna Gasa Airport",
+    "iata": "JHG",
+    "city": "Jinghonggasa",
+    "country": "China",
+    "passengers": 3990867
+  },
+  {
+    "rank": 345,
+    "name": "T. F. Green Airport",
+    "iata": "PVD",
+    "city": "Providence",
+    "country": "United States",
+    "passengers": 3937947
+  },
+  {
+    "rank": 346,
+    "name": "Tabing Airport",
+    "iata": "PDG",
+    "city": "Padang",
+    "country": "Indonesia",
+    "passengers": 3937251
+  },
+  {
+    "rank": 347,
+    "name": "Katowice International Airport",
+    "iata": "KTW",
+    "city": "Katowice",
+    "country": "Poland",
+    "passengers": 3892941
+  },
+  {
+    "rank": 348,
+    "name": "Milas Bodrum International Airport",
+    "iata": "BJV",
+    "city": "Bodrum",
+    "country": "Turkey",
+    "passengers": 3877603
+  },
+  {
+    "rank": 349,
+    "name": "Hercílio Luz International Airport",
+    "iata": "FLN",
+    "city": "Florianopolis",
+    "country": "Brazil",
+    "passengers": 3843328
+  },
+  {
+    "rank": 350,
+    "name": "Monastir Habib Bourguiba International Airport",
+    "iata": "MIR",
+    "city": "Monastir",
+    "country": "Tunisia",
+    "passengers": 3831924
+  },
+  {
+    "rank": 351,
+    "name": "Lhasa Gonggar Airport",
+    "iata": "LXA",
+    "city": "Lhasa",
+    "country": "China",
+    "passengers": 3718350
+  },
+  {
+    "rank": 352,
+    "name": "Husein Sastranegara International Airport",
+    "iata": "BDO",
+    "city": "Bandung",
+    "country": "Indonesia",
+    "passengers": 3696175
+  },
+  {
+    "rank": 353,
+    "name": "Lombok International Airport",
+    "iata": "LOP",
+    "city": "Praya",
+    "country": "Indonesia",
+    "passengers": 3677477
+  },
+  {
+    "rank": 354,
+    "name": "Sam Ratulangi Airport",
+    "iata": "MDC",
+    "city": "Manado",
+    "country": "Indonesia",
+    "passengers": 3671997
+  },
+  {
+    "rank": 355,
+    "name": "Syamsudin Noor Airport",
+    "iata": "BDJ",
+    "city": "Banjarmasin",
+    "country": "Indonesia",
+    "passengers": 3613473
+  },
+  {
+    "rank": 356,
+    "name": "Sir Seewoosagur Ramgoolam International Airport",
+    "iata": "MRU",
+    "city": "Plaisance",
+    "country": "Mauritius",
+    "passengers": 3588777
+  },
+  {
+    "rank": 357,
+    "name": "Daegu Airport",
+    "iata": "TAE",
+    "city": "Taegu",
+    "country": "South Korea",
+    "passengers": 3560124
+  },
+  {
+    "rank": 358,
+    "name": "Francisco Bangoy International Airport",
+    "iata": "DVO",
+    "city": "Davao",
+    "country": "Philippines",
+    "passengers": 3553201
+  },
+  {
+    "rank": 359,
+    "name": "Mianyang Airport",
+    "iata": "MIG",
+    "city": "Mianyang",
+    "country": "China",
+    "passengers": 3543403
+  },
+  {
+    "rank": 360,
+    "name": "Shiraz Shahid Dastghaib International Airport",
+    "iata": "SYZ",
+    "city": "Shiraz",
+    "country": "Iran",
+    "passengers": 3530525
+  },
+  {
+    "rank": 361,
+    "name": "Krasnodar Pashkovsky International Airport",
+    "iata": "KRR",
+    "city": "Krasnodar",
+    "country": "Russia",
+    "passengers": 3498126
+  },
+  {
+    "rank": 362,
+    "name": "Nnamdi Azikiwe International Airport",
+    "iata": "ABV",
+    "city": "Abuja",
+    "country": "Nigeria",
+    "passengers": 3462830
+  },
+  {
+    "rank": 363,
+    "name": "Supadio Airport",
+    "iata": "PNK",
+    "city": "Pontianak",
+    "country": "Indonesia",
+    "passengers": 3447254
+  },
+  {
+    "rank": 364,
+    "name": "Menorca Airport",
+    "iata": "MAH",
+    "city": "Menorca",
+    "country": "Spain",
+    "passengers": 3434615
+  },
+  {
+    "rank": 365,
+    "name": "Trabzon International Airport",
+    "iata": "TZX",
+    "city": "Trabzon",
+    "country": "Turkey",
+    "passengers": 3361450
+  },
+  {
+    "rank": 366,
+    "name": "General Mitchell International Airport",
+    "iata": "MKE",
+    "city": "Milwaukee",
+    "country": "United States",
+    "passengers": 3350000
+  },
+  {
+    "rank": 367,
+    "name": "Val de Cans International Airport",
+    "iata": "BEL",
+    "city": "Belem",
+    "country": "Brazil",
+    "passengers": 3311817
+  },
+  {
+    "rank": 368,
+    "name": "Kumamoto Airport",
+    "iata": "KMJ",
+    "city": "Kumamoto",
+    "country": "Japan",
+    "passengers": 3241633
+  },
+  {
+    "rank": 369,
+    "name": "Alejandro Velasco Astete International Airport",
+    "iata": "CUZ",
+    "city": "Cuzco",
+    "country": "Peru",
+    "passengers": 3209153
+  },
+  {
+    "rank": 370,
+    "name": "Cristiano Ronaldo International Airport",
+    "iata": "FNC",
+    "city": "Funchal",
+    "country": "Portugal",
+    "passengers": 3200000
+  },
+  {
+    "rank": 371,
+    "name": "Tbilisi International Airport",
+    "iata": "TBS",
+    "city": "Tbilisi",
+    "country": "Georgia",
+    "passengers": 3164139
+  },
+  {
+    "rank": 372,
+    "name": "Sendai Airport",
+    "iata": "SDJ",
+    "city": "Sendai",
+    "country": "Japan",
+    "passengers": 3152569
+  },
+  {
+    "rank": 373,
+    "name": "Senai International Airport",
+    "iata": "JHB",
+    "city": "Johor Bahru",
+    "country": "Malaysia",
+    "passengers": 3124799
+  },
+  {
+    "rank": 374,
+    "name": "Nagasaki Airport",
+    "iata": "NGS",
+    "city": "Nagasaki",
+    "country": "Japan",
+    "passengers": 3110686
+  },
+  {
+    "rank": 375,
+    "name": "Zagreb Airport",
+    "iata": "ZAG",
+    "city": "Zagreb",
+    "country": "Croatia",
+    "passengers": 3092047
+  },
+  {
+    "rank": 376,
+    "name": "Kona International At Keahole Airport",
+    "iata": "KOA",
+    "city": "Kona",
+    "country": "United States",
+    "passengers": 3088641
+  },
+  {
+    "rank": 377,
+    "name": "Santa Genoveva Airport",
+    "iata": "GYN",
+    "city": "Goiania",
+    "country": "Brazil",
+    "passengers": 3088274
+  },
+  {
+    "rank": 378,
+    "name": "Eurico de Aguiar Salles Airport",
+    "iata": "VIX",
+    "city": "Vitoria",
+    "country": "Brazil",
+    "passengers": 3021949
+  },
+  {
+    "rank": 379,
+    "name": "Luxembourg Airport",
+    "iata": "LUX",
+    "city": "Luxemburg",
+    "country": "Luxembourg",
+    "passengers": 3020000
+  },
+  {
+    "rank": 380,
+    "name": "Phu Quoc International Airport",
+    "iata": "PQC",
+    "city": "Phuquoc",
+    "country": "Vietnam",
+    "passengers": 3000000
+  },
+  {
+    "rank": 381,
+    "name": "Canberra International Airport",
+    "iata": "CBR",
+    "city": "Canberra",
+    "country": "Australia",
+    "passengers": 2995470
+  },
+  {
+    "rank": 382,
+    "name": "El Salvador International Airport",
+    "iata": "SAL",
+    "city": "San Salvador",
+    "country": "El Salvador",
+    "passengers": 2984764
+  },
+  {
+    "rank": 383,
+    "name": "Miyazaki Airport",
+    "iata": "KMI",
+    "city": "Miyazaki",
+    "country": "Japan",
+    "passengers": 2976563
+  },
+  {
+    "rank": 384,
+    "name": "Ahwaz International Airport",
+    "iata": "AWZ",
+    "city": "Ahwaz",
+    "country": "Iran",
+    "passengers": 2939958
+  },
+  {
+    "rank": 385,
+    "name": "Kish International Airport",
+    "iata": "KIH",
+    "city": "Kish Island",
+    "country": "Iran",
+    "passengers": 2926752
+  },
+  {
+    "rank": 386,
+    "name": "Biju Patnaik Airport",
+    "iata": "BBI",
+    "city": "Bhubaneswar",
+    "country": "India",
+    "passengers": 2907867
+  },
+  {
+    "rank": 387,
+    "name": "Calicut International Airport",
+    "iata": "CCJ",
+    "city": "Calicut",
+    "country": "India",
+    "passengers": 2886915
+  },
+  {
+    "rank": 388,
+    "name": "Marechal Rondon Airport",
+    "iata": "CGB",
+    "city": "Cuiaba",
+    "country": "Brazil",
+    "passengers": 2882450
+  },
+  {
+    "rank": 389,
+    "name": "Sultan Abdul Aziz Shah International Airport",
+    "iata": "SZB",
+    "city": "Kuala Lumpur",
+    "country": "Malaysia",
+    "passengers": 2880586
+  },
+  {
+    "rank": 390,
+    "name": "Matsuyama Airport",
+    "iata": "MYJ",
+    "city": "Matsuyama",
+    "country": "Japan",
+    "passengers": 2863239
+  },
+  {
+    "rank": 391,
+    "name": "Long Beach /Daugherty Field/ Airport",
+    "iata": "LGB",
+    "city": "Long Beach",
+    "country": "United States",
+    "passengers": 2852294
+  },
+  {
+    "rank": 392,
+    "name": "Lihue Airport",
+    "iata": "LIH",
+    "city": "Lihue",
+    "country": "United States",
+    "passengers": 2832281
+  },
+  {
+    "rank": 393,
+    "name": "Split Airport",
+    "iata": "SPU",
+    "city": "Split",
+    "country": "Croatia",
+    "passengers": 2818176
+  },
+  {
+    "rank": 394,
+    "name": "Ufa International Airport",
+    "iata": "UFA",
+    "city": "Ufa",
+    "country": "Russia",
+    "passengers": 2814330
+  },
+  {
+    "rank": 395,
+    "name": "El Paso International Airport",
+    "iata": "ELP",
+    "city": "El Paso",
+    "country": "United States",
+    "passengers": 2807734
+  },
+  {
+    "rank": 396,
+    "name": "Billy Bishop Toronto City Centre Airport",
+    "iata": "YTZ",
+    "city": "Toronto",
+    "country": "Canada",
+    "passengers": 2800000
+  },
+  {
+    "rank": 397,
+    "name": "Isfahan International Airport",
+    "iata": "IFN",
+    "city": "Esfahan",
+    "country": "Iran",
+    "passengers": 2784616
+  },
+  {
+    "rank": 398,
+    "name": "Lok Nayak Jayaprakash Airport",
+    "iata": "PAT",
+    "city": "Patina",
+    "country": "India",
+    "passengers": 2781276
+  },
+  {
+    "rank": 399,
+    "name": "Langkawi International Airport",
+    "iata": "LGK",
+    "city": "Langkawi",
+    "country": "Malaysia",
+    "passengers": 2767707
+  },
+  {
+    "rank": 400,
+    "name": "Rostov-on-Don Airport",
+    "iata": "ROV",
+    "city": "Rostov",
+    "country": "Russia",
+    "passengers": 2766000
+  },
+  {
+    "rank": 401,
+    "name": "Ingeniero Ambrosio Taravella Airport",
+    "iata": "COR",
+    "city": "Cordoba",
+    "country": "Argentina",
+    "passengers": 2762393
+  },
+  {
+    "rank": 402,
+    "name": "Orlando Sanford International Airport",
+    "iata": "SFB",
+    "city": "Sanford",
+    "country": "United States",
+    "passengers": 2752410
+  },
+  {
+    "rank": 403,
+    "name": "Cheongju International Airport",
+    "iata": "CJJ",
+    "city": "Chongju",
+    "country": "South Korea",
+    "passengers": 2732755
+  },
+  {
+    "rank": 404,
+    "name": "Kalibo International Airport",
+    "iata": "KLO",
+    "city": "Kalibo",
+    "country": "Philippines",
+    "passengers": 2711036
+  },
+  {
+    "rank": 405,
+    "name": "Hiroshima Airport",
+    "iata": "HIJ",
+    "city": "Hiroshima",
+    "country": "Japan",
+    "passengers": 2669210
+  },
+  {
+    "rank": 406,
+    "name": "Kurumoch International Airport",
+    "iata": "KUF",
+    "city": "Samara",
+    "country": "Russia",
+    "passengers": 2649426
+  },
+  {
+    "rank": 407,
+    "name": "Eduardo Gomes International Airport",
+    "iata": "MAO",
+    "city": "Manaus",
+    "country": "Brazil",
+    "passengers": 2645205
+  },
+  {
+    "rank": 408,
+    "name": "Santiago de Compostela Airport",
+    "iata": "SCQ",
+    "city": "Santiago",
+    "country": "Spain",
+    "passengers": 2644925
+  },
+  {
+    "rank": 409,
+    "name": "Kazan International Airport",
+    "iata": "KZN",
+    "city": "Kazan",
+    "country": "Russia",
+    "passengers": 2623423
+  },
+  {
+    "rank": 410,
+    "name": "La Aurora International Airport",
+    "iata": "GUA",
+    "city": "Guatemala City",
+    "country": "Guatemala",
+    "passengers": 2579123
+  },
+  {
+    "rank": 411,
+    "name": "Kotoka International Airport",
+    "iata": "ACC",
+    "city": "Accra",
+    "country": "Ghana",
+    "passengers": 2547527
+  },
+  {
+    "rank": 412,
+    "name": "Bremen Airport",
+    "iata": "BRE",
+    "city": "Bremen",
+    "country": "Germany",
+    "passengers": 2540084
+  },
+  {
+    "rank": 413,
+    "name": "Sentani International Airport",
+    "iata": "DJJ",
+    "city": "Jayapura",
+    "country": "Indonesia",
+    "passengers": 2533445
+  },
+  {
+    "rank": 414,
+    "name": "Changzhou Benniu Airport",
+    "iata": "CZX",
+    "city": "Changzhou",
+    "country": "China",
+    "passengers": 2510512
+  },
+  {
+    "rank": 415,
+    "name": "Sharm El Sheikh International Airport",
+    "iata": "SSH",
+    "city": "Sharm El Sheikh",
+    "country": "Egypt",
+    "passengers": 2509277
+  },
+  {
+    "rank": 416,
+    "name": "Chiang Rai International Airport",
+    "iata": "CEI",
+    "city": "Chiang Rai",
+    "country": "Thailand",
+    "passengers": 2503375
+  },
+  {
+    "rank": 417,
+    "name": "Samui Airport",
+    "iata": "USM",
+    "city": "Ko Samui",
+    "country": "Thailand",
+    "passengers": 2500000
+  },
+  {
+    "rank": 418,
+    "name": "Julius Nyerere International Airport",
+    "iata": "DAR",
+    "city": "Dar Es Salaam",
+    "country": "Tanzania",
+    "passengers": 2496394
+  },
+  {
+    "rank": 419,
+    "name": "Gaziantep International Airport",
+    "iata": "GZT",
+    "city": "Gaziantep",
+    "country": "Turkey",
+    "passengers": 2480979
+  },
+  {
+    "rank": 420,
+    "name": "Frankfurt-Hahn Airport",
+    "iata": "HHN",
+    "city": "Hahn",
+    "country": "Germany",
+    "passengers": 2471900
+  },
+  {
+    "rank": 421,
+    "name": "Hobart International Airport",
+    "iata": "HBA",
+    "city": "Hobart",
+    "country": "Australia",
+    "passengers": 2440792
+  },
+  {
+    "rank": 422,
+    "name": "Kobe Airport",
+    "iata": "UKB",
+    "city": "Kobe",
+    "country": "Japan",
+    "passengers": 2435110
+  },
+  {
+    "rank": 423,
+    "name": "Quatro de Fevereiro Airport",
+    "iata": "LAD",
+    "city": "Luanda",
+    "country": "Angola",
+    "passengers": 2430794
+  },
+  {
+    "rank": 424,
+    "name": "Governador Aluízio Alves International Airport",
+    "iata": "NAT",
+    "city": "Natal",
+    "country": "Brazil",
+    "passengers": 2403135
+  },
+  {
+    "rank": 425,
+    "name": "Ercan International Airport",
+    "iata": "ECN",
+    "city": "Nicosia",
+    "country": "Cyprus",
+    "passengers": 2400000
+  },
+  {
+    "rank": 426,
+    "name": "Albany International Airport",
+    "iata": "ALB",
+    "city": "Albany",
+    "country": "United States",
+    "passengers": 2393506
+  },
+  {
+    "rank": 427,
+    "name": "Leipzig Halle Airport",
+    "iata": "LEJ",
+    "city": "Leipzig",
+    "country": "Germany",
+    "passengers": 2361534
+  },
+  {
+    "rank": 428,
+    "name": "Udon Thani Airport",
+    "iata": "UTH",
+    "city": "Udon Thani",
+    "country": "Thailand",
+    "passengers": 2350005
+  },
+  {
+    "rank": 429,
+    "name": "Marinduque Airport",
+    "iata": "MRQ",
+    "city": "Gasan",
+    "country": "Philippines",
+    "passengers": 2343346
+  },
+  {
+    "rank": 430,
+    "name": "Dubrovnik Airport",
+    "iata": "DBV",
+    "city": "Dubrovnik",
+    "country": "Croatia",
+    "passengers": 2323065
+  },
+  {
+    "rank": 431,
+    "name": "Makung Airport",
+    "iata": "MZG",
+    "city": "Makung",
+    "country": "Taiwan",
+    "passengers": 2320249
+  },
+  {
+    "rank": 432,
+    "name": "Ishigaki Airport",
+    "iata": "ISG",
+    "city": "Ishigaki",
+    "country": "Japan",
+    "passengers": 2308065
+  },
+  {
+    "rank": 433,
+    "name": "Yemelyanovo Airport",
+    "iata": "KJA",
+    "city": "Krasnoyarsk",
+    "country": "Russia",
+    "passengers": 2297468
+  },
+  {
+    "rank": 434,
+    "name": "Roland Garros Airport",
+    "iata": "RUN",
+    "city": "St.-denis",
+    "country": "Reunion",
+    "passengers": 2293242
+  },
+  {
+    "rank": 435,
+    "name": "Bob Hope Airport",
+    "iata": "BUR",
+    "city": "Burbank",
+    "country": "United States",
+    "passengers": 2282000
+  },
+  {
+    "rank": 436,
+    "name": "Devi Ahilyabai Holkar Airport",
+    "iata": "IDR",
+    "city": "Indore",
+    "country": "India",
+    "passengers": 2256760
+  },
+  {
+    "rank": 437,
+    "name": "Visakhapatnam Airport",
+    "iata": "VTZ",
+    "city": "Vishakhapatnam",
+    "country": "India",
+    "passengers": 2242645
+  },
+  {
+    "rank": 438,
+    "name": "Sheikh ul Alam Airport",
+    "iata": "SXR",
+    "city": "Srinagar",
+    "country": "India",
+    "passengers": 2227863
+  },
+  {
+    "rank": 439,
+    "name": "Miri Airport",
+    "iata": "MYY",
+    "city": "Miri",
+    "country": "Malaysia",
+    "passengers": 2188048
+  },
+  {
+    "rank": 440,
+    "name": "Mineralnyye Vody Airport",
+    "iata": "MRV",
+    "city": "Mineralnye Vody",
+    "country": "Russia",
+    "passengers": 2180178
+  },
+  {
+    "rank": 441,
+    "name": "Vladivostok International Airport",
+    "iata": "VVO",
+    "city": "Vladivostok",
+    "country": "Russia",
+    "passengers": 2179000
+  },
+  {
+    "rank": 442,
+    "name": "Khartoum International Airport",
+    "iata": "KRT",
+    "city": "Khartoum",
+    "country": "Sudan",
+    "passengers": 2178097
+  },
+  {
+    "rank": 443,
+    "name": "Foz do Iguaçu International Airport",
+    "iata": "IGU",
+    "city": "Foz Do Iguacu",
+    "country": "Brazil",
+    "passengers": 2177298
+  },
+  {
+    "rank": 444,
+    "name": "Coimbatore International Airport",
+    "iata": "CJB",
+    "city": "Coimbatore",
+    "country": "India",
+    "passengers": 2175212
+  },
+  {
+    "rank": 445,
+    "name": "Léopold Sédar Senghor International Airport",
+    "iata": "DKR",
+    "city": "Dakar",
+    "country": "Senegal",
+    "passengers": 2114269
+  },
+  {
+    "rank": 446,
+    "name": "Sri Guru Ram Dass Jee International Airport",
+    "iata": "ATQ",
+    "city": "Amritsar",
+    "country": "India",
+    "passengers": 2087118
+  },
+  {
+    "rank": 447,
+    "name": "Diyarbakir Airport",
+    "iata": "DIY",
+    "city": "Diyabakir",
+    "country": "Turkey",
+    "passengers": 2071089
+  },
+  {
+    "rank": 448,
+    "name": "Félix-Houphouët-Boigny International Airport",
+    "iata": "ABJ",
+    "city": "Abidjan",
+    "country": "Cote d'Ivoire",
+    "passengers": 2070000
+  },
+  {
+    "rank": 449,
+    "name": "Zumbi dos Palmares Airport",
+    "iata": "MCZ",
+    "city": "Maceio",
+    "country": "Brazil",
+    "passengers": 2068245
+  },
+  {
+    "rank": 450,
+    "name": "Darwin International Airport",
+    "iata": "DRW",
+    "city": "Darwin",
+    "country": "Australia",
+    "passengers": 2057307
+  },
+  {
+    "rank": 451,
+    "name": "Mangalore International Airport",
+    "iata": "IXE",
+    "city": "Mangalore",
+    "country": "India",
+    "passengers": 2054005
+  },
+  {
+    "rank": 452,
+    "name": "Khabarovsk-Novy Airport",
+    "iata": "KHV",
+    "city": "Khabarovsk",
+    "country": "Russia",
+    "passengers": 2051000
+  },
+  {
+    "rank": 453,
+    "name": "Bagdogra Airport",
+    "iata": "IXB",
+    "city": "Baghdogra",
+    "country": "India",
+    "passengers": 2040765
+  },
+  {
+    "rank": 454,
+    "name": "Surat Thani Airport",
+    "iata": "URT",
+    "city": "Surat Thani",
+    "country": "Thailand",
+    "passengers": 2032042
+  },
+  {
+    "rank": 455,
+    "name": "Irkutsk Airport",
+    "iata": "IKT",
+    "city": "Irkutsk",
+    "country": "Russia",
+    "passengers": 2010000
+  },
+  {
+    "rank": 456,
+    "name": "Dortmund Airport",
+    "iata": "DTM",
+    "city": "Dortmund",
+    "country": "Germany",
+    "passengers": 2000695
+  },
+  {
+    "rank": 457,
+    "name": "Palm Springs International Airport",
+    "iata": "PSP",
+    "city": "Palm Springs",
+    "country": "United States",
+    "passengers": 1998206
+  },
+  {
+    "rank": 458,
+    "name": "Sultan Ismail Petra Airport",
+    "iata": "KBR",
+    "city": "Kota Bahru",
+    "country": "Malaysia",
+    "passengers": 1988212
+  },
+  {
+    "rank": 459,
+    "name": "Nadi International Airport",
+    "iata": "NAN",
+    "city": "Nandi",
+    "country": "Fiji",
+    "passengers": 1984898
+  },
+  {
+    "rank": 460,
+    "name": "Kayseri Erkilet Airport",
+    "iata": "ASR",
+    "city": "Kayseri",
+    "country": "Turkey",
+    "passengers": 1980247
+  },
+  {
+    "rank": 461,
+    "name": "Dr. Babasaheb Ambedkar International Airport",
+    "iata": "NAG",
+    "city": "Nagpur",
+    "country": "India",
+    "passengers": 1976707
+  },
+  {
+    "rank": 462,
+    "name": "Syracuse Hancock International Airport",
+    "iata": "SYR",
+    "city": "Syracuse",
+    "country": "United States",
+    "passengers": 1951370
+  },
+  {
+    "rank": 463,
+    "name": "Girona Airport",
+    "iata": "GRO",
+    "city": "Gerona",
+    "country": "Spain",
+    "passengers": 1946816
+  },
+  {
+    "rank": 464,
+    "name": "Iloilo International Airport",
+    "iata": "ILO",
+    "city": "Iloilo",
+    "country": "Philippines",
+    "passengers": 1943719
+  },
+  {
+    "rank": 465,
+    "name": "Tabriz International Airport",
+    "iata": "TBZ",
+    "city": "Tabriz",
+    "country": "Iran",
+    "passengers": 1942726
+  },
+  {
+    "rank": 466,
+    "name": "Victoria International Airport",
+    "iata": "YYJ",
+    "city": "Victoria",
+    "country": "Canada",
+    "passengers": 1934842
+  },
+  {
+    "rank": 467,
+    "name": "Lal Bahadur Shastri Airport",
+    "iata": "VNS",
+    "city": "Varanasi",
+    "country": "India",
+    "passengers": 1916454
+  },
+  {
+    "rank": 468,
+    "name": "Pangkal Pinang (Depati Amir) Airport",
+    "iata": "PGK",
+    "city": "Pangkal Pinang",
+    "country": "Indonesia",
+    "passengers": 1914006
+  },
+  {
+    "rank": 469,
+    "name": "Kelowna International Airport",
+    "iata": "YLW",
+    "city": "Kelowna",
+    "country": "Canada",
+    "passengers": 1893470
+  },
+  {
+    "rank": 470,
+    "name": "Queenstown International Airport",
+    "iata": "ZQN",
+    "city": "Queenstown International",
+    "country": "New Zealand",
+    "passengers": 1892443
+  },
+  {
+    "rank": 471,
+    "name": "Weeze Airport",
+    "iata": "NRN",
+    "city": "Weeze",
+    "country": "Germany",
+    "passengers": 1885811
+  },
+  {
+    "rank": 472,
+    "name": "Es Senia Airport",
+    "iata": "ORN",
+    "city": "Oran",
+    "country": "Algeria",
+    "passengers": 1851910
+  },
+  {
+    "rank": 473,
+    "name": "Oita Airport",
+    "iata": "OIT",
+    "city": "Oita",
+    "country": "Japan",
+    "passengers": 1849834
+  },
+  {
+    "rank": 474,
+    "name": "João Paulo II Airport",
+    "iata": "PDL",
+    "city": "Ponta Delgada",
+    "country": "Portugal",
+    "passengers": 1849000
+  },
+  {
+    "rank": 475,
+    "name": "Komatsu Airport",
+    "iata": "KMQ",
+    "city": "Kanazawa",
+    "country": "Japan",
+    "passengers": 1844117
+  },
+  {
+    "rank": 476,
+    "name": "Yangzhou Taizhou Airport",
+    "iata": "YTY",
+    "city": "Yangzhou",
+    "country": "China",
+    "passengers": 1836515
+  },
+  {
+    "rank": 477,
+    "name": "Roshchino International Airport",
+    "iata": "TJM",
+    "city": "Tyumen",
+    "country": "Russia",
+    "passengers": 1831654
+  },
+  {
+    "rank": 478,
+    "name": "Princess Juliana International Airport",
+    "iata": "SXM",
+    "city": "Philipsburg",
+    "country": "Netherlands Antilles",
+    "passengers": 1829543
+  },
+  {
+    "rank": 479,
+    "name": "Takamatsu Airport",
+    "iata": "TAK",
+    "city": "Takamatsu",
+    "country": "Japan",
+    "passengers": 1809820
+  },
+  {
+    "rank": 480,
+    "name": "Vinh Airport",
+    "iata": "VII",
+    "city": "Vinh",
+    "country": "Vietnam",
+    "passengers": 1800000
+  },
+  {
+    "rank": 481,
+    "name": "Ubon Ratchathani Airport",
+    "iata": "UBP",
+    "city": "Ubon Ratchathani",
+    "country": "Thailand",
+    "passengers": 1791828
+  },
+  {
+    "rank": 482,
+    "name": "Cat Bi International Airport",
+    "iata": "HPH",
+    "city": "Haiphong",
+    "country": "Vietnam",
+    "passengers": 1787300
+  },
+  {
+    "rank": 483,
+    "name": "Portland International Jetport Airport",
+    "iata": "PWM",
+    "city": "Portland",
+    "country": "United States",
+    "passengers": 1785649
+  },
+  {
+    "rank": 484,
+    "name": "Khrabrovo Airport",
+    "iata": "KGD",
+    "city": "Kaliningrad",
+    "country": "Russia",
+    "passengers": 1780000
+  },
+  {
+    "rank": 485,
+    "name": "Cagayan De Oro Airport",
+    "iata": "CGY",
+    "city": "Ladag",
+    "country": "Philippines",
+    "passengers": 1776353
+  },
+  {
+    "rank": 486,
+    "name": "Borg El Arab Airport",
+    "iata": "HBE",
+    "city": "Alexandria",
+    "country": "Egypt",
+    "passengers": 1774163
+  },
+  {
+    "rank": 487,
+    "name": "Hakodate Airport",
+    "iata": "HKD",
+    "city": "Hakodate",
+    "country": "Japan",
+    "passengers": 1772052
+  },
+  {
+    "rank": 488,
+    "name": "Phu Bai Airport",
+    "iata": "HUI",
+    "city": "Hue",
+    "country": "Vietnam",
+    "passengers": 1750000
+  },
+  {
+    "rank": 489,
+    "name": "Surgut Airport",
+    "iata": "SGC",
+    "city": "Surgut",
+    "country": "Russia",
+    "passengers": 1723312
+  },
+  {
+    "rank": 490,
+    "name": "El Plumerillo Airport",
+    "iata": "MDZ",
+    "city": "Mendoza",
+    "country": "Argentina",
+    "passengers": 1717419
+  },
+  {
+    "rank": 491,
+    "name": "Samsun Çarşamba Airport",
+    "iata": "SZF",
+    "city": "Samsun",
+    "country": "Turkey",
+    "passengers": 1716993
+  },
+  {
+    "rank": 492,
+    "name": "Porto Seguro Airport",
+    "iata": "BPS",
+    "city": "Porto Seguro",
+    "country": "Brazil",
+    "passengers": 1716037
+  },
+  {
+    "rank": 493,
+    "name": "Dresden Airport",
+    "iata": "DRS",
+    "city": "Dresden",
+    "country": "Germany",
+    "passengers": 1706563
+  },
+  {
+    "rank": 494,
+    "name": "Khon Kaen Airport",
+    "iata": "KKC",
+    "city": "Khon Kaen",
+    "country": "Thailand",
+    "passengers": 1703209
+  },
+  {
+    "rank": 495,
+    "name": "Ljubljana Jože Pučnik Airport",
+    "iata": "LJU",
+    "city": "Ljubljana",
+    "country": "Slovenia",
+    "passengers": 1683045
+  },
+  {
+    "rank": 496,
+    "name": "Québec City Jean Lesage International Airport",
+    "iata": "YQB",
+    "city": "Quebec",
+    "country": "Canada",
+    "passengers": 1670880
+  },
+  {
+    "rank": 497,
+    "name": "Zakynthos International Airport",
+    "iata": "ZTH",
+    "city": "Zakynthos",
+    "country": "Greece",
+    "passengers": 1659646
+  },
+  {
+    "rank": 498,
+    "name": "Pensacola Regional Airport",
+    "iata": "PNS",
+    "city": "Pensacola",
+    "country": "United States",
+    "passengers": 1650000
+  },
+  {
+    "rank": 499,
+    "name": "Puerto Princesa Airport",
+    "iata": "PPS",
+    "city": "Puerto Princesa",
+    "country": "Philippines",
+    "passengers": 1644003
+  },
+  {
+    "rank": 500,
+    "name": "Sultan Thaha Airport",
+    "iata": "DJB",
+    "city": "Jambi",
+    "country": "Indonesia",
+    "passengers": 1639873
+  },
+  {
+    "rank": 501,
+    "name": "Rodríguez Ballón International Airport",
+    "iata": "AQP",
+    "city": "Arequipa",
+    "country": "Peru",
+    "passengers": 1634090
+  },
+  {
+    "rank": 502,
+    "name": "Manchester Airport",
+    "iata": "MHT",
+    "city": "Manchester NH",
+    "country": "United States",
+    "passengers": 1630000
+  },
+  {
+    "rank": 503,
+    "name": "Port Elizabeth International Airport",
+    "iata": "PLZ",
+    "city": "Port Elizabeth",
+    "country": "South Africa",
+    "passengers": 1620705
+  },
+  {
+    "rank": 504,
+    "name": "Gwangju Airport",
+    "iata": "KWJ",
+    "city": "Kwangju",
+    "country": "South Korea",
+    "passengers": 1613775
+  },
+  {
+    "rank": 505,
+    "name": "Poznań-Ławica Airport",
+    "iata": "POZ",
+    "city": "Poznan",
+    "country": "Poland",
+    "passengers": 1611074
+  },
+  {
+    "rank": 506,
+    "name": "Marechal Cunha Machado International Airport",
+    "iata": "SLZ",
+    "city": "Sao Luis",
+    "country": "Brazil",
+    "passengers": 1601836
+  },
+  {
+    "rank": 507,
+    "name": "Lien Khuong Airport",
+    "iata": "DLI",
+    "city": "Dalat",
+    "country": "Vietnam",
+    "passengers": 1600000
+  },
+  {
+    "rank": 508,
+    "name": "Ministro Victor Konder International Airport",
+    "iata": "NVT",
+    "city": "Navegantes",
+    "country": "Brazil",
+    "passengers": 1588921
+  },
+  {
+    "rank": 509,
+    "name": "Agadir–Al Massira Airport",
+    "iata": "AGA",
+    "city": "Agadir",
+    "country": "Morocco",
+    "passengers": 1544160
+  },
+  {
+    "rank": 510,
+    "name": "Campo Grande Airport",
+    "iata": "CGR",
+    "city": "Campo Grande",
+    "country": "Brazil",
+    "passengers": 1536838
+  },
+  {
+    "rank": 511,
+    "name": "Augusto C. Sandino (Managua) International Airport",
+    "iata": "MGA",
+    "city": "Managua",
+    "country": "Nicaragua",
+    "passengers": 1533034
+  },
+  {
+    "rank": 512,
+    "name": "Entebbe International Airport",
+    "iata": "EBB",
+    "city": "Entebbe",
+    "country": "Uganda",
+    "passengers": 1530031
+  },
+  {
+    "rank": 513,
+    "name": "Adi Sumarmo Wiryokusumo Airport",
+    "iata": "SOC",
+    "city": "Solo City",
+    "country": "Indonesia",
+    "passengers": 1525013
+  },
+  {
+    "rank": 514,
+    "name": "El Tari Airport",
+    "iata": "KOE",
+    "city": "Kupang",
+    "country": "Indonesia",
+    "passengers": 1523342
+  },
+  {
+    "rank": 515,
+    "name": "Chelyabinsk Balandino Airport",
+    "iata": "CEK",
+    "city": "Chelyabinsk",
+    "country": "Russia",
+    "passengers": 1517000
+  },
+  {
+    "rank": 516,
+    "name": "Clark International Airport",
+    "iata": "CRK",
+    "city": "Angeles City",
+    "country": "Philippines",
+    "passengers": 1514531
+  },
+  {
+    "rank": 517,
+    "name": "Nakhon Si Thammarat Airport",
+    "iata": "NST",
+    "city": "Nakhon Si Thammarat",
+    "country": "Thailand",
+    "passengers": 1503463
+  },
+  {
+    "rank": 518,
+    "name": "Douala International Airport",
+    "iata": "DLA",
+    "city": "Douala",
+    "country": "Cameroon",
+    "passengers": 1500000
+  },
+  {
+    "rank": 519,
+    "name": "Bacolod-Silay City International Airport",
+    "iata": "BCD",
+    "city": "Bacolod",
+    "country": "Philippines",
+    "passengers": 1498741
+  },
+  {
+    "rank": 520,
+    "name": "Townsville Airport",
+    "iata": "TSV",
+    "city": "Townsville",
+    "country": "Australia",
+    "passengers": 1497946
+  },
+  {
+    "rank": 521,
+    "name": "Sibu Airport",
+    "iata": "SBW",
+    "city": "Sibu",
+    "country": "Malaysia",
+    "passengers": 1497412
+  },
+  {
+    "rank": 522,
+    "name": "Westchester County Airport",
+    "iata": "HPN",
+    "city": "White Plains",
+    "country": "United States",
+    "passengers": 1468851
+  },
+  {
+    "rank": 523,
+    "name": "Saskatoon John G. Diefenbaker International Airport",
+    "iata": "YXE",
+    "city": "Saskatoon",
+    "country": "Canada",
+    "passengers": 1462751
+  },
+  {
+    "rank": 524,
+    "name": "Radin Inten II (Branti) Airport",
+    "iata": "TKG",
+    "city": "Bandar Lampung-Sumatra Island",
+    "country": "Indonesia",
+    "passengers": 1419342
+  },
+  {
+    "rank": 525,
+    "name": "Asturias Airport",
+    "iata": "OVD",
+    "city": "Aviles",
+    "country": "Spain",
+    "passengers": 1407217
+  },
+  {
+    "rank": 526,
+    "name": "Van Ferit Melen Airport",
+    "iata": "VAN",
+    "city": "Van",
+    "country": "Turkey",
+    "passengers": 1394328
+  },
+  {
+    "rank": 527,
+    "name": "Okayama Airport",
+    "iata": "OKJ",
+    "city": "Okayama",
+    "country": "Japan",
+    "passengers": 1391723
+  },
+  {
+    "rank": 528,
+    "name": "Presidente Castro Pinto International Airport",
+    "iata": "JPA",
+    "city": "Joao Pessoa",
+    "country": "Brazil",
+    "passengers": 1387496
+  },
+  {
+    "rank": 529,
+    "name": "Tawau Airport",
+    "iata": "TWU",
+    "city": "Tawau",
+    "country": "Malaysia",
+    "passengers": 1374893
+  },
+  {
+    "rank": 530,
+    "name": "Anapa Vityazevo Airport",
+    "iata": "AAQ",
+    "city": "Anapa",
+    "country": "Russia",
+    "passengers": 1364000
+  },
+  {
+    "rank": 531,
+    "name": "Tiruchirapally Civil Airport Airport",
+    "iata": "TRZ",
+    "city": "Tiruchirappalli",
+    "country": "India",
+    "passengers": 1359447
+  },
+  {
+    "rank": 532,
+    "name": "Djerba–Zarzis International Airport",
+    "iata": "DJE",
+    "city": "Djerba",
+    "country": "Tunisia",
+    "passengers": 1354502
+  },
+  {
+    "rank": 533,
+    "name": "Kōchi Ryōma Airport",
+    "iata": "KCZ",
+    "city": "Kochi",
+    "country": "Japan",
+    "passengers": 1350930
+  },
+  {
+    "rank": 534,
+    "name": "Bolshoye Savino Airport",
+    "iata": "PEE",
+    "city": "Perm",
+    "country": "Russia",
+    "passengers": 1338373
+  },
+  {
+    "rank": 535,
+    "name": "Miyako Airport",
+    "iata": "MMY",
+    "city": "Miyako",
+    "country": "Japan",
+    "passengers": 1335697
+  },
+  {
+    "rank": 536,
+    "name": "Shubuling Airport",
+    "iata": "LYI",
+    "city": "Linyi",
+    "country": "China",
+    "passengers": 1328071
+  },
+  {
+    "rank": 537,
+    "name": "Hilo International Airport",
+    "iata": "ITO",
+    "city": "Hilo",
+    "country": "United States",
+    "passengers": 1327245
+  },
+  {
+    "rank": 538,
+    "name": "Pattimura Airport",
+    "iata": "Ambon",
+    "city": "AMQ",
+    "country": "Ambon",
+    "passengers": "Indonesia"
+  },
+  {
+    "rank": 539,
+    "name": "Kitakyūshū Airport",
+    "iata": "KKJ",
+    "city": "Kitakyushu",
+    "country": "Japan",
+    "passengers": 1317504
+  },
+  {
+    "rank": 540,
+    "name": "Mombasa Moi International Airport",
+    "iata": "MBA",
+    "city": "Mombasa",
+    "country": "Kenya",
+    "passengers": 1313168
+  },
+  {
+    "rank": 541,
+    "name": "La Palma Airport",
+    "iata": "SPC",
+    "city": "Santa Cruz De La Palma",
+    "country": "Spain",
+    "passengers": 1302485
+  },
+  {
+    "rank": 542,
+    "name": "Mandalay International Airport",
+    "iata": "MDL",
+    "city": "Mandalay",
+    "country": "Burma",
+    "passengers": 1290000
+  },
+  {
+    "rank": 543,
+    "name": "Bandar Abbas International Airport",
+    "iata": "BND",
+    "city": "Bandar Abbas",
+    "country": "Iran",
+    "passengers": 1289063
+  },
+  {
+    "rank": 544,
+    "name": "San Carlos De Bariloche Airport",
+    "iata": "BRC",
+    "city": "San Carlos De Bariloche",
+    "country": "Argentina",
+    "passengers": 1279524
+  },
+  {
+    "rank": 545,
+    "name": "Launceston Airport",
+    "iata": "LST",
+    "city": "Launceston",
+    "country": "Australia",
+    "passengers": 1272198
+  },
+  {
+    "rank": 546,
+    "name": "Karlsruhe Baden-Baden Airport",
+    "iata": "FKB",
+    "city": "Karlsruhe/Baden-Baden",
+    "country": "Germany",
+    "passengers": 1240551
+  },
+  {
+    "rank": 547,
+    "name": "Akita Airport",
+    "iata": "AXT",
+    "city": "Akita",
+    "country": "Japan",
+    "passengers": 1238082
+  },
+  {
+    "rank": 548,
+    "name": "Santa Maria Airport",
+    "iata": "AJU",
+    "city": "Aracaju",
+    "country": "Brazil",
+    "passengers": 1225789
+  },
+  {
+    "rank": 549,
+    "name": "Port Harcourt International Airport",
+    "iata": "PHC",
+    "city": "Port Hartcourt",
+    "country": "Nigeria",
+    "passengers": 1223807
+  },
+  {
+    "rank": 550,
+    "name": "Regina International Airport",
+    "iata": "YQR",
+    "city": "Regina",
+    "country": "Canada",
+    "passengers": 1219311
+  },
+  {
+    "rank": 551,
+    "name": "San Javier Airport",
+    "iata": "MJV",
+    "city": "Murcia",
+    "country": "Spain",
+    "passengers": 1196605
+  },
+  {
+    "rank": 552,
+    "name": "Sarasota Bradenton International Airport",
+    "iata": "SRQ",
+    "city": "Sarasota",
+    "country": "United States",
+    "passengers": 1186419
+  },
+  {
+    "rank": 553,
+    "name": "Greater Rochester International Airport",
+    "iata": "ROC",
+    "city": "Rochester",
+    "country": "United States",
+    "passengers": 1186002
+  },
+  {
+    "rank": 554,
+    "name": "Agartala Airport",
+    "iata": "IXA",
+    "city": "Agartala",
+    "country": "India",
+    "passengers": 1184867
+  },
+  {
+    "rank": 555,
+    "name": "Daniel Z. Romualdez Airport",
+    "iata": "TAC",
+    "city": "Tacloban",
+    "country": "Philippines",
+    "passengers": 1182951
+  },
+  {
+    "rank": 556,
+    "name": "Daniel Oduber Quiros International Airport",
+    "iata": "LIR",
+    "city": "Liberia",
+    "country": "Costa Rica",
+    "passengers": 1182123
+  },
+  {
+    "rank": 557,
+    "name": "Silvio Pettirossi International Airport",
+    "iata": "ASU",
+    "city": "Asuncion",
+    "country": "Paraguay",
+    "passengers": 1180111
+  },
+  {
+    "rank": 558,
+    "name": "Memmingen Airport",
+    "iata": "FMM",
+    "city": "Memmingen",
+    "country": "Germany",
+    "passengers": 1179875
+  },
+  {
+    "rank": 559,
+    "name": "Hatay Airport",
+    "iata": "HTY",
+    "city": "Hatay",
+    "country": "Turkey",
+    "passengers": 1171484
+  },
+  {
+    "rank": 560,
+    "name": "Jammu Airport",
+    "iata": "IXJ",
+    "city": "Jammu",
+    "country": "India",
+    "passengers": 1159937
+  },
+  {
+    "rank": 561,
+    "name": "Burlington International Airport",
+    "iata": "BTV",
+    "city": "Burlington",
+    "country": "United States",
+    "passengers": 1151000
+  },
+  {
+    "rank": 562,
+    "name": "Asahikawa Airport",
+    "iata": "AKJ",
+    "city": "Asahikawa",
+    "country": "Japan",
+    "passengers": 1148825
+  },
+  {
+    "rank": 563,
+    "name": "Newcastle Airport",
+    "iata": "NTL",
+    "city": "Newcastle",
+    "country": "Australia",
+    "passengers": 1142997
+  },
+  {
+    "rank": 564,
+    "name": "A Coruña Airport",
+    "iata": "LCG",
+    "city": "La Coruna",
+    "country": "Spain",
+    "passengers": 1141242
+  },
+  {
+    "rank": 565,
+    "name": "Balıkesir Körfez Airport",
+    "iata": "EDO",
+    "city": "Balikesir Korfez",
+    "country": "Turkey",
+    "passengers": 1115595
+  },
+  {
+    "rank": 566,
+    "name": "Bijie Feixiong Airport",
+    "iata": "BFJ",
+    "city": "Bijie",
+    "country": "China",
+    "passengers": 1110613
+  },
+  {
+    "rank": 567,
+    "name": "Senador Petrônio Portela Airport",
+    "iata": "THE",
+    "city": "Teresina",
+    "country": "Brazil",
+    "passengers": 1104451
+  },
+  {
+    "rank": 568,
+    "name": "Vadodara Airport",
+    "iata": "BDQ",
+    "city": "Baroda",
+    "country": "India",
+    "passengers": 1103981
+  },
+  {
+    "rank": 569,
+    "name": "Ten. Cel. Aviador César Bombonato Airport",
+    "iata": "UDI",
+    "city": "Uberlandia",
+    "country": "Brazil",
+    "passengers": 1102569
+  },
+  {
+    "rank": 570,
+    "name": "Martin Miguel De Guemes International Airport",
+    "iata": "SLA",
+    "city": "Salta",
+    "country": "Argentina",
+    "passengers": 1095104
+  },
+  {
+    "rank": 571,
+    "name": "Amílcar Cabral International Airport",
+    "iata": "SID",
+    "city": "Amilcar Cabral",
+    "country": "Cape Verde",
+    "passengers": 1093059
+  },
+  {
+    "rank": 572,
+    "name": "Maharana Pratap Airport",
+    "iata": "UDR",
+    "city": "Udaipur",
+    "country": "India",
+    "passengers": 1089899
+  },
+  {
+    "rank": 573,
+    "name": "Erzurum International Airport",
+    "iata": "ERZ",
+    "city": "Erzurum",
+    "country": "Turkey",
+    "passengers": 1085117
+  },
+  {
+    "rank": 574,
+    "name": "Zamboanga International Airport",
+    "iata": "ZAM",
+    "city": "Zamboanga",
+    "country": "Philippines",
+    "passengers": 1076000
+  },
+  {
+    "rank": 575,
+    "name": "Tangier Ibn Batouta Airport",
+    "iata": "TNG",
+    "city": "Tanger",
+    "country": "Morocco",
+    "passengers": 1070247
+  },
+  {
+    "rank": 576,
+    "name": "Konya Airport",
+    "iata": "KYA",
+    "city": "Konya",
+    "country": "Turkey",
+    "passengers": 1067753
+  },
+  {
+    "rank": 577,
+    "name": "Uytash Airport",
+    "iata": "MCX",
+    "city": "Makhachkala",
+    "country": "Russia",
+    "passengers": 1067685
+  },
+  {
+    "rank": 578,
+    "name": "Vigo Airport",
+    "iata": "VGO",
+    "city": "Vigo",
+    "country": "Spain",
+    "passengers": 1065595
+  },
+  {
+    "rank": 579,
+    "name": "Jerez Airport",
+    "iata": "XRY",
+    "city": "Jerez",
+    "country": "Spain",
+    "passengers": 1046251
+  },
+  {
+    "rank": 580,
+    "name": "Birsa Munda Airport",
+    "iata": "IXR",
+    "city": "Ranchi",
+    "country": "India",
+    "passengers": 1035740
+  },
+  {
+    "rank": 581,
+    "name": "Reus Air Base",
+    "iata": "REU",
+    "city": "Reus",
+    "country": "Spain",
+    "passengers": 1022964
+  },
+  {
+    "rank": 582,
+    "name": "Volgograd International Airport",
+    "iata": "VOG",
+    "city": "Volgograd",
+    "country": "Russia",
+    "passengers": 1013985
+  },
+  {
+    "rank": 583,
+    "name": "Almería International Airport",
+    "iata": "LEI",
+    "city": "Almeria",
+    "country": "Spain",
+    "passengers": 1007446
+  },
+  {
+    "rank": 584,
+    "name": "Juwata Airport",
+    "iata": "TRK",
+    "city": "Taraken",
+    "country": "Indonesia",
+    "passengers": 1002484
+  },
+  {
+    "rank": 585,
+    "name": "Nelson Airport",
+    "iata": "NSN",
+    "city": "Nelson",
+    "country": "New Zealand",
+    "passengers": 1000373
+  },
+  {
+    "rank": 586,
+    "name": "Tokushima Airport",
+    "iata": "TKS",
+    "city": "Tokushima",
+    "country": "Japan",
+    "passengers": 1000121
+  },
+  {
+    "rank": 587,
+    "name": "Cataratas del Iguazú International Airport",
+    "iata": "IGR",
+    "city": "Iguazu Falls",
+    "country": "Argentina",
+    "passengers": 99846
+  },
+  {
+    "rank": 588,
+    "name": "Aomori Airport",
+    "iata": "AOJ",
+    "city": "Aomori",
+    "country": "Japan",
+    "passengers": 992696
+  },
+  {
+    "rank": 589,
+    "name": "Yuzhno-Sakhalinsk Airport",
+    "iata": "UUS",
+    "city": "Yuzhno-sakhalinsk",
+    "country": "Russia",
+    "passengers": 9852
+  },
+  {
+    "rank": 590,
+    "name": "Niigata Airport",
+    "iata": "KIJ",
+    "city": "Niigata",
+    "country": "Japan",
+    "passengers": 984629
+  },
+  {
+    "rank": 591,
+    "name": "Madurai Airport",
+    "iata": "IXM",
+    "city": "Madurai",
+    "country": "India",
+    "passengers": 978919
+  },
+  {
+    "rank": 592,
+    "name": "Dunedin Airport",
+    "iata": "DUD",
+    "city": "Dunedin",
+    "country": "New Zealand",
+    "passengers": 973089
+  },
+  {
+    "rank": 593,
+    "name": "Nizhny Novgorod Strigino International Airport",
+    "iata": "GOJ",
+    "city": "Nizhniy Novgorod",
+    "country": "Russia",
+    "passengers": 966
+  },
+  {
+    "rank": 594,
+    "name": "St Petersburg Clearwater International Airport",
+    "iata": "PIE",
+    "city": "St. Petersburg",
+    "country": "United States",
+    "passengers": 965
+  },
+  {
+    "rank": 595,
+    "name": "Omsk Central Airport",
+    "iata": "OMS",
+    "city": "Omsk",
+    "country": "Russia",
+    "passengers": 9636
+  },
+  {
+    "rank": 596,
+    "name": "Münster Osnabrück Airport",
+    "iata": "FMO",
+    "city": "Munster",
+    "country": "Germany",
+    "passengers": 962348
+  },
+  {
+    "rank": 597,
+    "name": "Sarajevo International Airport",
+    "iata": "SJJ",
+    "city": "Sarajevo",
+    "country": "Bosnia and Herzegovina",
+    "passengers": 957971
+  },
+  {
+    "rank": 598,
+    "name": "Elazığ Airport",
+    "iata": "EZS",
+    "city": "Elazig",
+    "country": "Turkey",
+    "passengers": 955988
+  },
+  {
+    "rank": 599,
+    "name": "Sultan Mahmud Airport",
+    "iata": "TGG",
+    "city": "Kuala Terengganu",
+    "country": "Malaysia",
+    "passengers": 94366
+  },
+  {
+    "rank": 600,
+    "name": "Novy Urengoy Airport",
+    "iata": "NUX",
+    "city": "Novy Urengoy",
+    "country": "Russia",
+    "passengers": 939625
+  },
+  {
+    "rank": 601,
+    "name": "Santander Airport",
+    "iata": "SDR",
+    "city": "Santander",
+    "country": "Spain",
+    "passengers": 937641
+  },
+  {
+    "rank": 602,
+    "name": "Abeid Amani Karume International Airport",
+    "iata": "ZNZ",
+    "city": "Zanzibar",
+    "country": "Tanzania",
+    "passengers": 934337
+  },
+  {
+    "rank": 603,
+    "name": "Coronel FAP Francisco Secada Vignetta International Airport",
+    "iata": "IQT",
+    "city": "Iquitos",
+    "country": "Peru",
+    "passengers": 934031
+  },
+  {
+    "rank": 604,
+    "name": "Mackay Airport",
+    "iata": "MKY",
+    "city": "Mackay",
+    "country": "Australia",
+    "passengers": 928354
+  },
+  {
+    "rank": 605,
+    "name": "Yamaguchi Ube Airport",
+    "iata": "UBJ",
+    "city": "Yamaguchi",
+    "country": "Japan",
+    "passengers": 918238
+  },
+  {
+    "rank": 606,
+    "name": "Gazipaşa Airport",
+    "iata": "GZP",
+    "city": "Alanya",
+    "country": "Turkey",
+    "passengers": 915046
+  },
+  {
+    "rank": 607,
+    "name": "Northwest Florida Beaches International Airport",
+    "iata": "ECP",
+    "city": "Panama City",
+    "country": "United States",
+    "passengers": 910
+  },
+  {
+    "rank": 608,
+    "name": "Presidente Peron Airport",
+    "iata": "NQN",
+    "city": "Neuquen",
+    "country": "Argentina",
+    "passengers": 90798
+  },
+  {
+    "rank": 609,
+    "name": "Al Maktoum International Airport",
+    "iata": "DWC",
+    "city": "Dubai",
+    "country": "United Arab Emirates",
+    "passengers": 90494
+  },
+  {
+    "rank": 610,
+    "name": "Yakutsk Airport",
+    "iata": "YKS",
+    "city": "Yakutsk",
+    "country": "Russia",
+    "passengers": 902463
+  },
+  {
+    "rank": 611,
+    "name": "Federico Garcia Lorca Airport",
+    "iata": "GRX",
+    "city": "Granada",
+    "country": "Spain",
+    "passengers": 901961
+  },
+  {
+    "rank": 612,
+    "name": "Port Moresby Jacksons International Airport",
+    "iata": "POM",
+    "city": "Port Moresby",
+    "country": "Papua New Guinea",
+    "passengers": 900
+  },
+  {
+    "rank": 613,
+    "name": "Sandakan Airport",
+    "iata": "SDK",
+    "city": "Sandakan",
+    "country": "Malaysia",
+    "passengers": 896347
+  },
+  {
+    "rank": 614,
+    "name": "Talagi Airport",
+    "iata": "ARH",
+    "city": "Arkhangelsk",
+    "country": "Russia",
+    "passengers": 8934
+  },
+  {
+    "rank": 615,
+    "name": "Imphal Airport",
+    "iata": "IMF",
+    "city": "Imphal",
+    "country": "India",
+    "passengers": 886338
+  },
+  {
+    "rank": 616,
+    "name": "Dehradun Airport",
+    "iata": "DED",
+    "city": "Dehra Dun",
+    "country": "India",
+    "passengers": 882564
+  },
+  {
+    "rank": 617,
+    "name": "Governador José Richa Airport",
+    "iata": "LDB",
+    "city": "Londrina",
+    "country": "Brazil",
+    "passengers": 880429
+  },
+  {
+    "rank": 618,
+    "name": "Luoyang Airport",
+    "iata": "LYA",
+    "city": "Luoyang",
+    "country": "China",
+    "passengers": 880253
+  },
+  {
+    "rank": 619,
+    "name": "Tagbilaran Airport",
+    "iata": "TAG",
+    "city": "Tagbilaran",
+    "country": "Philippines",
+    "passengers": 871383
+  },
+  {
+    "rank": 620,
+    "name": "Philip S. W. Goldson International Airport",
+    "iata": "BZE",
+    "city": "Belize City",
+    "country": "Belize",
+    "passengers": 867976
+  },
+  {
+    "rank": 621,
+    "name": "Ramón Villeda Morales International Airport",
+    "iata": "SAP",
+    "city": "San Pedro Sula",
+    "country": "Honduras",
+    "passengers": 867747
+  },
+  {
+    "rank": 622,
+    "name": "Leite Lopes Airport",
+    "iata": "RAO",
+    "city": "Ribeirao Preto",
+    "country": "Brazil",
+    "passengers": 867544
+  },
+  {
+    "rank": 623,
+    "name": "Buon Ma Thuot Airport",
+    "iata": "BMV",
+    "city": "Buonmethuot",
+    "country": "Vietnam",
+    "passengers": 860
+  },
+  {
+    "rank": 624,
+    "name": "Abdul Rachman Saleh Airport",
+    "iata": "MLG",
+    "city": "Malang",
+    "country": "Indonesia",
+    "passengers": 859
+  },
+  {
+    "rank": 625,
+    "name": "Persian Gulf Airport",
+    "iata": "PGU",
+    "city": "Khalije Fars",
+    "country": "Iran",
+    "passengers": 85299
+  },
+  {
+    "rank": 626,
+    "name": "Bintulu Airport",
+    "iata": "BTU",
+    "city": "Bintulu",
+    "country": "Malaysia",
+    "passengers": 849596
+  },
+  {
+    "rank": 627,
+    "name": "Capitán FAP Guillermo Concha Iberico International Airport",
+    "iata": "PIU",
+    "city": "Piura",
+    "country": "Peru",
+    "passengers": 849388
+  },
+  {
+    "rank": 628,
+    "name": "Sunshine Coast Airport",
+    "iata": "MCY",
+    "city": "Maroochydore",
+    "country": "Australia",
+    "passengers": 847906
+  },
+  {
+    "rank": 629,
+    "name": "Murmansk Airport",
+    "iata": "MMK",
+    "city": "Murmansk",
+    "country": "Russia",
+    "passengers": 84644
+  },
+  {
+    "rank": 630,
+    "name": "Kermanshah Airport",
+    "iata": "KER",
+    "city": "Kerman",
+    "country": "Iran",
+    "passengers": 846317
+  },
+  {
+    "rank": 631,
+    "name": "General Santos International Airport",
+    "iata": "GES",
+    "city": "Romblon",
+    "country": "Philippines",
+    "passengers": 838941
+  },
+  {
+    "rank": 632,
+    "name": "Izumo Airport",
+    "iata": "IZO",
+    "city": "Izumo",
+    "country": "Japan",
+    "passengers": 832825
+  },
+  {
+    "rank": 633,
+    "name": "Fresno Yosemite International Airport",
+    "iata": "FAT",
+    "city": "Fresno",
+    "country": "United States",
+    "passengers": 805252
+  },
+  {
+    "rank": 634,
+    "name": "Sultan Abdul Halim Airport",
+    "iata": "AOR",
+    "city": "Alor Setar",
+    "country": "Malaysia",
+    "passengers": 802304
+  },
+  {
+    "rank": 635,
+    "name": "Trang Airport",
+    "iata": "TST",
+    "city": "Trang",
+    "country": "Thailand",
+    "passengers": 799279
+  },
+  {
+    "rank": 636,
+    "name": "Malvinas Argentinas Airport",
+    "iata": "USH",
+    "city": "Ushuaia",
+    "country": "Argentina",
+    "passengers": 795652
+  },
+  {
+    "rank": 637,
+    "name": "Governador Jorge Teixeira de Oliveira Airport",
+    "iata": "PVH",
+    "city": "Porto Velho",
+    "country": "Brazil",
+    "passengers": 794109
+  },
+  {
+    "rank": 638,
+    "name": "Kilimanjaro International Airport",
+    "iata": "JRO",
+    "city": "Kilimanjaro",
+    "country": "Tanzania",
+    "passengers": 7808
+  },
+  {
+    "rank": 639,
+    "name": "Ndjili International Airport",
+    "iata": "FIH",
+    "city": "Kinshasa",
+    "country": "Democratic Republic of the Congo",
+    "passengers": 773338
+  },
+  {
+    "rank": 640,
+    "name": "Malatya Tulga Airport",
+    "iata": "MLX",
+    "city": "Malatya",
+    "country": "Turkey",
+    "passengers": 767701
+  },
+  {
+    "rank": 641,
+    "name": "Shahid Sadooghi Airport",
+    "iata": "AZD",
+    "city": "Yazd",
+    "country": "Iran",
+    "passengers": 764074
+  },
+  {
+    "rank": 642,
+    "name": "Memanbetsu Airport",
+    "iata": "MMB",
+    "city": "Memanbetsu",
+    "country": "Japan",
+    "passengers": 757103
+  },
+  {
+    "rank": 643,
+    "name": "Islas Malvinas Airport",
+    "iata": "ROS",
+    "city": "Rosario",
+    "country": "Argentina",
+    "passengers": 747571
+  },
+  {
+    "rank": 644,
+    "name": "Sultan Iskandar Muda International Airport",
+    "iata": "BTJ",
+    "city": "Banda Aceh",
+    "country": "Indonesia",
+    "passengers": 741438
+  },
+  {
+    "rank": 645,
+    "name": "Paderborn Lippstadt Airport",
+    "iata": "PAD",
+    "city": "Paderborn",
+    "country": "Germany",
+    "passengers": 738474
+  },
+  {
+    "rank": 646,
+    "name": "Toyama Airport",
+    "iata": "TOY",
+    "city": "Toyama",
+    "country": "Japan",
+    "passengers": 73674
+  },
+  {
+    "rank": 647,
+    "name": "Godofredo P. Ramos Airport",
+    "iata": "MPH",
+    "city": "Caticlan",
+    "country": "Philippines",
+    "passengers": 736559
+  },
+  {
+    "rank": 648,
+    "name": "Fatmawati Soekarno Airport",
+    "iata": "BKS",
+    "city": "Bengkulu",
+    "country": "Indonesia",
+    "passengers": 736315
+  },
+  {
+    "rank": 649,
+    "name": "Nagoya Airport",
+    "iata": "NKM",
+    "city": "Nagoya",
+    "country": "Japan",
+    "passengers": 735114
+  },
+  {
+    "rank": 650,
+    "name": "Prof. Eribelto Manoel Reino State Airport",
+    "iata": "SJP",
+    "city": "Sao Jose Do Rio Preto",
+    "country": "Brazil",
+    "passengers": 728162
+  },
+  {
+    "rank": 651,
+    "name": "Orenburg Central Airport",
+    "iata": "REN",
+    "city": "Orenburg",
+    "country": "Russia",
+    "passengers": 714635
+  },
+  {
+    "rank": 652,
+    "name": "Mc Allen Miller International Airport",
+    "iata": "MFE",
+    "city": "Mcallen",
+    "country": "United States",
+    "passengers": 714067
+  },
+  {
+    "rank": 653,
+    "name": "U-Tapao International Airport",
+    "iata": "UTP",
+    "city": "Pattaya",
+    "country": "Thailand",
+    "passengers": 710
+  },
+  {
+    "rank": 654,
+    "name": "Toncontín International Airport",
+    "iata": "TGU",
+    "city": "Tegucigalpa",
+    "country": "Honduras",
+    "passengers": 697925
+  },
+  {
+    "rank": 655,
+    "name": "Şanlıurfa GAP Airport",
+    "iata": "GNY",
+    "city": "Sanliurfa",
+    "country": "Turkey",
+    "passengers": 697729
+  },
+  {
+    "rank": 656,
+    "name": "Tallahassee Regional Airport",
+    "iata": "TLH",
+    "city": "Tallahassee",
+    "country": "United States",
+    "passengers": 692724
+  },
+  {
+    "rank": 657,
+    "name": "Kushiro Airport",
+    "iata": "KUH",
+    "city": "Kushiro",
+    "country": "Japan",
+    "passengers": 685379
+  },
+  {
+    "rank": 658,
+    "name": "Acapulco International Airport",
+    "iata": "ACA",
+    "city": "Acapulco",
+    "country": "Mexico",
+    "passengers": 685124
+  },
+  {
+    "rank": 659,
+    "name": "Handan Airport",
+    "iata": "HDG",
+    "city": "Handan",
+    "country": "China",
+    "passengers": 684081
+  },
+  {
+    "rank": 660,
+    "name": "Bancasi Airport",
+    "iata": "BXU",
+    "city": "Butuan",
+    "country": "Philippines",
+    "passengers": 681263
+  },
+  {
+    "rank": 661,
+    "name": "Nizhnevartovsk Airport",
+    "iata": "NJC",
+    "city": "Nizhnevartovsk",
+    "country": "Russia",
+    "passengers": 680577
+  },
+  {
+    "rank": 662,
+    "name": "Rick Husband Amarillo International Airport",
+    "iata": "AMA",
+    "city": "Amarillo",
+    "country": "United States",
+    "passengers": 679653
+  },
+  {
+    "rank": 663,
+    "name": "Amami Airport",
+    "iata": "ASJ",
+    "city": "Amami",
+    "country": "Japan",
+    "passengers": 676601
+  },
+  {
+    "rank": 664,
+    "name": "Raja Bhoj International Airport",
+    "iata": "BHO",
+    "city": "Bhopal",
+    "country": "India",
+    "passengers": 676015
+  },
+  {
+    "rank": 665,
+    "name": "Chu Lai International Airport",
+    "iata": "VCL",
+    "city": "Chu Lai",
+    "country": "Vietnam",
+    "passengers": 673
+  },
+  {
+    "rank": 666,
+    "name": "Mutiara Airport",
+    "iata": "PLW",
+    "city": "Palu",
+    "country": "Indonesia",
+    "passengers": 672698
+  },
+  {
+    "rank": 667,
+    "name": "Cadete FAP Guillermo Del Castillo Paredes Airport",
+    "iata": "TPP",
+    "city": "Tarapoto",
+    "country": "Peru",
+    "passengers": 671576
+  },
+  {
+    "rank": 668,
+    "name": "Miho Yonago Airport",
+    "iata": "YGJ",
+    "city": "Miho",
+    "country": "Japan",
+    "passengers": 666445
+  },
+  {
+    "rank": 669,
+    "name": "Karratha Airport",
+    "iata": "KTA",
+    "city": "Karratha",
+    "country": "Australia",
+    "passengers": 659913
+  },
+  {
+    "rank": 670,
+    "name": "Santa Barbara Municipal Airport",
+    "iata": "SBA",
+    "city": "Santa Barbara",
+    "country": "United States",
+    "passengers": 658955
+  },
+  {
+    "rank": 671,
+    "name": "Yelizovo Airport",
+    "iata": "PKC",
+    "city": "Petropavlovsk",
+    "country": "Russia",
+    "passengers": 658718
+  },
+  {
+    "rank": 672,
+    "name": "Regional de Maringá - Sílvio Nane Junior Airport",
+    "iata": "MGF",
+    "city": "Maringa",
+    "country": "Brazil",
+    "passengers": 658
+  },
+  {
+    "rank": 673,
+    "name": "Brigadeiro Lysias Rodrigues Airport",
+    "iata": "PMW",
+    "city": "Palmas",
+    "country": "Brazil",
+    "passengers": 654397
+  },
+  {
+    "rank": 674,
+    "name": "Hawke's Bay Airport",
+    "iata": "NPE",
+    "city": "NAPIER",
+    "country": "New Zealand",
+    "passengers": 652456
+  },
+  {
+    "rank": 675,
+    "name": "Abadan Airport",
+    "iata": "ABD",
+    "city": "Abadan",
+    "country": "Iran",
+    "passengers": 644915
+  },
+  {
+    "rank": 676,
+    "name": "Tjilik Riwut Airport",
+    "iata": "PKY",
+    "city": "Palangkaraya",
+    "country": "Indonesia",
+    "passengers": 64233
+  },
+  {
+    "rank": 677,
+    "name": "Rockhampton Airport",
+    "iata": "ROK",
+    "city": "Rockhampton",
+    "country": "Australia",
+    "passengers": 634913
+  },
+  {
+    "rank": 678,
+    "name": "Lajes Field",
+    "iata": "TER",
+    "city": "Lajes (terceira Island)",
+    "country": "Portugal",
+    "passengers": 631236
+  },
+  {
+    "rank": 679,
+    "name": "Saga Airport",
+    "iata": "HSG",
+    "city": "Saga",
+    "country": "Japan",
+    "passengers": 630478
+  },
+  {
+    "rank": 680,
+    "name": "Palmerston North Airport",
+    "iata": "PMR",
+    "city": "Palmerston North",
+    "country": "New Zealand",
+    "passengers": 630
+  },
+  {
+    "rank": 681,
+    "name": "Bogashevo Airport",
+    "iata": "TOF",
+    "city": "Tomsk",
+    "country": "Russia",
+    "passengers": 628932
+  },
+  {
+    "rank": 682,
+    "name": "Bushehr Airport",
+    "iata": "BUZ",
+    "city": "Bushehr",
+    "country": "Iran",
+    "passengers": 625976
+  },
+  {
+    "rank": 683,
+    "name": "El Calafate Airport",
+    "iata": "FTE",
+    "city": "El Calafate",
+    "country": "Argentina",
+    "passengers": 625562
+  },
+  {
+    "rank": 684,
+    "name": "Vijayawada Airport",
+    "iata": "VGA",
+    "city": "Vijayawada",
+    "country": "India",
+    "passengers": 622354
+  },
+  {
+    "rank": 685,
+    "name": "Long Island Mac Arthur Airport",
+    "iata": "ISP",
+    "city": "Islip",
+    "country": "United States",
+    "passengers": 620
+  },
+  {
+    "rank": 686,
+    "name": "General E. Mosconi Airport",
+    "iata": "CRD",
+    "city": "Comodoro Rivadavia",
+    "country": "Argentina",
+    "passengers": 618257
+  },
+  {
+    "rank": 687,
+    "name": "Harare International Airport",
+    "iata": "HRE",
+    "city": "Harare",
+    "country": "Zimbabwe",
+    "passengers": 612208
+  },
+  {
+    "rank": 688,
+    "name": "Ivato Airport",
+    "iata": "TNR",
+    "city": "Antananarivo",
+    "country": "Madagascar",
+    "passengers": 611175
+  },
+  {
+    "rank": 689,
+    "name": "Voronezh International Airport",
+    "iata": "VOZ",
+    "city": "Voronezh",
+    "country": "Russia",
+    "passengers": 606697
+  },
+  {
+    "rank": 690,
+    "name": "Tokachi-Obihiro Airport",
+    "iata": "OBO",
+    "city": "Obihiro",
+    "country": "Japan",
+    "passengers": 605703
+  },
+  {
+    "rank": 691,
+    "name": "Bahia - Jorge Amado Airport",
+    "iata": "IOS",
+    "city": "Ilheus",
+    "country": "Brazil",
+    "passengers": 596351
+  },
+  {
+    "rank": 692,
+    "name": "Pula Airport",
+    "iata": "PUY",
+    "city": "Pula",
+    "country": "Croatia",
+    "passengers": 595812
+  },
+  {
+    "rank": 693,
+    "name": "Labuan Airport",
+    "iata": "LBU",
+    "city": "Labuan",
+    "country": "Malaysia",
+    "passengers": 59529
+  },
+  {
+    "rank": 694,
+    "name": "Zemunik Airport",
+    "iata": "ZAD",
+    "city": "Zadar",
+    "country": "Croatia",
+    "passengers": 589841
+  },
+  {
+    "rank": 695,
+    "name": "Begishevo Airport",
+    "iata": "NBC",
+    "city": "Nizhnekamsk",
+    "country": "Russia",
+    "passengers": 587775
+  },
+  {
+    "rank": 696,
+    "name": "Alice Springs Airport",
+    "iata": "ASP",
+    "city": "Alice Springs",
+    "country": "Australia",
+    "passengers": 582755
+  },
+  {
+    "rank": 697,
+    "name": "Astrakhan Airport",
+    "iata": "ASF",
+    "city": "Astrakhan",
+    "country": "Russia",
+    "passengers": 582302
+  },
+  {
+    "rank": 698,
+    "name": "Alberto Alcolumbre Airport",
+    "iata": "MCP",
+    "city": "Macapa",
+    "country": "Brazil",
+    "passengers": 576257
+  },
+  {
+    "rank": 699,
+    "name": "Mardin Airport",
+    "iata": "MQM",
+    "city": "Mardin",
+    "country": "Turkey",
+    "passengers": 567597
+  },
+  {
+    "rank": 700,
+    "name": "Legazpi City International Airport",
+    "iata": "LGP",
+    "city": "Legazpi",
+    "country": "Philippines",
+    "passengers": 564372
+  },
+  {
+    "rank": 701,
+    "name": "Leh Kushok Bakula Rimpochee Airport",
+    "iata": "IXL",
+    "city": "Leh",
+    "country": "India",
+    "passengers": 5638
+  },
+  {
+    "rank": 702,
+    "name": "Capitan FAP Carlos Martinez De Pinillos International Airport",
+    "iata": "TRU",
+    "city": "Trujillo",
+    "country": "Peru",
+    "passengers": 560922
+  },
+  {
+    "rank": 703,
+    "name": "Charlotte County Airport",
+    "iata": "PGD",
+    "city": "Punta Gorda",
+    "country": "United States",
+    "passengers": 558471
+  },
+  {
+    "rank": 704,
+    "name": "Teniente Benjamin Matienzo Airport",
+    "iata": "TUC",
+    "city": "Tucuman",
+    "country": "Argentina",
+    "passengers": 556834
+  },
+  {
+    "rank": 705,
+    "name": "Zahedan International Airport",
+    "iata": "ZAH",
+    "city": "Zahedan",
+    "country": "Iran",
+    "passengers": 554683
+  },
+  {
+    "rank": 706,
+    "name": "Sibulan Airport",
+    "iata": "DGT",
+    "city": "Dumaguete",
+    "country": "Philippines",
+    "passengers": 546276
+  },
+  {
+    "rank": 707,
+    "name": "Ulsan Airport",
+    "iata": "USN",
+    "city": "Ulsan",
+    "country": "South Korea",
+    "passengers": 545321
+  },
+  {
+    "rank": 708,
+    "name": "Orlando Bezerra de Menezes Airport",
+    "iata": "JDO",
+    "city": "Juazeiro Do Norte",
+    "country": "Brazil",
+    "passengers": 5424
+  },
+  {
+    "rank": 709,
+    "name": "Hyakuri Airport",
+    "iata": "IBR",
+    "city": "Ibaraki",
+    "country": "Japan",
+    "passengers": 538227
+  },
+  {
+    "rank": 710,
+    "name": "Tuzla International Airport",
+    "iata": "TZL",
+    "city": "Tuzla",
+    "country": "Bosnia and Herzegovina",
+    "passengers": 535834
+  },
+  {
+    "rank": 711,
+    "name": "Sivas Nuri Demirağ Airport",
+    "iata": "VAS",
+    "city": "Sivas",
+    "country": "Turkey",
+    "passengers": 533278
+  },
+  {
+    "rank": 712,
+    "name": "Barnaul Airport",
+    "iata": "BAX",
+    "city": "Barnaul",
+    "country": "Russia",
+    "passengers": 5216
+  },
+  {
+    "rank": 713,
+    "name": "Friedrichshafen Airport",
+    "iata": "FDH",
+    "city": "Friedrichshafen",
+    "country": "Germany",
+    "passengers": 517209
+  },
+  {
+    "rank": 714,
+    "name": "Capitan FAP Jose A Quinones Gonzales International Airport",
+    "iata": "CIX",
+    "city": "Chiclayo",
+    "country": "Peru",
+    "passengers": 516589
+  },
+  {
+    "rank": 715,
+    "name": "Lauro Carneiro de Loyola Airport",
+    "iata": "JOI",
+    "city": "Joinville",
+    "country": "Brazil",
+    "passengers": 515832
+  },
+  {
+    "rank": 716,
+    "name": "Norilsk-Alykel Airport",
+    "iata": "NSK",
+    "city": "Norilsk",
+    "country": "Russia",
+    "passengers": 515764
+  },
+  {
+    "rank": 717,
+    "name": "Çardak Airport",
+    "iata": "DNZ",
+    "city": "Denizli",
+    "country": "Turkey",
+    "passengers": 509047
+  },
+  {
+    "rank": 718,
+    "name": "Cadjehoun Airport",
+    "iata": "COO",
+    "city": "Cotonou",
+    "country": "Benin",
+    "passengers": 503633
+  },
+  {
+    "rank": 719,
+    "name": "Yeosu Airport",
+    "iata": "RSU",
+    "city": "Yeosu",
+    "country": "South Korea",
+    "passengers": 503371
+  },
+  {
+    "rank": 720,
+    "name": "Cap FAP David Abenzur Rengifo International Airport",
+    "iata": "PCL",
+    "city": "Pucallpa",
+    "country": "Peru",
+    "passengers": 4998
+  },
+  {
+    "rank": 721,
+    "name": "Batumi International Airport",
+    "iata": "BUS",
+    "city": "Batumi",
+    "country": "Georgia",
+    "passengers": 495668
+  },
+  {
+    "rank": 722,
+    "name": "Hamilton Island Airport",
+    "iata": "HTI",
+    "city": "Hamilton Island",
+    "country": "Australia",
+    "passengers": 49386
+  },
+  {
+    "rank": 723,
+    "name": "Phitsanulok Airport",
+    "iata": "PHS",
+    "city": "Phitsanulok",
+    "country": "Thailand",
+    "passengers": 492117
+  },
+  {
+    "rank": 724,
+    "name": "Tirupati Airport",
+    "iata": "TIR",
+    "city": "Tirupeti",
+    "country": "India",
+    "passengers": 486029
+  },
+  {
+    "rank": 725,
+    "name": "Senador Nilo Coelho Airport",
+    "iata": "PNZ",
+    "city": "Petrolina",
+    "country": "Brazil",
+    "passengers": 485495
+  },
+  {
+    "rank": 726,
+    "name": "Can Tho International Airport",
+    "iata": "VCA",
+    "city": "Can Tho",
+    "country": "Vietnam",
+    "passengers": 481447
+  },
+  {
+    "rank": 727,
+    "name": "Rendani Airport",
+    "iata": "MKW",
+    "city": "Manokwari",
+    "country": "Indonesia",
+    "passengers": 479889
+  },
+  {
+    "rank": 728,
+    "name": "Ras Al Khaimah International Airport",
+    "iata": "RKT",
+    "city": "Ras Al Khaimah",
+    "country": "United Arab Emirates",
+    "passengers": 471432
+  },
+  {
+    "rank": 729,
+    "name": "Port Hedland International Airport",
+    "iata": "PHE",
+    "city": "Port Hedland",
+    "country": "Australia",
+    "passengers": 470741
+  },
+  {
+    "rank": 730,
+    "name": "Brno–Tuřany Airport",
+    "iata": "BRQ",
+    "city": "Brno",
+    "country": "Czech Republic",
+    "passengers": 470
+  },
+  {
+    "rank": 731,
+    "name": "Belgorod International Airport",
+    "iata": "EGO",
+    "city": "Belgorod",
+    "country": "Russia",
+    "passengers": 468787
+  },
+  {
+    "rank": 732,
+    "name": "Annaba Airport",
+    "iata": "AAE",
+    "city": "Annaba",
+    "country": "Algeria",
+    "passengers": 466053
+  },
+  {
+    "rank": 733,
+    "name": "Inca Manco Capac International Airport",
+    "iata": "JUL",
+    "city": "Juliaca",
+    "country": "Peru",
+    "passengers": 46265
+  },
+  {
+    "rank": 734,
+    "name": "Maestro Wilson Fonseca Airport",
+    "iata": "STM",
+    "city": "Santarem",
+    "country": "Brazil",
+    "passengers": 452966
+  },
+  {
+    "rank": 735,
+    "name": "Urmia Airport",
+    "iata": "OMH",
+    "city": "Uromiyeh",
+    "country": "Iran",
+    "passengers": 451967
+  },
+  {
+    "rank": 736,
+    "name": "Syktyvkar Airport",
+    "iata": "SCW",
+    "city": "Syktyvkar",
+    "country": "Russia",
+    "passengers": 451187
+  },
+  {
+    "rank": 737,
+    "name": "Oued Irara Airport",
+    "iata": "HME",
+    "city": "Hassi Messaoud",
+    "country": "Algeria",
+    "passengers": 450929
+  },
+  {
+    "rank": 738,
+    "name": "Rasht Airport",
+    "iata": "RAS",
+    "city": "Rasht",
+    "country": "Iran",
+    "passengers": 446576
+  },
+  {
+    "rank": 739,
+    "name": "Mwanza Airport",
+    "iata": "MWZ",
+    "city": "Mwanza",
+    "country": "Tanzania",
+    "passengers": 444215
+  },
+  {
+    "rank": 740,
+    "name": "Gladstone Airport",
+    "iata": "GLT",
+    "city": "Gladstone",
+    "country": "Australia",
+    "passengers": 44373
+  },
+  {
+    "rank": 741,
+    "name": "Zaragoza Air Base",
+    "iata": "ZAZ",
+    "city": "Zaragoza",
+    "country": "Spain",
+    "passengers": 438035
+  },
+  {
+    "rank": 742,
+    "name": "Ballina Byron Gateway Airport",
+    "iata": "BNK",
+    "city": "Ballina Byron Bay",
+    "country": "Australia",
+    "passengers": 437026
+  },
+  {
+    "rank": 743,
+    "name": "Iskandar Airport",
+    "iata": "PKN",
+    "city": "Pangkalan Bun",
+    "country": "Indonesia",
+    "passengers": 436264
+  },
+  {
+    "rank": 744,
+    "name": "Gainesville Regional Airport",
+    "iata": "GNV",
+    "city": "Gainesville",
+    "country": "United States",
+    "passengers": 436184
+  },
+  {
+    "rank": 745,
+    "name": "New Plymouth Airport",
+    "iata": "NPL",
+    "city": "New Plymouth",
+    "country": "New Zealand",
+    "passengers": 435
+  },
+  {
+    "rank": 746,
+    "name": "Saratov Central Airport",
+    "iata": "RTW",
+    "city": "Saratov",
+    "country": "Russia",
+    "passengers": 433385
+  },
+  {
+    "rank": 747,
+    "name": "Moses Kilangin Airport",
+    "iata": "TIM",
+    "city": "Timika",
+    "country": "Indonesia",
+    "passengers": 429774
+  },
+  {
+    "rank": 748,
+    "name": "Kars Airport",
+    "iata": "KSY",
+    "city": "Kars",
+    "country": "Turkey",
+    "passengers": 424724
+  },
+  {
+    "rank": 749,
+    "name": "Buluh Tumbang (H A S Hanandjoeddin) Airport",
+    "iata": "TJQ",
+    "city": "Tanjung Pandan",
+    "country": "Indonesia",
+    "passengers": 421211
+  },
+  {
+    "rank": 750,
+    "name": "Phu Cat Airport",
+    "iata": "UIH",
+    "city": "Phucat",
+    "country": "Vietnam",
+    "passengers": 42052
+  },
+  {
+    "rank": 751,
+    "name": "Comandante Espora Airport",
+    "iata": "BHI",
+    "city": "Bahia Blanca",
+    "country": "Argentina",
+    "passengers": 410415
+  },
+  {
+    "rank": 752,
+    "name": "Rajkot Airport",
+    "iata": "RAJ",
+    "city": "Rajkot",
+    "country": "India",
+    "passengers": 405518
+  },
+  {
+    "rank": 753,
+    "name": "Kopitnari Airport",
+    "iata": "KUT",
+    "city": "Kutaisi",
+    "country": "Georgia",
+    "passengers": 405173
+  },
+  {
+    "rank": 754,
+    "name": "Ignatyevo Airport",
+    "iata": "BQS",
+    "city": "Blagoveschensk",
+    "country": "Russia",
+    "passengers": 405
+  },
+  {
+    "rank": 755,
+    "name": "Saarbrücken Airport",
+    "iata": "SCN",
+    "city": "Saarbruecken",
+    "country": "Germany",
+    "passengers": 396849
+  },
+  {
+    "rank": 756,
+    "name": "Hanamaki Airport",
+    "iata": "HNA",
+    "city": "Hanamaki",
+    "country": "Japan",
+    "passengers": 395647
+  },
+  {
+    "rank": 757,
+    "name": "Mallam Aminu International Airport",
+    "iata": "KAN",
+    "city": "Kano",
+    "country": "Nigeria",
+    "passengers": 38953
+  },
+  {
+    "rank": 758,
+    "name": "Broome International Airport",
+    "iata": "BME",
+    "city": "Broome",
+    "country": "Australia",
+    "passengers": 383952
+  },
+  {
+    "rank": 759,
+    "name": "Jalaluddin Airport",
+    "iata": "GTO",
+    "city": "Gorontalo",
+    "country": "Indonesia",
+    "passengers": 381082
+  },
+  {
+    "rank": 760,
+    "name": "Chita-Kadala Airport",
+    "iata": "HTA",
+    "city": "Chita",
+    "country": "Russia",
+    "passengers": 3805
+  },
+  {
+    "rank": 761,
+    "name": "Nan Airport",
+    "iata": "NNT",
+    "city": "Nan",
+    "country": "Thailand",
+    "passengers": 37642
+  },
+  {
+    "rank": 762,
+    "name": "Nakhon Phanom Airport",
+    "iata": "KOP",
+    "city": "Nakhon Phanom",
+    "country": "Thailand",
+    "passengers": 372026
+  },
+  {
+    "rank": 763,
+    "name": "Juan Manuel Galvez International Airport",
+    "iata": "RTB",
+    "city": "Roatan",
+    "country": "Honduras",
+    "passengers": 371657
+  },
+  {
+    "rank": 764,
+    "name": "Beslan Airport",
+    "iata": "OGZ",
+    "city": "Beslan",
+    "country": "Russia",
+    "passengers": 369288
+  },
+  {
+    "rank": 765,
+    "name": "Tainan Airport",
+    "iata": "TNN",
+    "city": "Tainan",
+    "country": "Taiwan",
+    "passengers": 367124
+  },
+  {
+    "rank": 766,
+    "name": "Tottori Airport",
+    "iata": "TTJ",
+    "city": "Tottori",
+    "country": "Japan",
+    "passengers": 366925
+  },
+  {
+    "rank": 767,
+    "name": "Shonai Airport",
+    "iata": "SYO",
+    "city": "Shonai",
+    "country": "Japan",
+    "passengers": 364815
+  },
+  {
+    "rank": 768,
+    "name": "Frans Kaisiepo Airport",
+    "iata": "BIK",
+    "city": "Biak",
+    "country": "Indonesia",
+    "passengers": 36141
+  },
+  {
+    "rank": 769,
+    "name": "Nevşehir Kapadokya Airport",
+    "iata": "NAV",
+    "city": "Nevsehir",
+    "country": "Turkey",
+    "passengers": 359563
+  },
+  {
+    "rank": 770,
+    "name": "Stavropol Shpakovskoye Airport",
+    "iata": "STW",
+    "city": "Stavropol",
+    "country": "Russia",
+    "passengers": 356253
+  },
+  {
+    "rank": 771,
+    "name": "Coffs Harbour Airport",
+    "iata": "CFS",
+    "city": "Coff's Harbour",
+    "country": "Australia",
+    "passengers": 354212
+  },
+  {
+    "rank": 772,
+    "name": "Akanu Ibiam International Airport",
+    "iata": "ENU",
+    "city": "Enugu",
+    "country": "Nigeria",
+    "passengers": 35282
+  },
+  {
+    "rank": 773,
+    "name": "Jodhpur Airport",
+    "iata": "JDH",
+    "city": "Jodhpur",
+    "country": "India",
+    "passengers": 350583
+  },
+  {
+    "rank": 774,
+    "name": "Tauranga Airport",
+    "iata": "TRG",
+    "city": "Tauranga",
+    "country": "New Zealand",
+    "passengers": 350085
+  },
+  {
+    "rank": 775,
+    "name": "Newman Airport",
+    "iata": "ZNE",
+    "city": "Newman",
+    "country": "Australia",
+    "passengers": 348885
+  },
+  {
+    "rank": 776,
+    "name": "Dominique Edward Osok Airport",
+    "iata": "SOQ",
+    "city": "Sorong",
+    "country": "Indonesia",
+    "passengers": 347355
+  },
+  {
+    "rank": 777,
+    "name": "Sakon Nakhon Airport",
+    "iata": "SNO",
+    "city": "Sakon Nakhon",
+    "country": "Thailand",
+    "passengers": 346351
+  },
+  {
+    "rank": 778,
+    "name": "Plácido de Castro Airport",
+    "iata": "RBR",
+    "city": "Rio Branco",
+    "country": "Brazil",
+    "passengers": 345079
+  },
+  {
+    "rank": 779,
+    "name": "Muş Airport",
+    "iata": "MSR",
+    "city": "Mus",
+    "country": "Turkey",
+    "passengers": 342953
+  },
+  {
+    "rank": 780,
+    "name": "Sultan Khairun Babullah Airport",
+    "iata": "TTE",
+    "city": "Ternate",
+    "country": "Indonesia",
+    "passengers": 342313
+  },
+  {
+    "rank": 781,
+    "name": "Victoria Falls Airport",
+    "iata": "VFA",
+    "city": "Victoria Falls",
+    "country": "Zimbabwe",
+    "passengers": 341196
+  },
+  {
+    "rank": 782,
+    "name": "Roi Et Airport",
+    "iata": "ROI",
+    "city": "Roi Et",
+    "country": "Thailand",
+    "passengers": 334955
+  },
+  {
+    "rank": 783,
+    "name": "Aurangabad Airport",
+    "iata": "IXU",
+    "city": "Aurangabad",
+    "country": "India",
+    "passengers": 326971
+  },
+  {
+    "rank": 784,
+    "name": "Melilla Airport",
+    "iata": "MLN",
+    "city": "Melilla",
+    "country": "Spain",
+    "passengers": 324366
+  },
+  {
+    "rank": 785,
+    "name": "Leoš Janáček Airport Ostrava",
+    "iata": "OSR",
+    "city": "Ostrava",
+    "country": "Czech Republic",
+    "passengers": 324116
+  },
+  {
+    "rank": 786,
+    "name": "Enrique Malek International Airport",
+    "iata": "DAV",
+    "city": "David",
+    "country": "Panama",
+    "passengers": 323465
+  },
+  {
+    "rank": 787,
+    "name": "Muan International Airport",
+    "iata": "MWX",
+    "city": "Muan",
+    "country": "South Korea",
+    "passengers": 321675
+  },
+  {
+    "rank": 788,
+    "name": "Francisco B. Reyes Airport",
+    "iata": "USU",
+    "city": "Busuanga",
+    "country": "Philippines",
+    "passengers": 321595
+  },
+  {
+    "rank": 789,
+    "name": "Hamilton International Airport",
+    "iata": "HLZ",
+    "city": "Hamilton",
+    "country": "New Zealand",
+    "passengers": 317348
+  },
+  {
+    "rank": 790,
+    "name": "Resistencia International Airport",
+    "iata": "RES",
+    "city": "Resistencia",
+    "country": "Argentina",
+    "passengers": 31629
+  },
+  {
+    "rank": 791,
+    "name": "Izhevsk Airport",
+    "iata": "IJK",
+    "city": "Izhevsk",
+    "country": "Russia",
+    "passengers": 315702
+  },
+  {
+    "rank": 792,
+    "name": "Ayers Rock Connellan Airport",
+    "iata": "AYQ",
+    "city": "Uluru",
+    "country": "Australia",
+    "passengers": 307068
+  },
+  {
+    "rank": 793,
+    "name": "Dibrugarh Airport",
+    "iata": "DIB",
+    "city": "Mohanbari",
+    "country": "India",
+    "passengers": 305796
+  },
+  {
+    "rank": 794,
+    "name": "Gelendzhik Airport",
+    "iata": "GDZ",
+    "city": "Gelendzhik",
+    "country": "Russia",
+    "passengers": 304
+  },
+  {
+    "rank": 795,
+    "name": "Woodbourne Airport",
+    "iata": "BHE",
+    "city": "Woodbourne",
+    "country": "New Zealand",
+    "passengers": 302884
+  },
+  {
+    "rank": 796,
+    "name": "Nairobi Wilson Airport",
+    "iata": "WIL",
+    "city": "Nairobi",
+    "country": "Kenya",
+    "passengers": 302194
+  },
+  {
+    "rank": 797,
+    "name": "Stewart International Airport",
+    "iata": "SWF",
+    "city": "Newburgh",
+    "country": "United States",
+    "passengers": 302
+  },
+  {
+    "rank": 798,
+    "name": "Pleiku Airport",
+    "iata": "PXU",
+    "city": "Pleiku",
+    "country": "Vietnam",
+    "passengers": 300471
+  },
+  {
+    "rank": 799,
+    "name": "Taitung Airport",
+    "iata": "TTT",
+    "city": "Fengnin",
+    "country": "Taiwan",
+    "passengers": 300432
+  },
+  {
+    "rank": 800,
+    "name": "Mopah Airport",
+    "iata": "MKQ",
+    "city": "Merauke",
+    "country": "Indonesia",
+    "passengers": 300332
+  },
+  {
+    "rank": 801,
+    "name": "Prefeito Renato Moreira Airport",
+    "iata": "IMP",
+    "city": "Imperatriz",
+    "country": "Brazil",
+    "passengers": 300023
+  },
+  {
+    "rank": 802,
+    "name": "Almirante Marco Andres Zar Airport",
+    "iata": "REL",
+    "city": "Trelew",
+    "country": "Argentina",
+    "passengers": 298946
+  },
+  {
+    "rank": 803,
+    "name": "Salekhard Airport",
+    "iata": "SLY",
+    "city": "Salekhard",
+    "country": "Russia",
+    "passengers": 296294
+  },
+  {
+    "rank": 804,
+    "name": "Erzincan Airport",
+    "iata": "ERC",
+    "city": "Erzincan",
+    "country": "Turkey",
+    "passengers": 296284
+  },
+  {
+    "rank": 805,
+    "name": "Soummam Airport",
+    "iata": "BJA",
+    "city": "Bejaja",
+    "country": "Algeria",
+    "passengers": 294933
+  },
+  {
+    "rank": 806,
+    "name": "Invercargill Airport",
+    "iata": "IVC",
+    "city": "Invercargill",
+    "country": "New Zealand",
+    "passengers": 294832
+  },
+  {
+    "rank": 807,
+    "name": "Mirny Airport",
+    "iata": "MJZ",
+    "city": "Mirnyj",
+    "country": "Russia",
+    "passengers": 29141
+  },
+  {
+    "rank": 808,
+    "name": "Labo Airport",
+    "iata": "OZC",
+    "city": "Ozamis",
+    "country": "Philippines",
+    "passengers": 290966
+  },
+  {
+    "rank": 809,
+    "name": "Piloto Civil N. Fernández Airport",
+    "iata": "RGL",
+    "city": "Rio Gallegos",
+    "country": "Argentina",
+    "passengers": 255982
+  },
+  {
+    "rank": 810,
+    "name": "Molokai Airport",
+    "iata": "MKK",
+    "city": "Molokai",
+    "country": "United States",
+    "passengers": 290588
+  },
+  {
+    "rank": 811,
+    "name": "Lampang Airport",
+    "iata": "LPT",
+    "city": "Lampang",
+    "country": "Thailand",
+    "passengers": 29042
+  },
+  {
+    "rank": 812,
+    "name": "Ástor Piazzola International Airport",
+    "iata": "MDQ",
+    "city": "Mar Del Plata",
+    "country": "Argentina",
+    "passengers": 285289
+  },
+  {
+    "rank": 813,
+    "name": "Atlas Brasil Cantanhede Airport",
+    "iata": "BVB",
+    "city": "Boa Vista",
+    "country": "Brazil",
+    "passengers": 283699
+  },
+  {
+    "rank": 814,
+    "name": "Erfurt–Weimar Airport",
+    "iata": "ERF",
+    "city": "Erfurt",
+    "country": "Germany",
+    "passengers": 282731
+  },
+  {
+    "rank": 815,
+    "name": "San Sebastian Airport",
+    "iata": "EAS",
+    "city": "San Sebastian",
+    "country": "Spain",
+    "passengers": 281859
+  },
+  {
+    "rank": 816,
+    "name": "Whitsunday Coast Airport",
+    "iata": "PPP",
+    "city": "Prosserpine",
+    "country": "Australia",
+    "passengers": 280848
+  },
+  {
+    "rank": 817,
+    "name": "João Correa da Rocha Airport",
+    "iata": "MAB",
+    "city": "Maraba",
+    "country": "Brazil",
+    "passengers": 280174
+  },
+  {
+    "rank": 818,
+    "name": "Mário Ribeiro Airport",
+    "iata": "MOC",
+    "city": "Montes Claros",
+    "country": "Brazil",
+    "passengers": 280022
+  },
+  {
+    "rank": 819,
+    "name": "Raja Haji Fisabilillah International Airport",
+    "iata": "TNJ",
+    "city": "Tanjung Pinang",
+    "country": "Indonesia",
+    "passengers": 274509
+  },
+  {
+    "rank": 820,
+    "name": "Sultan Azlan Shah Airport",
+    "iata": "IPH",
+    "city": "Ipoh",
+    "country": "Malaysia",
+    "passengers": 274146
+  },
+  {
+    "rank": 821,
+    "name": "Şırnak Şerafettin Elçi Airport",
+    "iata": "NKT",
+    "city": "Cizre",
+    "country": "Turkey",
+    "passengers": 272576
+  },
+  {
+    "rank": 822,
+    "name": "Ulan-Ude Airport (Mukhino)",
+    "iata": "UUD",
+    "city": "Ulan-ude",
+    "country": "Russia",
+    "passengers": 2697
+  },
+  {
+    "rank": 823,
+    "name": "Kemerovo Airport",
+    "iata": "KEJ",
+    "city": "Kemorovo",
+    "country": "Russia",
+    "passengers": 26856
+  },
+  {
+    "rank": 824,
+    "name": "Roxas Airport",
+    "iata": "RXS",
+    "city": "Roxas City",
+    "country": "Philippines",
+    "passengers": 267388
+  },
+  {
+    "rank": 825,
+    "name": "Kisumu Airport",
+    "iata": "KIS",
+    "city": "Kisumu",
+    "country": "Kenya",
+    "passengers": 267379
+  },
+  {
+    "rank": 826,
+    "name": "Gobernador Horacio Guzman International Airport",
+    "iata": "JUJ",
+    "city": "Jujuy",
+    "country": "Argentina",
+    "passengers": 264819
+  },
+  {
+    "rank": 827,
+    "name": "Rajahmundry Airport",
+    "iata": "RJA",
+    "city": "Rajahmundry",
+    "country": "India",
+    "passengers": 261348
+  },
+  {
+    "rank": 828,
+    "name": "Loei Airport",
+    "iata": "LOE",
+    "city": "Loei",
+    "country": "Thailand",
+    "passengers": 261274
+  },
+  {
+    "rank": 829,
+    "name": "Matsu Nangan Airport",
+    "iata": "LZN",
+    "city": "Matsu Islands",
+    "country": "Taiwan",
+    "passengers": 259289
+  },
+  {
+    "rank": 830,
+    "name": "Cotulla-La Salle County Airport",
+    "iata": "COT",
+    "city": "Cotulla",
+    "country": "United States",
+    "passengers": 258529
+  },
+  {
+    "rank": 831,
+    "name": "Presidente Prudente Airport",
+    "iata": "PPB",
+    "city": "President Prudente",
+    "country": "Brazil",
+    "passengers": 256883
+  },
+  {
+    "rank": 832,
+    "name": "Misawa Air Base",
+    "iata": "MSJ",
+    "city": "Misawa",
+    "country": "Japan",
+    "passengers": 252616
+  },
+  {
+    "rank": 833,
+    "name": "Fukushima Airport",
+    "iata": "FKS",
+    "city": "Fukushima",
+    "country": "Japan",
+    "passengers": 250535
+  },
+  {
+    "rank": 834,
+    "name": "Tsushima Airport",
+    "iata": "TSJ",
+    "city": "Tsushima",
+    "country": "Japan",
+    "passengers": 250194
+  },
+  {
+    "rank": 835,
+    "name": "Cheboksary Airport",
+    "iata": "CSY",
+    "city": "Cheboksary",
+    "country": "Russia",
+    "passengers": 250
+  },
+  {
+    "rank": 836,
+    "name": "Fernando de Noronha Airport",
+    "iata": "FEN",
+    "city": "Fernando Do Noronha",
+    "country": "Brazil",
+    "passengers": 248248
+  },
+  {
+    "rank": 837,
+    "name": "Albury Airport",
+    "iata": "ABX",
+    "city": "Albury",
+    "country": "Australia",
+    "passengers": 244611
+  },
+  {
+    "rank": 838,
+    "name": "Dipolog Airport",
+    "iata": "DPL",
+    "city": "Dipolog",
+    "country": "Philippines",
+    "passengers": 243418
+  },
+  {
+    "rank": 839,
+    "name": "Narathiwat Airport",
+    "iata": "NAW",
+    "city": "Narathiwat",
+    "country": "Thailand",
+    "passengers": 241721
+  },
+  {
+    "rank": 840,
+    "name": "Kuantan Airport",
+    "iata": "KUA",
+    "city": "Kuantan",
+    "country": "Malaysia",
+    "passengers": 241314
+  },
+  {
+    "rank": 841,
+    "name": "Rotorua Regional Airport",
+    "iata": "ROT",
+    "city": "Rotorua",
+    "country": "New Zealand",
+    "passengers": 241303
+  },
+  {
+    "rank": 842,
+    "name": "Süleyman Demirel International Airport",
+    "iata": "ISE",
+    "city": "Isparta",
+    "country": "Turkey",
+    "passengers": 241016
+  },
+  {
+    "rank": 843,
+    "name": "Ulyanovsk East Airport",
+    "iata": "ULY",
+    "city": "Ulyanovsk",
+    "country": "Russia",
+    "passengers": 241
+  },
+  {
+    "rank": 844,
+    "name": "Kumejima Airport",
+    "iata": "UEO",
+    "city": "Kumejima",
+    "country": "Japan",
+    "passengers": 238875
+  },
+  {
+    "rank": 845,
+    "name": "Nalchik Airport",
+    "iata": "NAL",
+    "city": "Nalchik",
+    "country": "Russia",
+    "passengers": 236865
+  },
+  {
+    "rank": 846,
+    "name": "Lengpui Airport",
+    "iata": "AJL",
+    "city": "Aizwal",
+    "country": "India",
+    "passengers": 235613
+  },
+  {
+    "rank": 847,
+    "name": "Belo Horizonte/Pampulha – Carlos Drummond de Andrade Airport",
+    "iata": "PLU",
+    "city": "Belo Horizonte",
+    "country": "Brazil",
+    "passengers": 234675
+  },
+  {
+    "rank": 848,
+    "name": "Niagara Falls International Airport",
+    "iata": "IAG",
+    "city": "Niagara Falls",
+    "country": "United States",
+    "passengers": 233302
+  },
+  {
+    "rank": 849,
+    "name": "Kunsan Air Base",
+    "iata": "KUV",
+    "city": "Kunsan",
+    "country": "South Korea",
+    "passengers": 232132
+  },
+  {
+    "rank": 850,
+    "name": "Emerald Airport",
+    "iata": "EMD",
+    "city": "Emerald",
+    "country": "Australia",
+    "passengers": 230274
+  },
+  {
+    "rank": 851,
+    "name": "Khanty Mansiysk Airport",
+    "iata": "HMA",
+    "city": "Khanty-Mansiysk",
+    "country": "Russia",
+    "passengers": 230124
+  },
+  {
+    "rank": 852,
+    "name": "Albrook International Airport",
+    "iata": "PAC",
+    "city": "Panama",
+    "country": "Panama",
+    "passengers": 230
+  },
+  {
+    "rank": 853,
+    "name": "Kahramanmaraş Airport",
+    "iata": "KCM",
+    "city": "Kahramanmaras",
+    "country": "Turkey",
+    "passengers": 228689
+  },
+  {
+    "rank": 854,
+    "name": "Kalgoorlie Boulder Airport",
+    "iata": "KGI",
+    "city": "Kalgoorlie",
+    "country": "Australia",
+    "passengers": 227946
+  },
+  {
+    "rank": 855,
+    "name": "Port Macquarie Airport",
+    "iata": "PQQ",
+    "city": "Port Macquarie",
+    "country": "Australia",
+    "passengers": 225198
+  },
+  {
+    "rank": 856,
+    "name": "Binaka Airport",
+    "iata": "GNS",
+    "city": "Gunung Sitoli",
+    "country": "Indonesia",
+    "passengers": 225147
+  },
+  {
+    "rank": 857,
+    "name": "Cherepovets Airport",
+    "iata": "CEE",
+    "city": "Cherepovets",
+    "country": "Russia",
+    "passengers": 221463
+  },
+  {
+    "rank": 858,
+    "name": "Domingo Faustino Sarmiento Airport",
+    "iata": "UAQ",
+    "city": "San Julian",
+    "country": "Argentina",
+    "passengers": 217712
+  },
+  {
+    "rank": 859,
+    "name": "Igarka Airport",
+    "iata": "IAA",
+    "city": "Igarka",
+    "country": "Russia",
+    "passengers": 215413
+  },
+  {
+    "rank": 860,
+    "name": "Mildura Airport",
+    "iata": "MQL",
+    "city": "Mildura",
+    "country": "Australia",
+    "passengers": 212789
+  },
+  {
+    "rank": 861,
+    "name": "Silchar Airport",
+    "iata": "IXS",
+    "city": "Silchar",
+    "country": "India",
+    "passengers": 212228
+  },
+  {
+    "rank": 862,
+    "name": "Ağrı Airport",
+    "iata": "AJI",
+    "city": "Agri",
+    "country": "Turkey",
+    "passengers": 211806
+  },
+  {
+    "rank": 863,
+    "name": "Libertador Gral D Jose De San Martin Airport",
+    "iata": "PSS",
+    "city": "Posadas",
+    "country": "Argentina",
+    "passengers": 211581
+  },
+  {
+    "rank": 864,
+    "name": "Wagga Wagga City Airport",
+    "iata": "WGA",
+    "city": "Wagga Wagga",
+    "country": "Australia",
+    "passengers": 209671
+  },
+  {
+    "rank": 865,
+    "name": "Yaoundé Nsimalen International Airport",
+    "iata": "NSI",
+    "city": "Yaounde",
+    "country": "Cameroon",
+    "passengers": 208973
+  },
+  {
+    "rank": 866,
+    "name": "Mount Isa Airport",
+    "iata": "ISA",
+    "city": "Mount Isa",
+    "country": "Australia",
+    "passengers": 208395
+  },
+  {
+    "rank": 867,
+    "name": "Ende (H Hasan Aroeboesman) Airport",
+    "iata": "ENE",
+    "city": "Ende",
+    "country": "Indonesia",
+    "passengers": 208284
+  },
+  {
+    "rank": 868,
+    "name": "Khankala Air Base",
+    "iata": "GRV",
+    "city": "Grozny",
+    "country": "Russia",
+    "passengers": 208052
+  },
+  {
+    "rank": 869,
+    "name": "Magas Airport",
+    "iata": "IGT",
+    "city": "Magas",
+    "country": "Russia",
+    "passengers": 205843
+  },
+  {
+    "rank": 870,
+    "name": "Naryan Mar Airport",
+    "iata": "NNM",
+    "city": "Naryan-Mar",
+    "country": "Russia",
+    "passengers": 205017
+  },
+  {
+    "rank": 871,
+    "name": "Laoag International Airport",
+    "iata": "LAO",
+    "city": "Laoag",
+    "country": "Philippines",
+    "passengers": 204156
+  },
+  {
+    "rank": 872,
+    "name": "Wamena Airport",
+    "iata": "WMX",
+    "city": "Wamena",
+    "country": "Indonesia",
+    "passengers": 20171
+  },
+  {
+    "rank": 873,
+    "name": "Noyabrsk Airport",
+    "iata": "NOJ",
+    "city": "Noyabrsk",
+    "country": "Russia",
+    "passengers": 201612
+  },
+  {
+    "rank": 874,
+    "name": "Komodo (Mutiara II) Airport",
+    "iata": "LBJ",
+    "city": "Labuhan Bajo",
+    "country": "Indonesia",
+    "passengers": 200212
+  },
+  {
+    "rank": 875,
+    "name": "Roma Airport",
+    "iata": "RMA",
+    "city": "Roma",
+    "country": "Australia",
+    "passengers": 198099
+  },
+  {
+    "rank": 876,
+    "name": "Buri Ram Airport",
+    "iata": "BFV",
+    "city": "Buri Ram",
+    "country": "Thailand",
+    "passengers": 197988
+  },
+  {
+    "rank": 877,
+    "name": "Batman Airport",
+    "iata": "BAL",
+    "city": "Batman",
+    "country": "Turkey",
+    "passengers": 197301
+  },
+  {
+    "rank": 878,
+    "name": "Port Lincoln Airport",
+    "iata": "PLO",
+    "city": "Port Lincoln",
+    "country": "Australia",
+    "passengers": 190853
+  },
+  {
+    "rank": 879,
+    "name": "Adıyaman Airport",
+    "iata": "ADF",
+    "city": "Adiyaman",
+    "country": "Turkey",
+    "passengers": 190744
+  },
+  {
+    "rank": 880,
+    "name": "Margaret Ekpo International Airport",
+    "iata": "CBQ",
+    "city": "Calabar",
+    "country": "Nigeria",
+    "passengers": 189908
+  },
+  {
+    "rank": 881,
+    "name": "Pagadian Airport",
+    "iata": "PAG",
+    "city": "Pagadian",
+    "country": "Philippines",
+    "passengers": 18892
+  },
+  {
+    "rank": 882,
+    "name": "Abakan Airport",
+    "iata": "ABA",
+    "city": "Abakan",
+    "country": "Russia",
+    "passengers": 188786
+  },
+  {
+    "rank": 883,
+    "name": "Dubbo City Regional Airport",
+    "iata": "DBO",
+    "city": "Dubbo",
+    "country": "Australia",
+    "passengers": 188736
+  },
+  {
+    "rank": 884,
+    "name": "Co Ong Airport",
+    "iata": "VCS",
+    "city": "Conson",
+    "country": "Vietnam",
+    "passengers": 188549
+  },
+  {
+    "rank": 885,
+    "name": "Spichenkovo Airport",
+    "iata": "NOZ",
+    "city": "Novokuznetsk",
+    "country": "Russia",
+    "passengers": 188458
+  },
+  {
+    "rank": 886,
+    "name": "Bursa Yenişehir Airport",
+    "iata": "YEI",
+    "city": "Yenisehir",
+    "country": "Turkey",
+    "passengers": 186703
+  },
+  {
+    "rank": 887,
+    "name": "Tuguegarao Airport",
+    "iata": "TUG",
+    "city": "Tuguegarao",
+    "country": "Philippines",
+    "passengers": 186193
+  },
+  {
+    "rank": 888,
+    "name": "Hualien Airport",
+    "iata": "HUN",
+    "city": "Hualien",
+    "country": "Taiwan",
+    "passengers": 184347
+  },
+  {
+    "rank": 889,
+    "name": "Brownsville South Padre Island International Airport",
+    "iata": "BRO",
+    "city": "Brownsville",
+    "country": "United States",
+    "passengers": 183604
+  },
+  {
+    "rank": 890,
+    "name": "Paraburdoo Airport",
+    "iata": "PBO",
+    "city": "Paraburdoo",
+    "country": "Australia",
+    "passengers": 1761
+  },
+  {
+    "rank": 891,
+    "name": "Porto Santo Airport",
+    "iata": "PXO",
+    "city": "Porto Santo",
+    "country": "Portugal",
+    "passengers": 1753
+  },
+  {
+    "rank": 892,
+    "name": "Mae Sot Airport",
+    "iata": "MAQ",
+    "city": "Tak",
+    "country": "Thailand",
+    "passengers": 174612
+  },
+  {
+    "rank": 893,
+    "name": "Nadym Airport",
+    "iata": "NYM",
+    "city": "Nadym",
+    "country": "Russia",
+    "passengers": 169343
+  },
+  {
+    "rank": 894,
+    "name": "Çanakkale Airport",
+    "iata": "CKZ",
+    "city": "Canakkale",
+    "country": "Turkey",
+    "passengers": 168031
+  },
+  {
+    "rank": 895,
+    "name": "Termas de Río Hondo international Airport",
+    "iata": "RHD",
+    "city": "Rio Hondo",
+    "country": "Argentina",
+    "passengers": 167968
+  },
+  {
+    "rank": 896,
+    "name": "Pobedilovo Airport",
+    "iata": "KVX",
+    "city": "Kirov",
+    "country": "Russia",
+    "passengers": 16616
+  },
+  {
+    "rank": 897,
+    "name": "Golosón International Airport",
+    "iata": "LCE",
+    "city": "La Ceiba",
+    "country": "Honduras",
+    "passengers": 165802
+  },
+  {
+    "rank": 898,
+    "name": "Usinsk Airport",
+    "iata": "USK",
+    "city": "Usinsk",
+    "country": "Russia",
+    "passengers": 165087
+  },
+  {
+    "rank": 899,
+    "name": "Diori Hamani International Airport",
+    "iata": "NIM",
+    "city": "Niamey",
+    "country": "Niger",
+    "passengers": 165
+  },
+  {
+    "rank": 900,
+    "name": "Hervey Bay Airport",
+    "iata": "HVB",
+    "city": "Hervey Bay",
+    "country": "Australia",
+    "passengers": 162688
+  },
+  {
+    "rank": 901,
+    "name": "Rijeka Airport",
+    "iata": "RJK",
+    "city": "Rijeka",
+    "country": "Croatia",
+    "passengers": 160
+  },
+  {
+    "rank": 902,
+    "name": "Fort Lauderdale Executive Airport",
+    "iata": "FXE",
+    "city": "Fort Lauderdale",
+    "country": "United States",
+    "passengers": 159999
+  },
+  {
+    "rank": 903,
+    "name": "Ketapang(Rahadi Usman) Airport",
+    "iata": "KTG",
+    "city": "Ketapang",
+    "country": "Indonesia",
+    "passengers": 156577
+  },
+  {
+    "rank": 904,
+    "name": "Bundaberg Airport",
+    "iata": "BDB",
+    "city": "Bundaberg",
+    "country": "Australia",
+    "passengers": 156231
+  },
+  {
+    "rank": 905,
+    "name": "Moranbah Airport",
+    "iata": "MOV",
+    "city": "Moranbah",
+    "country": "Australia",
+    "passengers": 156192
+  },
+  {
+    "rank": 906,
+    "name": "Tamworth Airport",
+    "iata": "TMW",
+    "city": "Tamworth",
+    "country": "Australia",
+    "passengers": 153838
+  },
+  {
+    "rank": 907,
+    "name": "Penza Airport",
+    "iata": "PEZ",
+    "city": "Penza",
+    "country": "Russia",
+    "passengers": 152758
+  },
+  {
+    "rank": 908,
+    "name": "Tekirdağ Çorlu Airport",
+    "iata": "TEQ",
+    "city": "Çorlu",
+    "country": "Turkey",
+    "passengers": 15152
+  },
+  {
+    "rank": 909,
+    "name": "Hermes Quijada International Airport",
+    "iata": "RGA",
+    "city": "Rio Grande",
+    "country": "Argentina",
+    "passengers": 150849
+  },
+  {
+    "rank": 910,
+    "name": "Sacheon Air Base",
+    "iata": "HIN",
+    "city": "Sacheon",
+    "country": "South Korea",
+    "passengers": 150728
+  },
+  {
+    "rank": 911,
+    "name": "Amasya Merzifon Airport",
+    "iata": "MZH",
+    "city": "Merzifon",
+    "country": "Turkey",
+    "passengers": 146707
+  },
+  {
+    "rank": 912,
+    "name": "Devonport Airport",
+    "iata": "DPO",
+    "city": "Devonport",
+    "country": "Australia",
+    "passengers": 143597
+  },
+  {
+    "rank": 913,
+    "name": "Arusha Airport",
+    "iata": "ARK",
+    "city": "Arusha",
+    "country": "Tanzania",
+    "passengers": 142224
+  },
+  {
+    "rank": 914,
+    "name": "Lahad Datu Airport",
+    "iata": "LDU",
+    "city": "Lahad Datu",
+    "country": "Malaysia",
+    "passengers": 140077
+  },
+  {
+    "rank": 915,
+    "name": "Zenata – Messali El Hadj Airport",
+    "iata": "TLM",
+    "city": "Tlemcen",
+    "country": "Algeria",
+    "passengers": 137907
+  },
+  {
+    "rank": 916,
+    "name": "Naga Airport",
+    "iata": "WNP",
+    "city": "Naga",
+    "country": "Philippines",
+    "passengers": 137329
+  },
+  {
+    "rank": 917,
+    "name": "Muhammad Salahuddin Airport",
+    "iata": "BMU",
+    "city": "Bima",
+    "country": "Indonesia",
+    "passengers": 134977
+  },
+  {
+    "rank": 918,
+    "name": "Panama Pacific International Airport",
+    "iata": "BLB",
+    "city": "Howard",
+    "country": "Panama",
+    "passengers": 13193
+  },
+  {
+    "rank": 919,
+    "name": "Magnitogorsk International Airport",
+    "iata": "MQF",
+    "city": "Magnetiogorsk",
+    "country": "Russia",
+    "passengers": 127662
+  },
+  {
+    "rank": 920,
+    "name": "Armidale Airport",
+    "iata": "ARM",
+    "city": "Armidale",
+    "country": "Australia",
+    "passengers": 124173
+  },
+  {
+    "rank": 921,
+    "name": "Wajir Airport",
+    "iata": "WJR",
+    "city": "Wajir",
+    "country": "Kenya",
+    "passengers": 123
+  },
+  {
+    "rank": 922,
+    "name": "Betoambari Airport",
+    "iata": "BUW",
+    "city": "Bau-Bau",
+    "country": "Indonesia",
+    "passengers": 122676
+  },
+  {
+    "rank": 923,
+    "name": "Geraldton Airport",
+    "iata": "GET",
+    "city": "Geraldton",
+    "country": "Australia",
+    "passengers": 119467
+  },
+  {
+    "rank": 924,
+    "name": "Bratsk Airport",
+    "iata": "BTK",
+    "city": "Bratsk",
+    "country": "Russia",
+    "passengers": 117789
+  },
+  {
+    "rank": 925,
+    "name": "Kogalym International Airport",
+    "iata": "KGP",
+    "city": "Kogalym",
+    "country": "Russia",
+    "passengers": 117774
+  },
+  {
+    "rank": 926,
+    "name": "Laredo International Airport",
+    "iata": "LRD",
+    "city": "Laredo",
+    "country": "United States",
+    "passengers": 116565
+  },
+  {
+    "rank": 927,
+    "name": "Mundo Maya International Airport",
+    "iata": "FRS",
+    "city": "Flores",
+    "country": "Guatemala",
+    "passengers": 113444
+  },
+  {
+    "rank": 928,
+    "name": "Eldoret International Airport",
+    "iata": "EDL",
+    "city": "Eldoret",
+    "country": "Kenya",
+    "passengers": 11125
+  },
+  {
+    "rank": 929,
+    "name": "Formosa Airport",
+    "iata": "FMA",
+    "city": "Formosa",
+    "country": "Argentina",
+    "passengers": 106527
+  },
+  {
+    "rank": 930,
+    "name": "General Urquiza Airport",
+    "iata": "PRA",
+    "city": "Parana",
+    "country": "Argentina",
+    "passengers": 106054
+  },
+  {
+    "rank": 931,
+    "name": "Aviador C. Campos Airport",
+    "iata": "CPC",
+    "city": "San Martin Des Andes",
+    "country": "Argentina",
+    "passengers": 104695
+  },
+  {
+    "rank": 932,
+    "name": "El Tehuelche Airport",
+    "iata": "PMY",
+    "city": "Puerto Madryn",
+    "country": "Argentina",
+    "passengers": 104315
+  },
+  {
+    "rank": 933,
+    "name": "Surigao Airport",
+    "iata": "SUG",
+    "city": "Sangley Point",
+    "country": "Philippines",
+    "passengers": 104313
+  },
+  {
+    "rank": 934,
+    "name": "Corrientes Airport",
+    "iata": "CNQ",
+    "city": "Corrientes",
+    "country": "Argentina",
+    "passengers": 102977
+  },
+  {
+    "rank": 935,
+    "name": "Ranong Airport",
+    "iata": "UNN",
+    "city": "Ranong",
+    "country": "Thailand",
+    "passengers": 102228
+  },
+  {
+    "rank": 936,
+    "name": "San Angelo Regional Mathis Field",
+    "iata": "SJT",
+    "city": "San Angelo",
+    "country": "United States",
+    "passengers": 102079
+  },
+  {
+    "rank": 937,
+    "name": "Vicecomodoro Angel D. La Paz Aragonés Airport",
+    "iata": "SDE",
+    "city": "Santiago Del Estero",
+    "country": "Argentina",
+    "passengers": 98827
+  },
+  {
+    "rank": 938,
+    "name": "Zafer Airport",
+    "iata": "KZR",
+    "city": "Kutahya",
+    "country": "Turkey",
+    "passengers": 95239
+  },
+  {
+    "rank": 939,
+    "name": "Biskra Airport",
+    "iata": "BSK",
+    "city": "Biskra",
+    "country": "Algeria",
+    "passengers": 93644
+  },
+  {
+    "rank": 940,
+    "name": "Chumphon Airport",
+    "iata": "CJM",
+    "city": "Chumphon",
+    "country": "Thailand",
+    "passengers": 93567
+  },
+  {
+    "rank": 941,
+    "name": "Sinop Airport",
+    "iata": "SIC",
+    "city": "Sinop",
+    "country": "Turkey",
+    "passengers": 92418
+  },
+  {
+    "rank": 942,
+    "name": "Touat Cheikh Sidi Mohamed Belkebir Airport",
+    "iata": "AZR",
+    "city": "Adrar",
+    "country": "Algeria",
+    "passengers": 92197
+  },
+  {
+    "rank": 943,
+    "name": "Temindung Airport",
+    "iata": "SRI",
+    "city": "Samarinda",
+    "country": "Indonesia",
+    "passengers": 91849
+  },
+  {
+    "rank": 944,
+    "name": "Brigadier Mayor D Cesar Raul Ojeda Airport",
+    "iata": "LUQ",
+    "city": "San Luis",
+    "country": "Argentina",
+    "passengers": 90926
+  },
+  {
+    "rank": 945,
+    "name": "Trat Airport",
+    "iata": "TDX",
+    "city": "Trat",
+    "country": "Thailand",
+    "passengers": 90
+  },
+  {
+    "rank": 946,
+    "name": "Yangyang International Airport",
+    "iata": "YNY",
+    "city": "Sokcho / Gangneung",
+    "country": "South Korea",
+    "passengers": 88704
+  },
+  {
+    "rank": 947,
+    "name": "Pardubice Airport",
+    "iata": "PED",
+    "city": "Pardubice",
+    "country": "Czech Republic",
+    "passengers": 8849
+  },
+  {
+    "rank": 948,
+    "name": "Horn Island Airport",
+    "iata": "HID",
+    "city": "Horn Island",
+    "country": "Australia",
+    "passengers": 88197
+  },
+  {
+    "rank": 949,
+    "name": "Ithaca Tompkins Regional Airport",
+    "iata": "ITH",
+    "city": "Ithaca",
+    "country": "United States",
+    "passengers": 8723
+  },
+  {
+    "rank": 950,
+    "name": "Cauayan Airport",
+    "iata": "CYZ",
+    "city": "Cauayan",
+    "country": "Philippines",
+    "passengers": 85691
+  },
+  {
+    "rank": 951,
+    "name": "Kastamonu Airport",
+    "iata": "KFS",
+    "city": "Kastamonu",
+    "country": "Turkey",
+    "passengers": 82855
+  },
+  {
+    "rank": 952,
+    "name": "Basco Airport",
+    "iata": "BSO",
+    "city": "Basco",
+    "country": "Philippines",
+    "passengers": 82853
+  },
+  {
+    "rank": 953,
+    "name": "Dien Bien Phu Airport",
+    "iata": "DIN",
+    "city": "Dienbienphu",
+    "country": "Vietnam",
+    "passengers": 81564
+  },
+  {
+    "rank": 954,
+    "name": "Matsu Beigan Airport",
+    "iata": "MFK",
+    "city": "Matsu Islands",
+    "country": "Taiwan",
+    "passengers": 7985
+  },
+  {
+    "rank": 955,
+    "name": "Chiayi Airport",
+    "iata": "CYI",
+    "city": "Chiayi",
+    "country": "Taiwan",
+    "passengers": 78826
+  },
+  {
+    "rank": 956,
+    "name": "Wonju Airport",
+    "iata": "WJU",
+    "city": "Wonju",
+    "country": "South Korea",
+    "passengers": 78567
+  },
+  {
+    "rank": 957,
+    "name": "Batna Airport",
+    "iata": "BLJ",
+    "city": "Batna",
+    "country": "Algeria",
+    "passengers": 78123
+  },
+  {
+    "rank": 958,
+    "name": "Kununurra Airport",
+    "iata": "KNX",
+    "city": "Kununurra",
+    "country": "Australia",
+    "passengers": 77415
+  },
+  {
+    "rank": 959,
+    "name": "Mount Gambier Airport",
+    "iata": "MGB",
+    "city": "Mount Gambier",
+    "country": "Australia",
+    "passengers": 7695
+  },
+  {
+    "rank": 960,
+    "name": "Capitan V A Almonacid Airport",
+    "iata": "IRJ",
+    "city": "La Rioja",
+    "country": "Argentina",
+    "passengers": 75469
+  },
+  {
+    "rank": 961,
+    "name": "Kapalua Airport",
+    "iata": "JHM",
+    "city": "Lahania-kapalua",
+    "country": "United States",
+    "passengers": 75295
+  },
+  {
+    "rank": 962,
+    "name": "Olympic Dam Airport",
+    "iata": "OLP",
+    "city": "Olympic Dam",
+    "country": "Australia",
+    "passengers": 74346
+  },
+  {
+    "rank": 963,
+    "name": "Sukhothai Airport",
+    "iata": "THS",
+    "city": "Sukhothai",
+    "country": "Thailand",
+    "passengers": 74
+  },
+  {
+    "rank": 964,
+    "name": "Phrae Airport",
+    "iata": "PRH",
+    "city": "Phrae",
+    "country": "Thailand",
+    "passengers": 72274
+  },
+  {
+    "rank": 965,
+    "name": "Aguenar – Hadj Bey Akhamok Airport",
+    "iata": "TMR",
+    "city": "Tamanrasset",
+    "country": "Algeria",
+    "passengers": 70515
+  },
+  {
+    "rank": 966,
+    "name": "Pohang Airport",
+    "iata": "KPO",
+    "city": "Pohang",
+    "country": "South Korea",
+    "passengers": 68226
+  },
+  {
+    "rank": 967,
+    "name": "Lanai Airport",
+    "iata": "LNY",
+    "city": "Lanai",
+    "country": "United States",
+    "passengers": 64483
+  },
+  {
+    "rank": 968,
+    "name": "Dong Tac Airport",
+    "iata": "TBB",
+    "city": "Tuy Hoa",
+    "country": "Vietnam",
+    "passengers": 64037
+  },
+  {
+    "rank": 969,
+    "name": "Catamarca Airport",
+    "iata": "CTC",
+    "city": "Catamarca",
+    "country": "Argentina",
+    "passengers": 64007
+  },
+  {
+    "rank": 970,
+    "name": "Brigadier Antonio Parodi Airport",
+    "iata": "EQS",
+    "city": "Esquel",
+    "country": "Argentina",
+    "passengers": 60092
+  },
+  {
+    "rank": 971,
+    "name": "Mulu Airport",
+    "iata": "MZV",
+    "city": "Mulu",
+    "country": "Malaysia",
+    "passengers": 60074
+  },
+  {
+    "rank": 972,
+    "name": "Malacca Airport",
+    "iata": "MKZ",
+    "city": "Malacca",
+    "country": "Malaysia",
+    "passengers": 58703
+  },
+  {
+    "rank": 973,
+    "name": "Suboficial Ay Santiago Germano Airport",
+    "iata": "AFA",
+    "city": "San Rafael",
+    "country": "Argentina",
+    "passengers": 56905
+  },
+  {
+    "rank": 974,
+    "name": "Area De Material Airport",
+    "iata": "RCU",
+    "city": "Rio Cuarto",
+    "country": "Argentina",
+    "passengers": 56844
+  },
+  {
+    "rank": 975,
+    "name": "Limbang Airport",
+    "iata": "LMN",
+    "city": "Limbang",
+    "country": "Malaysia",
+    "passengers": 55437
+  },
+  {
+    "rank": 976,
+    "name": "Mae Hong Son Airport",
+    "iata": "HGN",
+    "city": "Mae Hong Son",
+    "country": "Thailand",
+    "passengers": 55368
+  },
+  {
+    "rank": 977,
+    "name": "Virac Airport",
+    "iata": "VRC",
+    "city": "Virac",
+    "country": "Philippines",
+    "passengers": 54021
+  },
+  {
+    "rank": 978,
+    "name": "Worcester Regional Airport",
+    "iata": "ORH",
+    "city": "Worcester",
+    "country": "United States",
+    "passengers": 54
+  },
+  {
+    "rank": 979,
+    "name": "Easterwood Field",
+    "iata": "CLL",
+    "city": "College Station",
+    "country": "United States",
+    "passengers": 53557
+  },
+  {
+    "rank": 980,
+    "name": "Siargao Airport",
+    "iata": "IAO",
+    "city": "Siargao",
+    "country": "Philippines",
+    "passengers": 5315
+  },
+  {
+    "rank": 981,
+    "name": "Anadolu Airport",
+    "iata": "AOE",
+    "city": "Eskissehir",
+    "country": "Turkey",
+    "passengers": 51925
+  },
+  {
+    "rank": 982,
+    "name": "Santa Rosa Airport",
+    "iata": "RSA",
+    "city": "Santa Rosa",
+    "country": "Argentina",
+    "passengers": 49109
+  },
+  {
+    "rank": 983,
+    "name": "San Jose Airport",
+    "iata": "SJI",
+    "city": "San Jose",
+    "country": "Philippines",
+    "passengers": 4901
+  },
+  {
+    "rank": 984,
+    "name": "Lanyu Airport",
+    "iata": "KYD",
+    "city": "Lanyu",
+    "country": "Taiwan",
+    "passengers": 47406
+  },
+  {
+    "rank": 985,
+    "name": "Noumérat - Moufdi Zakaria Airport",
+    "iata": "GHA",
+    "city": "Ghardaia",
+    "country": "Algeria",
+    "passengers": 45794
+  },
+  {
+    "rank": 986,
+    "name": "Guarani International Airport",
+    "iata": "AGT",
+    "city": "Ciudad del Este",
+    "country": "Paraguay",
+    "passengers": 40923
+  },
+  {
+    "rank": 987,
+    "name": "Catarman National Airport",
+    "iata": "CRM",
+    "city": "Catarman",
+    "country": "Philippines",
+    "passengers": 40237
+  },
+  {
+    "rank": 988,
+    "name": "Sauce Viejo Airport",
+    "iata": "SFN",
+    "city": "Santa Fe",
+    "country": "Argentina",
+    "passengers": 37725
+  },
+  {
+    "rank": 989,
+    "name": "Gobernador Castello Airport",
+    "iata": "VDM",
+    "city": "Viedma",
+    "country": "Argentina",
+    "passengers": 36327
+  }
+]

@@ -1,0 +1,5 @@
+flightbeat
+Copyright 2020 Gabriel FORIEN
+
+This product includes software developed by The Apache Software
+Foundation (http://www.apache.org/).

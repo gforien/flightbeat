@@ -35,7 +35,7 @@ switch($argsString) {
     "list last commit"      { &{ 1..1  | %{ ssh tc$_ "cd ~/flightbeat/leader-election; git log -n 1" }}}
     "build"                 { &{ 1..1  | %{ ssh tc$_ ". ~/.profile; ssh-add ~/.ssh/github_from_tc; cd ~/flightbeat/leader-election; git pull; npm i" }}}
     # (!) this removes all pre-existing cron jobs
-    "deploy"                { &{ 1..16 | %{ ssh tc$_ "echo '* * * * * (node ~/flightbeat/leader-election/leader.js $_ >> ~/electionlog_$_ 2>&1 &) && (echo ""CRON ALIVE ``uname -n`` ``date '\''+\%d-\%h \%H:\%M:\%S'\''``"" >> ~/electionlog_$_ 2>&1)' | crontab -" ; echo "tc$_ => $?"}}}
+    "deploy"                { &{ 1..16 | %{ ssh tc$_ "echo '* * * * * (cd ~/flightbeat/leader-election; node leader.js $_ >> ~/electionlog_$_ 2>&1 &) && (echo ""CRON ALIVE ``uname -n`` ``date '\''+\%d-\%h \%H:\%M:\%S'\''``"" >> ~/electionlog_$_ 2>&1)' | crontab -" ; echo "tc$_ => $?"}}}
 
     default                 { echo $helpString }
 }

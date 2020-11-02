@@ -2,3 +2,4 @@ build/
 logs/
 flightbeat.exe
 flightbeat
+flightbeat.yml

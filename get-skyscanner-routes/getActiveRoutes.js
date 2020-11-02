@@ -1,13 +1,15 @@
 (async () => {
 
   // we start from _skyscanner_1000_places which :
-
   //     - are unique (checked by hand)                                     a.filter( (v, i, s) => {return (s.findIndex(e => {return (e.iata === v.iata)}) === i)}).length
   //     - are geolocated (added with _9000_coordinates)                    a = routes.map(e => { e.geo = locations.find(v => v.iata_code===e.iata).coordinates; return e})
   //     - exist in the skyscanner API (checked by hand)
   //
 
   // skyscanner_40K_routes do not necessarily exist, they only correspond to existing places
+  //     routes.map(e => {a = e.orig.geo; lat1 = Number(a.slice(0,a.indexOf(','))); lon1 = Number(a.slice(a.indexOf(',')+1)); e.orig.geo = {"lat":lat1, "lon":lon1}; return e;})
+  //     routes.map(e => {a = e.dest.geo; lat1 = Number(a.slice(0,a.indexOf(','))); lon1 = Number(a.slice(a.indexOf(',')+1)); e.dest.geo = {"lat":lat1, "lon":lon1}; return e;})
+  //     fs.writeFileSync("new3", JSON.stringify(routes, null, 2))
   
   const axios      = require('axios');
   const fs         = require('fs');

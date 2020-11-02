@@ -28,7 +28,10 @@ type skRoute struct {
 		City       string `json:"city"`
 		Country    string `json:"country"`
 		Passengers int    `json:"passengers"`
-		Geo        string `json:"geo"`
+		Geo        struct {
+			Lat    float32 `json:"lat"`
+			Lon    float32 `json:"lon"`
+		} `json:"geo"`
 	} `json:"orig"`
 	Dest struct {
 		Rank       int    `json:"rank"`
@@ -37,7 +40,10 @@ type skRoute struct {
 		City       string `json:"city"`
 		Country    string `json:"country"`
 		Passengers int    `json:"passengers"`
-		Geo        string `json:"geo"`
+		Geo        struct {
+			Lat    float32 `json:"lat"`
+			Lon    float32 `json:"lon"`
+		} `json:"geo"`
 	} `json:"dest"`
 	Carrier string
 	Direct bool
@@ -177,6 +183,7 @@ func request(routes []skRoute, index int) (skRoute, error) {
 	origin := routes[index].Orig.Iata
 	dest := routes[index].Dest.Iata
 	now:= time.Now()
+	now.AddDate(0,0,14)
 	outboundpartialdate := fmt.Sprintf("%d-%d-%[2]d", now.Year(), now.Month(), now.Day())
 
 	url := fmt.Sprintf("https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/US/USD/en-US/%s/%s/%s", origin, dest, outboundpartialdate)
@@ -184,7 +191,11 @@ func request(routes []skRoute, index int) (skRoute, error) {
 	if (err != nil) { fmt.Println(err.Error()) }
 
 	req.Header.Add("x-rapidapi-host", "skyscanner-skyscanner-flight-search-v1.p.rapidapi.com")
-	req.Header.Add("x-rapidapi-key", os.Getenv("FLIGHT_API_KEY"))
+	if (index%2 == 0) {
+		req.Header.Add("x-rapidapi-key", os.Getenv("FLIGHT_API_KEY"))
+	} else {
+		req.Header.Add("x-rapidapi-key", os.Getenv("FLIGHT_API_KEY_2"))
+	}
 
 	res, err := http.DefaultClient.Do(req)
 	if (err != nil) { fmt.Println(err.Error()) }
@@ -209,8 +220,10 @@ func request(routes []skRoute, index int) (skRoute, error) {
 			Direct: data.Quotes[0].Direct,
 			MinPrice: data.Quotes[0].MinPrice}
 		return result, nil
+	} else if (res.StatusCode != 200) {
+		return skRoute{}, errors.New("Error (status "+string(res.Status)+")")
 	} else {
-		return skRoute{}, errors.New("Returned empty")
+		return skRoute{}, errors.New("Returned empty (status "+string(res.Status)+")")
 	}
 }
 

@@ -1,5 +1,7 @@
 build/
 logs/
+data/flightbeat.lock
 flightbeat.exe
 flightbeat
 flightbeat.yml
+nohup.out

@@ -15,6 +15,7 @@ const express            = require('express');
 const dns                = require('dns');
 const ps                 = require('ps-node');
 const child_process      = require('child_process');
+const process            = require('process');
 const { functionLogger, setLogger } = require('./logger.js');
 
 const PORT               = 5005;
@@ -62,14 +63,6 @@ async function main_() {
       if(await isProcessRunning('./flightbeat', '-e')) {
         console.log('Beat is running');
       } else {
-        // child_process.exec('~/flightbeat/flightbeat/flightbeat -e -d "*"',
-        //   (err, stdout, stderr) => {
-        //     if (err) throw err;
-        //     process.out.write(stdout);
-        //   });
-        // }
-        // 
-
         console.log('Restart beat');
         let child = child_process.spawn(
           './startBeat.sh',
@@ -369,6 +362,8 @@ app
     process.exit(1);
   }
   PRIORITY = process.argv[2];
+
+  console.log(`Current working directory is ${process.cwd()}`);
 
   // EXIT if leader.js was badly deployed, i.e.
   //   - deployed without a .env file

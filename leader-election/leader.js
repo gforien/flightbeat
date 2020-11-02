@@ -22,7 +22,7 @@ let HOSTNAME             = null;
 let PRIORITY             = null;
 const GET_STATUS_TIMEOUT = 100;
 const RESTART_DELAY_SEC  = 10; 
-const MAIN_DELAY_SEC     = 60*5; 
+const MAIN_DELAY_SEC     = 60*1; 
 let leader               = -1;
 let restartCount         = 0;
 
@@ -45,7 +45,7 @@ async function main_() {
 
     if (await notEnoughNodes(nodesUp)) {
       restart(`ERROR - Not enough nodes    [at line ${__line}]`);
-      await sleepSec(10);
+      await sleepSec(RESTART_DELAY_SEC);
       continue mainloop;
     }
 
@@ -59,16 +59,30 @@ async function main_() {
       console.log(`I am leader (${leader})`);
       /*-----------------------------------------------------------------------*/
       /*--------------------       Critical section        --------------------*/
-      if(await isProcessRunning('~/go/src/github.com/gforien/flightbeat/flightbeat', '-e -d "*"')) {
+      if(await isProcessRunning('./flightbeat', '-e')) {
         console.log('Beat is running');
       } else {
-        console.log('Should restart beat');
-        child_process.exec('~/go/src/github.com/gforien/flightbeat/flightbeat -e -d "*"',
-          (err, stdout, stderr) => {
-            // if (err) throw err;
-            // process.out.write(stdout);
-          });
-        }
+        // child_process.exec('~/flightbeat/flightbeat/flightbeat -e -d "*"',
+        //   (err, stdout, stderr) => {
+        //     if (err) throw err;
+        //     process.out.write(stdout);
+        //   });
+        // }
+        // 
+
+        console.log('Restart beat');
+        let child = child_process.spawn(
+          './startBeat.sh',
+          [],
+          {   detached: true,
+              stdio: [ 'ignore', 'ignore', 'ignore']
+          }
+        );
+        child.unref();
+
+        await sleepSec(5);
+        await isProcessRunning('./flightbeat', '-e')
+      }
       /*-----------------------------------------------------------------------*/
       await sleepSec(MAIN_DELAY_SEC);
     }
@@ -101,8 +115,8 @@ async function main_() {
     }
 
     else if (leader == -1) {
-      await sleepSec(5);
-      restart('Limit case: after 5 sec, there is no leader');
+      await sleepSec(RESTART_DELAY_SEC);
+      restart(`Limit case: after ${RESTART_DELAY_SEC} sec, there is no leader`);
       continue mainloop;
     }
 
